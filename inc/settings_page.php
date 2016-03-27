@@ -62,6 +62,14 @@ function SHighlighterForWPE_render_submenu_page() {
                         </div>
                     </div>
 
+                    <div id="help" class="postbox">
+                        <h3 class="title"><?php _e( 'Help', 'smbtoolbar' ); ?></h3>
+                        <div class="inside">
+                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'smbtoolbar' ); ?></p>
+                            <p><a href="mailto:arthurgareginyan@gmail.com">arthurgareginyan@gmail.com</a></p>
+                        </div>
+                    </div>
+
                     <div id="donate" class="postbox">
                         <h3 class="title"><?php _e( 'Donate', 'SHighlighterForWPE' ) ?></h3>
                         <div class="inside">
@@ -71,14 +79,6 @@ function SHighlighterForWPE_render_submenu_page() {
                                 <img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Make a donation">
                             </a>
                             <p><?php _e( 'Thanks for your support!', 'SHighlighterForWPE' ) ?></p>
-                        </div>
-                    </div>
-
-                    <div id="help" class="postbox">
-                        <h3 class="title"><?php _e( 'Help', 'SHighlighterForWPE' ) ?></h3>
-                        <div class="inside">
-                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'SHighlighterForWPE' ) ?></p>
-                            <p><a href="mailto:arthurgareginyan@gmail.com">arthurgareginyan@gmail.com</a></p>
                         </div>
                     </div>
 
