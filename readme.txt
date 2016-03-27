@@ -27,9 +27,10 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Easy to use Settings Page
 * Live preview on Settings Page
 * Ready for translation (.pot file included)
-* Added Russian translation
+* Russian translation
 
-A list of supported languages:
+**Supported languages:**
+
 * XML
 * HTML
 * CSS
