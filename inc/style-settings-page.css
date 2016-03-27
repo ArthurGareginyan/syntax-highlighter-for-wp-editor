@@ -1,0 +1,82 @@
+/*
+ * Syntax Highlighter for WP Editor
+ * Style sheet for plugin's page
+ * @since 0.1
+ * @agareginyan
+ */
+
+
+.aligncenter {
+    text-align: center;
+}
+
+.form-table {
+    clear: none;
+    margin-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+}
+
+h2 span {
+    margin-top: 1px;
+    font-size: 0.6em;
+    color: black;
+    display: inline;
+    padding: 0;
+}
+
+h2 span a {
+    display: inline;
+    padding: 0;
+}
+
+h3.title {
+    font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+    border-bottom: 1px solid #eee;
+}
+
+.inner-sidebar h3.title {
+    text-align: center;
+}
+
+td.help-text {
+    font-style: italic;
+    font-size: 12px !important;
+    float: left;
+    clear: left;
+    color: #797979;
+    line-height: 15px;
+    padding-top: 0px !important;
+}
+
+.postbox a {
+    text-decoration: none;
+}
+
+.CodeMirror {
+    height: 100% !important;
+    border: 1px solid grey;
+}
+
+#side-sortables {
+    position: relative;
+}
+
+#about {
+    text-align: center;
+}
+
+#donate {
+    text-align: center;
+}
+
+#help {
+    text-align: center;
+}
+
+#freelance {
+    text-align: center;
+}

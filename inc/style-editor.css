@@ -1,0 +1,20 @@
+/*
+ * Syntax Highlighter for WP Editor
+ * Style sheet for Plugins/Themes Editor pages
+ * @since 1.0
+ * @agareginyan
+ */
+
+
+.CodeMirror {
+    height: 100% !important;
+    border: 1px solid grey;
+}
+
+div.CodeMirror-hscrollbar {
+    min-height: 8px !important;
+}
+
+#template div {
+    margin-right: 0;
+}
