@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Arthur "Berserkr" Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 1.0
+ * Version: 1.1
  * License: GPL3
  * Text Domain: SHighlighterForWPE
  * Domain Path: /languages/
@@ -94,7 +94,7 @@ add_action( 'admin_init', 'SHighlighterForWPE_register_settings' );
 /**
  * Create a content for the _enqueue_scripts hook
  *
- * @since 1.0
+ * @since 1.1
  */
 function SHighlighterForWPE_prepare() {
 
@@ -139,6 +139,9 @@ function SHighlighterForWPE_prepare() {
                 $mode = 'text/x-markdown';
                 break;
         }
+
+        $readonly = '';
+
     } else {
         $mode = 'application/x-httpd-php';
         $readonly = 'true';

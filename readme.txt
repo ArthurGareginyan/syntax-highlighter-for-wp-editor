@@ -1,6 +1,6 @@
 === Syntax Highlighter for WP Editor ===
 Contributors: Arthur Gareginyan
-Tags: code editor, codemirror, editor, file editor, plugin editor, theme editor,
+Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editing, editor, code, php, xml, html ,css, javascript, markdown, codemirror, code mirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.4
@@ -71,10 +71,10 @@ After installation, a "`Syntax Highlighter for WP Editor`" menu item will appear
 
 
 == Frequently Asked Questions ==
-= Q. Does this plugin provide a syntax highlighting for the Page/Post editor?
+= Q. Does this plugin provide a syntax highlighting for the Page/Post editor? =
 A. No, only Theme and Plugin Editor.
 
-= Q. My theme uses a file type that is not supported by this plugin, how can I get it added?
+= Q. My theme uses a file type that is not supported by this plugin, how can I get it added? =
 A. If there is a filetype that is not supported by this plugin, just visit the support page and fill out the support form. I will do my best to include it in the next release.
 
 = Q. Will this Plugin work on my WordPress.COM website? =
@@ -95,7 +95,7 @@ A. Please visit [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareg
 = Q. Where to share any ideas or suggestions to make the plugin better? =
 A. Please send me email [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com).
 
-= Q. I love this plugin! Can I help somehow?
+= Q. I love this plugin! Can I help somehow? =
 A. Yes, any financial contributions are welcome! Just visit my website and click on the donate link, and thank you! [My website](http://www.arthurgareginyan.com/donate.html)
 
 
@@ -136,6 +136,8 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+= 1.1 =
+* Fixed: Undefined variable "readonly".
 = 1.0 =
 * Added default values for options.
 * Added support for Markdown files.
@@ -144,6 +146,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Added my personal ad about freelance.
 * Added ready for translation (.pot file included).
 * Added Russian translation.
+* Some changes in design of settings page.
 = 0.3 =
 * Added option "Display line numbers".
 * Added option "First line number".
@@ -155,6 +158,8 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
+= 1.1 =
+* Fixed: Undefined variable "readonly".
 = 1.0 =
 Please update to first stable release!
 = 0.3 =
