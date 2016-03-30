@@ -41,14 +41,10 @@ defined('ABSPATH') or die("Restricted access!");
  *
  * @since 0.1
  */
-if (!defined('SHWPE_DIR'))
-    define('SHWPE_DIR', dirname(plugin_basename(__FILE__)));
-if (!defined('SHWPE_BASE'))
-    define('SHWPE_BASE', plugin_basename( __FILE__ ));
-if (!defined('SHWPE_URL'))
-    define('SHWPE_URL', plugin_dir_url(__FILE__));
-if (!defined('SHWPE_PATH'))
-    define('SHWPE_PATH', plugin_dir_path( __FILE__ ));
+defined('SHWPE_DIR') or define('SHWPE_DIR', dirname(plugin_basename(__FILE__)));
+defined('SHWPE_BASE') or define('SHWPE_BASE', plugin_basename( __FILE__ ));
+defined('SHWPE_URL') or define('SHWPE_URL', plugin_dir_url(__FILE__));
+defined('SHWPE_PATH') or define('SHWPE_PATH', plugin_dir_path( __FILE__ ));
 
 /**
  * Register text domain
