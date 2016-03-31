@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.4
-Stable tag: 1.0
+Stable tag: 1.2
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -40,11 +40,11 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 **Got more ideas? Tell me!**
 
-* If you have any suggestions to make this plugin better, don't hesitate to contact me.
+If you have any suggestions to make this plugin better, don't hesitate to contact me.
 
 **Please Vote and Enjoy**
 
-* Your votes really make a difference! Thanks.
+Your votes really make a difference! Thanks.
 
 
 == Installation ==
@@ -136,6 +136,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+= 1.2 =
+* Constants variables added. (Thanks to @hsleonis)
+* JS best practice used in editor.js. (Thanks to @hsleonis)
 = 1.1 =
 * Fixed: Undefined variable "readonly".
 = 1.0 =
@@ -158,6 +161,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
+= 1.2 =
+* Constants variables added. (Thanks to @hsleonis)
+* JS best practice used in editor.js. (Thanks to @hsleonis)
 = 1.1 =
 * Fixed: Undefined variable "readonly".
 = 1.0 =

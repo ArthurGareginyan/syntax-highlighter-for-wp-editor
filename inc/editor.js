@@ -1,7 +1,7 @@
 /*
  * Syntax Highlighter for WP Editor
  * CodeMirror editor settings
- * @since 1.0
+ * @since 1.2
  * @agareginyan
  */
 
@@ -32,8 +32,6 @@
             mode: mode
         });
 
-        // Refresh CodeMirror editor after 1 second
-        //setTimeout(function() { editor.refresh(); },1);
         editor.refresh();
 
       });
