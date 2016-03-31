@@ -37,12 +37,22 @@
 defined('ABSPATH') or die("Restricted access!");
 
 /**
+ * Plugin constants
+ *
+ * @since 0.1
+ */
+defined('SHWPE_DIR') or define('SHWPE_DIR', dirname(plugin_basename(__FILE__)));
+defined('SHWPE_BASE') or define('SHWPE_BASE', plugin_basename( __FILE__ ));
+defined('SHWPE_URL') or define('SHWPE_URL', plugin_dir_url(__FILE__));
+defined('SHWPE_PATH') or define('SHWPE_PATH', plugin_dir_path( __FILE__ ));
+
+/**
  * Register text domain
  *
  * @since 0.1
  */
 function SHighlighterForWPE_textdomain() {
-	load_plugin_textdomain( 'SHighlighterForWPE', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+	load_plugin_textdomain( 'SHighlighterForWPE', false, SHWPE_DIR . '/languages/' );
 }
 add_action( 'init', 'SHighlighterForWPE_textdomain' );
 
@@ -61,8 +71,7 @@ function SHighlighterForWPE_settings_link( $links ) {
 	array_unshift( $links, $settings_page );
 	return $links;
 }
-$plugin = plugin_basename( __FILE__ );
-add_filter( "plugin_action_links_$plugin", 'SHighlighterForWPE_settings_link' );
+add_filter( "plugin_action_links_".SHWPE_BASE, 'SHighlighterForWPE_settings_link' );
 
 /**
  * Register "Syntax Highlighter" submenu in "Settings" Admin Menu
@@ -79,7 +88,7 @@ add_action( 'admin_menu', 'SHighlighterForWPE_register_submenu_page' );
  *
  * @since 0.1
  */
-require_once( plugin_dir_path( __FILE__ ) . 'inc/settings_page.php' );
+require_once( SHWPE_PATH . 'inc/settings_page.php' );
 
 /**
  * Register settings
@@ -102,11 +111,11 @@ function SHighlighterForWPE_prepare() {
     $options = get_option( 'SHighlighterForWPE_settings' );
 
     // CodeMirror library
-    wp_enqueue_script('codemirror', plugin_dir_url(__FILE__) . 'inc/codemirror/codemirror-compressed.js');
-    wp_enqueue_style('codemirror_style', plugin_dir_url(__FILE__) . 'inc/codemirror/codemirror.css');
-    wp_enqueue_script('codemirror-setting', plugin_dir_url(__FILE__) . 'inc/editor.js', array(), false, true);
+    wp_enqueue_script('codemirror', SHWPE_URL . 'inc/codemirror/codemirror-compressed.js');
+    wp_enqueue_style('codemirror_style', SHWPE_URL . 'inc/codemirror/codemirror.css');
+    wp_enqueue_script('codemirror-setting', SHWPE_URL . 'inc/editor.js', array(), false, true);
     if ( $options['theme'] != "default" ) {
-        wp_enqueue_style('codemirror_theme', plugin_dir_url(__FILE__) . 'inc/codemirror/theme/' . $options['theme'] . '.css');
+        wp_enqueue_style('codemirror_theme', SHWPE_URL . 'inc/codemirror/theme/' . $options['theme'] . '.css');
     }
 
     // Check the extension of loaded file and change the Mode of CodeMirror
@@ -174,7 +183,7 @@ function SHighlighterForWPE_enqueue_editor_scripts($hook) {
     // If is a Plugin/Theme Editors page
     if ( 'plugin-editor.php' == $hook || 'theme-editor.php' == $hook )  {
 
-        wp_enqueue_style('style-editor', plugin_dir_url(__FILE__) . 'inc/style-editor.css');
+        wp_enqueue_style('style-editor', SHWPE_URL . 'inc/style-editor.css');
             
         SHighlighterForWPE_prepare();
     }
@@ -182,7 +191,7 @@ function SHighlighterForWPE_enqueue_editor_scripts($hook) {
     // If is a settings page of this plugin
     if ( 'settings_page_syntax-highlighter-for-wp-editor' == $hook ) {
 
-        wp_enqueue_style('style-settings-page', plugin_dir_url(__FILE__) . 'inc/style-settings-page.css');
+        wp_enqueue_style('style-settings-page', SHWPE_URL . 'inc/style-settings-page.css');
 
         SHighlighterForWPE_prepare();
     }
