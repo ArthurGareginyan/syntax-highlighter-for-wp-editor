@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Syntax Highlighter for WP Editor\n"
-"POT-Creation-Date: 2016-03-27 05:49+0300\n"
+"POT-Creation-Date: 2016-04-08 16:40+0300\n"
 "PO-Revision-Date: 2016-03-25 05:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: inc/settings_page.php:44 syntax-highlighter-for-wp-editor.php:73
+#: inc/settings_page.php:44 syntax-highlighter-for-wp-editor.php:82
 msgid "Syntax Highlighter for WP Editor"
 msgstr ""
 
@@ -41,94 +41,98 @@ msgid ""
 "enhanced editor with syntax highlighting and line numbering"
 msgstr ""
 
-#: inc/settings_page.php:61
+#: inc/settings_page.php:65
+msgid "Using"
+msgstr ""
+
+#: inc/settings_page.php:67
 msgid ""
 "To use, select the desired settings, then click \"Save Changes\". It's that "
 "simple!"
 msgstr ""
 
-#: inc/settings_page.php:66
+#: inc/settings_page.php:72
+msgid "Help"
+msgstr ""
+
+#: inc/settings_page.php:74
+msgid "If you want more options then tell me and I will be happy to add it."
+msgstr ""
+
+#: inc/settings_page.php:80
 msgid "Donate"
 msgstr ""
 
-#: inc/settings_page.php:69
+#: inc/settings_page.php:83
 msgid ""
 "If you like this plugin and find it useful, help me to make this plugin even "
 "better and keep it up-to-date."
 msgstr ""
 
-#: inc/settings_page.php:73
+#: inc/settings_page.php:87
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/settings_page.php:78
-msgid "Help"
-msgstr ""
-
-#: inc/settings_page.php:80
-msgid "If you want more options then tell me and I will be happy to add it."
-msgstr ""
-
-#: inc/settings_page.php:86
+#: inc/settings_page.php:92
 msgid "Freelance"
 msgstr ""
 
-#: inc/settings_page.php:89
+#: inc/settings_page.php:95
 msgid ""
 "Hello, my name is Arthur and I'm a freelance web designer and developer."
 msgstr ""
 
-#: inc/settings_page.php:90
+#: inc/settings_page.php:96
 msgid ""
 "Share your thoughts with me. You may have a brilliant idea in your mind and "
 "I can make it happen, so let’s get started!"
 msgstr ""
 
-#: inc/settings_page.php:108
+#: inc/settings_page.php:114
 msgid "Main Settings"
 msgstr ""
 
-#: inc/settings_page.php:110
+#: inc/settings_page.php:116
 msgid "There you can configure this plugin."
 msgstr ""
 
-#: inc/settings_page.php:116
+#: inc/settings_page.php:122
 msgid "Color theme:"
 msgstr ""
 
-#: inc/settings_page.php:133
+#: inc/settings_page.php:139
 msgid "Theme which you like to view."
 msgstr ""
 
-#: inc/settings_page.php:139
+#: inc/settings_page.php:145
 msgid "Display line numbers:"
 msgstr ""
 
-#: inc/settings_page.php:148
+#: inc/settings_page.php:154
 msgid "First line number:"
 msgstr ""
 
-#: inc/settings_page.php:157
+#: inc/settings_page.php:163
 msgid "The width of Tab:"
 msgstr ""
 
-#: inc/settings_page.php:164
+#: inc/settings_page.php:170
 msgid "Save Changes"
 msgstr ""
 
-#: inc/settings_page.php:169
+#: inc/settings_page.php:175
 msgid "Preview"
 msgstr ""
 
-#: inc/settings_page.php:171
+#: inc/settings_page.php:177
 msgid "Click \"Save Changes\" to update this preview."
 msgstr ""
 
-#: inc/settings_page.php:173
+#: inc/settings_page.php:179
 msgid "This is an example of HTML language."
 msgstr ""
 
-#: syntax-highlighter-for-wp-editor.php:60
+#: syntax-highlighter-for-wp-editor.php:70
 msgid "Settings"
 msgstr ""
 
@@ -143,7 +147,7 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Arthur \"Berserkr\" Gareginyan"
+msgid "Arthur Gareginyan"
 msgstr ""
 
 #. Author URI of the plugin/theme

@@ -38,13 +38,13 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * JavaScript (.js)
 * Markdown (.txt)
 
-**Got more ideas? Tell me!**
-
-If you have any suggestions to make this plugin better, don't hesitate to contact me.
-
-**Please Vote and Enjoy**
-
-Your votes really make a difference! Thanks.
+>**Contribution**
+>
+>Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
+>
+>* Please [donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+>* Please take the time to [rate and review](https://wordpress.org/support/view/plugin-reviews/syntax-highlighter-for-wp-editor?rate=5#postform) this plugin.
+>* Please [share with me](mailto:arthurgareginyan@gmail.com) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
@@ -120,15 +120,6 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 [CodeMirror](https://codemirror.net/) is an open-source project shared under an [MIT license](https://codemirror.net/LICENSE).
 
-**Support**
-
-* Did you enjoy this plugin? Please [donate to support ongoing development](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS). Your contribution would be greatly appreciated.
-* Do you have any ideas or suggestions to make the plugin better? I can’t wait to hear them! Please share! [arthurgareginyan@gmail.com](mailto:arthurgareginyan@gmail.com)
-
-**Please Vote and Enjoy**
-
-* Your votes really make a difference! Thanks.
-
 **Links**
 
 * [Developer Website](http://www.arthurgareginyan.com)
@@ -136,9 +127,14 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+= 2.0 =
+* Text domain changed to "syntax-highlighter-for-wp-editor".
+* Added compatibility with the translate.wordpress.org.
+* All images are moved to the directory "images".
+* Image "btn_donateCC_LG.gif" is now located in the "images" directory.
 = 1.2 =
-* Constants variables added. (Thanks to @hsleonis)
-* JS best practice used in editor.js. (Thanks to @hsleonis)
+* Constants variables added. (Thanks @hsleonis)
+* JS best practice used in editor.js. (Thanks @hsleonis)
 = 1.1 =
 * Fixed: Undefined variable "readonly".
 = 1.0 =
@@ -161,14 +157,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
-= 1.2 =
-* Constants variables added. (Thanks to @hsleonis)
-* JS best practice used in editor.js. (Thanks to @hsleonis)
-= 1.1 =
-* Fixed: Undefined variable "readonly".
 = 1.0 =
 Please update to first stable release!
 = 0.3 =
 Prerelease.
 = 0.2 =
-Beta version.
+Please update to beta version.
