@@ -23,15 +23,16 @@
 
         // Change editor to CodeMirror
         var editor = CodeMirror.fromTextArea( elements , {
-            lineNumbers: line_numbers,
-            firstLineNumber: first_line_number,
-            matchBrackets: true,
-            indentUnit: tab_size,
-            readOnly: readonly,
-            theme: theme,
-            mode: mode
+                                lineNumbers: line_numbers,
+                                firstLineNumber: first_line_number,
+                                matchBrackets: true,
+                                indentUnit: tab_size,
+                                readOnly: readonly,
+                                theme: theme,
+                                mode: mode
         });
 
+        // Refresh CodeMirror editor
         editor.refresh();
 
       });

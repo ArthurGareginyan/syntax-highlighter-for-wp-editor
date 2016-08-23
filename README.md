@@ -21,6 +21,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Live preview on Settings Page
 * Ready for translation (.pot file included)
 * Russian translation
+* Published on [WordPess.org](http://wordpess.org/)
 
 **Supported languages and links:**
 

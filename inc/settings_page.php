@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 2.0
+ * @since 2.0.1
  */
 function SHighlighterForWPE_render_submenu_page() {
 
@@ -44,7 +44,7 @@ function SHighlighterForWPE_render_submenu_page() {
             <?php _e( 'Syntax Highlighter for WP Editor', 'syntax-highlighter-for-wp-editor' ); ?>
             <br/>
             <span>
-                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur "Berserkr" Gareginyan</a>', 'syntax-highlighter-for-wp-editor' ); ?>
+                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur Gareginyan</a>', 'syntax-highlighter-for-wp-editor' ); ?>
             <span/>
 		</h2>
 
@@ -55,46 +55,42 @@ function SHighlighterForWPE_render_submenu_page() {
                 <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
                     <div id="about" class="postbox">
-                        <h3 class="title"><?php _e( 'About', 'syntax-highlighter-for-wp-editor' ) ?></a></h3>
+                        <h3 class="title"><?php _e( 'About', 'syntax-highlighter-for-wp-editor' ); ?></a></h3>
                         <div class="inside">
-                            <p><?php _e( 'This plugin replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering', 'syntax-highlighter-for-wp-editor' ) ?></p>
+                            <p><?php _e( 'This plugin replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering', 'syntax-highlighter-for-wp-editor' ); ?></p>
                         </div>
                     </div>
 
                     <div id="using" class="postbox">
-                        <h3 class="title"><?php _e( 'Using', 'syntax-highlighter-for-wp-editor' ) ?></a></h3>
+                        <h3 class="title"><?php _e( 'Using', 'syntax-highlighter-for-wp-editor' ); ?></a></h3>
                         <div class="inside">
-                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'syntax-highlighter-for-wp-editor' ) ?></p>
+                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'syntax-highlighter-for-wp-editor' ); ?></p>
                         </div>
                     </div>
 
                     <div id="help" class="postbox">
                         <h3 class="title"><?php _e( 'Help', 'syntax-highlighter-for-wp-editor' ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'If you want more options then tell me and I will be happy to add it.', 'syntax-highlighter-for-wp-editor' ); ?></p>
-                            <p><a href="mailto:arthurgareginyan@gmail.com">arthurgareginyan@gmail.com</a></p>
+                            <p><?php _e( 'Got something to say? Need help?', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                            <p><a href="mailto:arthurgareginyan@gmail.com?subject=Syntax Highlighter for WP Editor">arthurgareginyan@gmail.com</a></p>
                         </div>
                     </div>
 
                     <div id="donate" class="postbox">
-                        <h3 class="title"><?php _e( 'Donate', 'syntax-highlighter-for-wp-editor' ) ?></h3>
+                        <h3 class="title"><?php _e( 'Donate', 'syntax-highlighter-for-wp-editor' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('images/thanks.png', __FILE__); ?>">
-                            <p><?php _e( 'If you like this plugin and find it useful, help me to make this plugin even better and keep it up-to-date.', 'syntax-highlighter-for-wp-editor' ) ?></p>
+                            <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'syntax-highlighter-for-wp-editor' ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
                                 <img src="<?php echo plugins_url('images/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
-                            <p><?php _e( 'Thanks for your support!', 'syntax-highlighter-for-wp-editor' ) ?></p>
+                            <p><?php _e( 'Thanks for your support!', 'syntax-highlighter-for-wp-editor' ); ?></p>
                         </div>
                     </div>
 
-                    <div id="freelance" class="postbox">
-                        <h3 class="title"><?php _e( 'Freelance', 'syntax-highlighter-for-wp-editor' ) ?></h3>
+                    <div id="advertisement" class="postbox">
+                        <h3 class="title"><?php _e( 'Advertisement', 'syntax-highlighter-for-wp-editor' ); ?></h3>
                         <div class="inside">
-                            <img src="<?php echo plugins_url('images/author.png', __FILE__); ?>">
-                            <p><?php _e( 'Hello, my name is Arthur and I\'m a freelance web designer and developer.', 'syntax-highlighter-for-wp-editor' ) ?></p>
-                            <p><?php _e( 'Share your thoughts with me. You may have a brilliant idea in your mind and I can make it happen, so let’s get started!', 'syntax-highlighter-for-wp-editor' ) ?></p>
-                            <p><a href="http://www.arthurgareginyan.com/" target="_blank">www.arthurgareginyan.com</a></p>
+                            <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=36439_5_1_21" target="_blank" rel="nofollow"><img style="border:0px" src="http://www.elegantthemes.com/affiliates/media/banners/divi_250x250.jpg" width="250" height="250" alt="Divi WordPress Theme"></a>
                         </div>
                     </div>
 

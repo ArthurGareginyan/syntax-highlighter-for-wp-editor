@@ -3,8 +3,8 @@ Contributors: Arthur Gareginyan
 Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editing, editor, code, php, xml, html ,css, javascript, markdown, codemirror, code mirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
-Tested up to: 4.5
-Stable tag: 1.2
+Tested up to: 4.6
+Stable tag: 2.0
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,14 +20,13 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 = Features =
 
-* Syntax highlighting by CodeMirror library
-* Changeable Color Theme (36)
+* Syntax highlighting (by CodeMirror)
+* Changeable color theme (36 variants)
 * Line numbering
-* Input areas allow for tab indentation
+* Editor allow for tab indentation
 * Easy to use Settings Page
 * Live preview on Settings Page
-* Ready for translation (.pot file included)
-* Russian translation
+* Ready for translation (POT file included)
 
 **Supported languages:**
 
@@ -38,13 +37,20 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * JavaScript (.js)
 * Markdown (.txt)
 
+= Translation =
+
+Please keep in mind that not all translations are up to date. You are welcome to contribute!
+
+* English (default)
+* Russian
+
 >**Contribution**
 >
 >Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
 >
->* Please [donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
->* Please take the time to [rate and review](https://wordpress.org/support/view/plugin-reviews/syntax-highlighter-for-wp-editor?rate=5#postform) this plugin.
->* Please [share with me](mailto:arthurgareginyan@gmail.com) if you have any ideas or suggestions to make this plugin better.
+>* [Donate](http://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+>* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/syntax-highlighter-for-wp-editor?rate=5#postform) this plugin.
+>* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
@@ -100,7 +106,7 @@ A. Yes, any financial contributions are welcome! Just visit my website and click
 
 
 == Screenshots ==
-1. Plugin’s settings page.
+1. Plugin settings page.
 2. Default WP Plugin Editor.
 3. Plugin Editor that provided by this plugin (color theme: ambiance).
 4. Plugin Editor that provided by this plugin (color theme: default).
@@ -118,7 +124,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 **Credits**
 
-[CodeMirror](https://codemirror.net/) is an open-source project shared under an [MIT license](https://codemirror.net/LICENSE).
+[CodeMirror](https://codemirror.net/) is an open-source project shared under a [MIT license](https://codemirror.net/LICENSE).
 
 **Links**
 
@@ -127,6 +133,13 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+= 2.0.1 =
+* POT file updated.
+* Russian translation updated.
+* Image "thanks.png" removed.
+* Advertisement replaced by new.
+* Added the subject with plugin name to email address on settings page.
+* Function "SHighlighterForWPE_enqueue_editor_scripts" renamed to "SHighlighterForWPE_load_scripts".
 = 2.0 =
 * Text domain changed to "syntax-highlighter-for-wp-editor".
 * Added compatibility with the translate.wordpress.org.

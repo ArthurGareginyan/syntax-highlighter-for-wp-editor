@@ -5,12 +5,12 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.0
+ * Version: 2.0.1
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
  *
- * Copyright 2016  Arthur Gareginyan  (email : arthurgareginyan@gmail.com)
+ * Copyright 2016 Arthur Gareginyan (email : arthurgareginyan@gmail.com)
  *
  * This file is part of "Syntax Highlighter for WP Editor".
  *
@@ -37,7 +37,7 @@
 defined('ABSPATH') or die("Restricted access!");
 
 /**
- * Plugin constants
+ * Define constants
  *
  * @since 1.2
  */
@@ -101,7 +101,7 @@ function SHighlighterForWPE_register_settings() {
 add_action( 'admin_init', 'SHighlighterForWPE_register_settings' );
 
 /**
- * Create a content for the _enqueue_scripts hook
+ * Create a content for the _load_scripts hook
  *
  * @since 1.2
  */
@@ -161,7 +161,6 @@ function SHighlighterForWPE_prepare() {
     if ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) { $line_numbers = "true"; } else { $line_numbers = "false"; };
     if ( !empty( $options['first_line_number'] ) ) { $first_line_number = $options['first_line_number']; } else { $first_line_number = "0"; };
     if ( !empty( $options['tab_size'] ) ) { $tab_size = $options['tab_size']; } else { $tab_size = "4"; };
-    
     $script_params = array(
                            'theme' => $theme,
                            'line_numbers' => $line_numbers,
@@ -174,11 +173,11 @@ function SHighlighterForWPE_prepare() {
 }
 
 /**
- * Enqueue scripts and style sheet
+ * Load scripts and style sheet for settings page
  *
  * @since 1.2
  */
-function SHighlighterForWPE_enqueue_editor_scripts($hook) {
+function SHighlighterForWPE_load_scripts($hook) {
 
     // If is a Plugin/Theme Editors page
     if ( 'plugin-editor.php' == $hook || 'theme-editor.php' == $hook )  {
@@ -196,7 +195,7 @@ function SHighlighterForWPE_enqueue_editor_scripts($hook) {
         SHighlighterForWPE_prepare();
     }
 }
-add_action( 'admin_enqueue_scripts', 'SHighlighterForWPE_enqueue_editor_scripts' );
+add_action( 'admin_enqueue_scripts', 'SHighlighterForWPE_load_scripts' );
 
 /**
  * Delete options on uninstall

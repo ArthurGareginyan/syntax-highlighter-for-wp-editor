@@ -1,7 +1,7 @@
 /*
  * Syntax Highlighter for WP Editor
  * Style sheet for plugin's page
- * @since 0.1
+ * @since 2.0.1
  * @agareginyan
  */
 
@@ -76,11 +76,14 @@ td.help-text {
 #help {
     text-align: center;
 }
+#help p {
+    margin: 0;
+}
 
 #donate {
     text-align: center;
 }
 
-#freelance {
+#advertisement {
     text-align: center;
 }

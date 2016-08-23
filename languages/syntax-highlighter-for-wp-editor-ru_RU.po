@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for WP Editor\n"
-"POT-Creation-Date: 2016-04-08 16:40+0300\n"
-"PO-Revision-Date: 2016-04-08 16:40+0300\n"
+"POT-Creation-Date: 2016-08-23 07:14+0300\n"
+"PO-Revision-Date: 2016-08-23 07:14+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -29,10 +29,10 @@ msgstr ""
 #: inc/settings_page.php:47
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-"\"Berserkr\" Gareginyan</a>"
+"Gareginyan</a>"
 msgstr ""
-"от <a href=“http://www.arthurgareginyan.com” target=“_blank”>Артур "
-"“Berserkr” Гарегинян</a>"
+"от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
+"Гарегинян</a>"
 
 #: inc/settings_page.php:58
 msgid "About"
@@ -63,85 +63,70 @@ msgid "Help"
 msgstr "Помощь"
 
 #: inc/settings_page.php:74
-msgid "If you want more options then tell me and I will be happy to add it."
-msgstr ""
-"Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
-"добавить их."
+msgid "Got something to say? Need help?"
+msgstr "Есть что сказать? Нужна помощь?"
 
 #: inc/settings_page.php:80
 msgid "Donate"
 msgstr "Пожертвование"
 
-#: inc/settings_page.php:83
+#: inc/settings_page.php:82
 msgid ""
-"If you like this plugin and find it useful, help me to make this plugin even "
-"better and keep it up-to-date."
+"If you like this plugin and find it useful, please help me to make this "
+"plugin even better and keep it up-to-date."
 msgstr ""
-"Если вам нравится этот плагин и вы находите его полезным, то помогите мне "
-"сделать этот плагин ещё лучше и держать его современным."
+"Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
+"помогите мне сделать его ещё лучше."
 
-#: inc/settings_page.php:87
+#: inc/settings_page.php:86
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/settings_page.php:92
-msgid "Freelance"
-msgstr "Фриланс"
+#: inc/settings_page.php:91
+msgid "Advertisement"
+msgstr "Реклама"
 
-#: inc/settings_page.php:95
-msgid ""
-"Hello, my name is Arthur and I'm a freelance web designer and developer."
-msgstr "Привет, меня зовут Артур и Я внештатный веб-дизайнер и разработчик."
-
-#: inc/settings_page.php:96
-msgid ""
-"Share your thoughts with me. You may have a brilliant idea in your mind and "
-"I can make it happen, so let’s get started!"
-msgstr ""
-"Поделитесь со мной своими мыслями. У вас может быть блестящая идея в уме, а "
-"я могу сделать её явью, так что давайте начнём!"
-
-#: inc/settings_page.php:114
+#: inc/settings_page.php:110
 msgid "Main Settings"
 msgstr "Основные Настройки"
 
-#: inc/settings_page.php:116
+#: inc/settings_page.php:112
 msgid "There you can configure this plugin."
 msgstr "Здесь вы можете настроить этот плагин."
 
-#: inc/settings_page.php:122
+#: inc/settings_page.php:118
 msgid "Color theme:"
 msgstr "Цветовая схема:"
 
-#: inc/settings_page.php:139
+#: inc/settings_page.php:135
 msgid "Theme which you like to view."
 msgstr "Тема, которую вы хотите использовать."
 
-#: inc/settings_page.php:145
+#: inc/settings_page.php:141
 msgid "Display line numbers:"
 msgstr "Отображать номера строк:"
 
-#: inc/settings_page.php:154
+#: inc/settings_page.php:150
 msgid "First line number:"
 msgstr "Номер первой строки:"
 
-#: inc/settings_page.php:163
+#: inc/settings_page.php:159
 msgid "The width of Tab:"
 msgstr "Ширина Таба:"
 
-#: inc/settings_page.php:170
+#: inc/settings_page.php:166
 msgid "Save Changes"
 msgstr "Сохранить Изменения"
 
-#: inc/settings_page.php:175
+#: inc/settings_page.php:171
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/settings_page.php:177
+#: inc/settings_page.php:173
 msgid "Click \"Save Changes\" to update this preview."
 msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
 
-#: inc/settings_page.php:179
+#: inc/settings_page.php:175
 msgid "This is an example of HTML language."
 msgstr "Это пример HTML языка."
 
@@ -168,6 +153,42 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr ""
+
+#~ msgid "Advertising"
+#~ msgstr "Реклама"
+
+#~ msgid ""
+#~ "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
+#~ "\"Berserkr\" Gareginyan</a>"
+#~ msgstr ""
+#~ "от <a href=“http://www.arthurgareginyan.com” target=“_blank”>Артур "
+#~ "“Berserkr” Гарегинян</a>"
+
+#~ msgid "If you want more options then tell me and I will be happy to add it."
+#~ msgstr ""
+#~ "Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
+#~ "добавить их."
+
+#~ msgid ""
+#~ "If you like this plugin and find it useful, help me to make this plugin "
+#~ "even better and keep it up-to-date."
+#~ msgstr ""
+#~ "Если вам нравится этот плагин и вы находите его полезным, то помогите мне "
+#~ "сделать этот плагин ещё лучше и держать его современным."
+
+#~ msgid "Freelance"
+#~ msgstr "Фриланс"
+
+#~ msgid ""
+#~ "Hello, my name is Arthur and I'm a freelance web designer and developer."
+#~ msgstr "Привет, меня зовут Артур и Я внештатный веб-дизайнер и разработчик."
+
+#~ msgid ""
+#~ "Share your thoughts with me. You may have a brilliant idea in your mind "
+#~ "and I can make it happen, so let’s get started!"
+#~ msgstr ""
+#~ "Поделитесь со мной своими мыслями. У вас может быть блестящая идея в уме, "
+#~ "а я могу сделать её явью, так что давайте начнём!"
 
 #~ msgid "Arthur \"Berserkr\" Gareginyan"
 #~ msgstr "Артур “Берсеркр” Гарегинян"
