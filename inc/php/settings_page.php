@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 2.0.1
+ * @since 3.0
  */
 function SHighlighterForWPE_render_submenu_page() {
 
@@ -81,7 +81,7 @@ function SHighlighterForWPE_render_submenu_page() {
                         <div class="inside">
                             <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'syntax-highlighter-for-wp-editor' ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
-                                <img src="<?php echo plugins_url('images/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
+                                <img src="<?php echo plugins_url('../img/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
                             <p><?php _e( 'Thanks for your support!', 'syntax-highlighter-for-wp-editor' ); ?></p>
                         </div>

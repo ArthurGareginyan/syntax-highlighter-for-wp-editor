@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 2.0.1
+ * Version: 3.0
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
@@ -86,9 +86,9 @@ add_action( 'admin_menu', 'SHighlighterForWPE_register_submenu_page' );
 /**
  * Attach Settings Page
  *
- * @since 1.2
+ * @since 3.0
  */
-require_once( SHWPE_PATH . 'inc/settings_page.php' );
+require_once( SHWPE_PATH . 'inc/php/settings_page.php' );
 
 /**
  * Register settings
@@ -103,7 +103,7 @@ add_action( 'admin_init', 'SHighlighterForWPE_register_settings' );
 /**
  * Create a content for the _load_scripts hook
  *
- * @since 1.2
+ * @since 3.0
  */
 function SHighlighterForWPE_prepare() {
 
@@ -111,11 +111,11 @@ function SHighlighterForWPE_prepare() {
     $options = get_option( 'SHighlighterForWPE_settings' );
 
     // CodeMirror library
-    wp_enqueue_script('codemirror', SHWPE_URL . 'inc/codemirror/codemirror-compressed.js');
-    wp_enqueue_style('codemirror_style', SHWPE_URL . 'inc/codemirror/codemirror.css');
-    wp_enqueue_script('codemirror-setting', SHWPE_URL . 'inc/editor.js', array(), false, true);
+    wp_enqueue_script( 'codemirror-js', SHWPE_URL . 'inc/lib/codemirror/codemirror-compressed.js' );
+    wp_enqueue_style( 'codemirror-css', SHWPE_URL . 'inc/lib/codemirror/codemirror.css' );
+    wp_enqueue_script( 'codemirror-setting', SHWPE_URL . 'inc/js/codemirror-settings.js', array(), false, true );
     if ( $options['theme'] != "default" ) {
-        wp_enqueue_style('codemirror_theme', SHWPE_URL . 'inc/codemirror/theme/' . $options['theme'] . '.css');
+        wp_enqueue_style( 'codemirror-theme', SHWPE_URL . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css' );
     }
 
     // Check the extension of loaded file and change the Mode of CodeMirror
@@ -175,14 +175,15 @@ function SHighlighterForWPE_prepare() {
 /**
  * Load scripts and style sheet for settings page
  *
- * @since 1.2
+ * @since 3.0
  */
 function SHighlighterForWPE_load_scripts($hook) {
 
     // If is a Plugin/Theme Editors page
     if ( 'plugin-editor.php' == $hook || 'theme-editor.php' == $hook )  {
 
-        wp_enqueue_style('style-editor', SHWPE_URL . 'inc/style-editor.css');
+        // Style sheet
+        wp_enqueue_style( 'editor-css', SHWPE_URL . 'inc/css/editor.css' );
             
         SHighlighterForWPE_prepare();
     }
@@ -190,7 +191,14 @@ function SHighlighterForWPE_load_scripts($hook) {
     // If is a settings page of this plugin
     if ( 'settings_page_syntax-highlighter-for-wp-editor' == $hook ) {
 
-        wp_enqueue_style('style-settings-page', SHWPE_URL . 'inc/style-settings-page.css');
+        // Style sheet
+        wp_enqueue_style( 'admin-css', SHWPE_URL . 'inc/css/admin.css' );
+        wp_enqueue_style( 'bootstrap', SMEDIABT_URL . 'inc/css/bootstrap.css' );
+        wp_enqueue_style( 'bootstrap-theme', SMEDIABT_URL . 'inc/css/bootstrap-theme.css' );
+
+        // JavaScript
+        wp_enqueue_script( 'admin-js', SMEDIABT_URL . 'inc/js/admin.js', array(), false, true );
+        wp_enqueue_script( 'bootstrap-checkbox', SMEDIABT_URL . 'inc/js/bootstrap-checkbox.min.js' );
 
         SHighlighterForWPE_prepare();
     }
