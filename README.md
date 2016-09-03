@@ -39,7 +39,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 
 Welcome and thanks! I appreciate you taking the initiative to contribute to this project.
 
-Contributing isn’t limited to just code. I encourage you to contribute in the way that best fits your abilities, by writing tutorials, giving a demo at your local meetup, helping other users with their support questions, or revising  the documentation for this project.
+Contributing isn’t limited to just code. I encourage you to contribute in the way that best fits your abilities, by writing tutorials, making translation to your native language, giving a demo at your local meetup, helping other users with their support questions, or revising  the documentation for this project.
 
 Please take a moment to read the guidelines in the [CONTRIBUTING.md](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor/blob/master/CONTRIBUTING.md). Following them helps to communicate that you respect the time of the other contributors to the project. In turn, they’ll do their best to reciprocate that respect when working with you, across timezones and around the world.
 
