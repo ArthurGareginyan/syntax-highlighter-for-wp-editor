@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for WP Editor\n"
-"POT-Creation-Date: 2016-08-23 07:14+0300\n"
-"PO-Revision-Date: 2016-08-23 07:14+0300\n"
+"POT-Creation-Date: 2016-11-01 18:41+0300\n"
+"PO-Revision-Date: 2016-11-01 18:41+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -22,11 +22,11 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: inc/settings_page.php:44 syntax-highlighter-for-wp-editor.php:82
+#: inc/php/settings_page.php:44 syntax-highlighter-for-wp-editor.php:85
 msgid "Syntax Highlighter for WP Editor"
 msgstr ""
 
-#: inc/settings_page.php:47
+#: inc/php/settings_page.php:47
 msgid ""
 "by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
 "Gareginyan</a>"
@@ -34,11 +34,11 @@ msgstr ""
 "от <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Артур "
 "Гарегинян</a>"
 
-#: inc/settings_page.php:58
+#: inc/php/settings_page.php:58
 msgid "About"
 msgstr "О плагине"
 
-#: inc/settings_page.php:60
+#: inc/php/settings_page.php:60
 msgid ""
 "This plugin replaces the defaults WordPress Theme and Plugin Editor with an "
 "enhanced editor with syntax highlighting and line numbering"
@@ -46,11 +46,11 @@ msgstr ""
 "Этот плагин заменяет стандартный WordPress редактор тем и плагинов на "
 "улучшенный редактор с подсветкой синтаксиса и нумерацией строк"
 
-#: inc/settings_page.php:65
+#: inc/php/settings_page.php:65
 msgid "Using"
-msgstr "Использование:"
+msgstr "Как пользоваться"
 
-#: inc/settings_page.php:67
+#: inc/php/settings_page.php:67
 msgid ""
 "To use, select the desired settings, then click \"Save Changes\". It's that "
 "simple!"
@@ -58,79 +58,77 @@ msgstr ""
 "Для использования, выберите нужные параметры, а затем нажмите кнопку "
 "«Сохранить изменения». Это так просто!"
 
-#: inc/settings_page.php:72
+#: inc/php/settings_page.php:72
 msgid "Help"
 msgstr "Помощь"
 
-#: inc/settings_page.php:74
+#: inc/php/settings_page.php:74
 msgid "Got something to say? Need help?"
 msgstr "Есть что сказать? Нужна помощь?"
 
-#: inc/settings_page.php:80
+#: inc/php/settings_page.php:80
 msgid "Donate"
-msgstr "Пожертвование"
+msgstr "Поддержать разработку"
 
-#: inc/settings_page.php:82
+#: inc/php/settings_page.php:82
 msgid ""
-"If you like this plugin and find it useful, please help me to make this "
-"plugin even better and keep it up-to-date."
+"I'm an independent developer, without a regular income, so every little "
+"contribution helps cover my costs and lets me spend more time building "
+"things for people like you to enjoy."
 msgstr ""
-"Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
-"помогите мне сделать его ещё лучше."
+"Я независимый разработчик, без регулярного дохода, так что каждый маленький "
+"вклад помогает мне покрыть затраты и позволяет тратить больше времени на "
+"создание программ для людей как вы."
 
-#: inc/settings_page.php:86
+#: inc/php/settings_page.php:86
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/settings_page.php:91
-msgid "Advertisement"
-msgstr "Реклама"
-
-#: inc/settings_page.php:110
+#: inc/php/settings_page.php:107
 msgid "Main Settings"
 msgstr "Основные Настройки"
 
-#: inc/settings_page.php:112
+#: inc/php/settings_page.php:109
 msgid "There you can configure this plugin."
 msgstr "Здесь вы можете настроить этот плагин."
 
-#: inc/settings_page.php:118
+#: inc/php/settings_page.php:115
 msgid "Color theme:"
 msgstr "Цветовая схема:"
 
-#: inc/settings_page.php:135
+#: inc/php/settings_page.php:132
 msgid "Theme which you like to view."
 msgstr "Тема, которую вы хотите использовать."
 
-#: inc/settings_page.php:141
+#: inc/php/settings_page.php:138
 msgid "Display line numbers:"
 msgstr "Отображать номера строк:"
 
-#: inc/settings_page.php:150
+#: inc/php/settings_page.php:147
 msgid "First line number:"
 msgstr "Номер первой строки:"
 
-#: inc/settings_page.php:159
+#: inc/php/settings_page.php:156
 msgid "The width of Tab:"
 msgstr "Ширина Таба:"
 
-#: inc/settings_page.php:166
+#: inc/php/settings_page.php:163
 msgid "Save Changes"
-msgstr "Сохранить Изменения"
+msgstr "Сохранить изменения"
 
-#: inc/settings_page.php:171
+#: inc/php/settings_page.php:168
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/settings_page.php:173
+#: inc/php/settings_page.php:170
 msgid "Click \"Save Changes\" to update this preview."
 msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
 
-#: inc/settings_page.php:175
+#: inc/php/settings_page.php:172
 msgid "This is an example of HTML language."
 msgstr "Это пример HTML языка."
 
-#: syntax-highlighter-for-wp-editor.php:70
+#: syntax-highlighter-for-wp-editor.php:73
 msgid "Settings"
 msgstr "Настройки"
 
@@ -153,6 +151,16 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr ""
+
+#~ msgid "Advertisement"
+#~ msgstr "Реклама"
+
+#~ msgid ""
+#~ "If you like this plugin and find it useful, please help me to make this "
+#~ "plugin even better and keep it up-to-date."
+#~ msgstr ""
+#~ "Если вам нравится этот плагин и вы находите его полезным, то пожалуйста "
+#~ "помогите мне сделать его ещё лучше."
 
 #~ msgid "Advertising"
 #~ msgstr "Реклама"

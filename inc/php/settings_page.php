@@ -10,7 +10,7 @@ defined('ABSPATH') or die("Restricted access!");
 /**
  * Render Settings Page
  *
- * @since 3.0
+ * @since 3.2
  */
 function SHighlighterForWPE_render_submenu_page() {
 
@@ -41,10 +41,10 @@ function SHighlighterForWPE_render_submenu_page() {
 	?>
 	<div class="wrap">
 		<h2>
-            <?php _e( 'Syntax Highlighter for WP Editor', 'syntax-highlighter-for-wp-editor' ); ?>
+            <?php _e( 'Syntax Highlighter for WP Editor', SHWPE_TEXT ); ?>
             <br/>
             <span>
-                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur Gareginyan</a>', 'syntax-highlighter-for-wp-editor' ); ?>
+                <?php _e( 'by <a href="http://www.arthurgareginyan.com" target="_blank">Arthur Gareginyan</a>', SHWPE_TEXT ); ?>
             <span/>
 		</h2>
 
@@ -55,44 +55,41 @@ function SHighlighterForWPE_render_submenu_page() {
                 <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
                     <div id="about" class="postbox">
-                        <h3 class="title"><?php _e( 'About', 'syntax-highlighter-for-wp-editor' ); ?></a></h3>
+                        <h3 class="title"><?php _e( 'About', SHWPE_TEXT ); ?></a></h3>
                         <div class="inside">
-                            <p><?php _e( 'This plugin replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                            <p><?php _e( 'This plugin replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering', SHWPE_TEXT ); ?></p>
                         </div>
                     </div>
 
                     <div id="using" class="postbox">
-                        <h3 class="title"><?php _e( 'Using', 'syntax-highlighter-for-wp-editor' ); ?></a></h3>
+                        <h3 class="title"><?php _e( 'Using', SHWPE_TEXT ); ?></a></h3>
                         <div class="inside">
-                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                            <p><?php _e( 'To use, select the desired settings, then click "Save Changes". It\'s that simple!', SHWPE_TEXT ); ?></p>
                         </div>
                     </div>
 
                     <div id="help" class="postbox">
-                        <h3 class="title"><?php _e( 'Help', 'syntax-highlighter-for-wp-editor' ); ?></h3>
+                        <h3 class="title"><?php _e( 'Help', SHWPE_TEXT ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'Got something to say? Need help?', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                            <p><?php _e( 'Got something to say? Need help?', SHWPE_TEXT ); ?></p>
                             <p><a href="mailto:arthurgareginyan@gmail.com?subject=Syntax Highlighter for WP Editor">arthurgareginyan@gmail.com</a></p>
                         </div>
                     </div>
 
                     <div id="donate" class="postbox">
-                        <h3 class="title"><?php _e( 'Donate', 'syntax-highlighter-for-wp-editor' ); ?></h3>
+                        <h3 class="title"><?php _e( 'Donate', SHWPE_TEXT ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'If you like this plugin and find it useful, please help me to make this plugin even better and keep it up-to-date.', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                            <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', SHWPE_TEXT ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" rel="nofollow">
                                 <img src="<?php echo plugins_url('../img/btn_donateCC_LG.gif', __FILE__); ?>" alt="Make a donation">
                             </a>
-                            <p><?php _e( 'Thanks for your support!', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                            <p><?php _e( 'Thanks for your support!', SHWPE_TEXT ); ?></p>
                         </div>
                     </div>
 
-                    <div id="advertisement" class="postbox">
-                        <h3 class="title"><?php _e( 'Advertisement', 'syntax-highlighter-for-wp-editor' ); ?></h3>
-                        <div class="inside">
-                            <a href="http://www.elegantthemes.com/affiliates/idevaffiliate.php?id=36439_5_1_21" target="_blank" rel="nofollow"><img style="border:0px" src="http://www.elegantthemes.com/affiliates/media/banners/divi_250x250.jpg" width="250" height="250" alt="Divi WordPress Theme"></a>
-                        </div>
-                    </div>
+                    <a href="//www.iconfinder.com/?ref=ArthurGareginyan" target="_blank" rel="nofollow">
+                        <img style="border:0px" src="<?php echo plugins_url('../img/banner.png', __FILE__); ?>" width="280" height="180" alt="">
+                    </a>
 
                 </div>
             </div>
@@ -107,15 +104,15 @@ function SHighlighterForWPE_render_submenu_page() {
                             <?php settings_fields( 'SHighlighterForWPE_settings_group' ); ?>
 
                             <div class="postbox" id="Settings">
-                                <h3 class="title"><?php _e( 'Main Settings', 'syntax-highlighter-for-wp-editor' ); ?></h3>
+                                <h3 class="title"><?php _e( 'Main Settings', SHWPE_TEXT ); ?></h3>
                                 <div class="inside">
-                                    <p><?php _e( 'There you can configure this plugin.', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                                    <p><?php _e( 'There you can configure this plugin.', SHWPE_TEXT ); ?></p>
 
                                     <table class="form-table">
 
                                         <tr valign='top'>
                                             <th>
-                                                <?php _e( 'Color theme:', 'syntax-highlighter-for-wp-editor' ); ?>
+                                                <?php _e( 'Color theme:', SHWPE_TEXT ); ?>
                                             </th>
                                             <td>
                                                 <select name="SHighlighterForWPE_settings[theme]">
@@ -132,13 +129,13 @@ function SHighlighterForWPE_render_submenu_page() {
                                         <tr valign='top'>
                                             <td></td>
                                             <td class='help-text'>
-                                                <?php _e( 'Theme which you like to view.', 'syntax-highlighter-for-wp-editor' ); ?>
+                                                <?php _e( 'Theme which you like to view.', SHWPE_TEXT ); ?>
                                             </td>
                                         </tr>
 
                                         <tr valign='top'>
                                             <th>
-                                                <?php _e( 'Display line numbers:', 'syntax-highlighter-for-wp-editor' ); ?>
+                                                <?php _e( 'Display line numbers:', SHWPE_TEXT ); ?>
                                             </th>
                                             <td>
                                                 <input type="checkbox" name="SHighlighterForWPE_settings[line_numbers]" id="SHighlighterForWPE_settings[line_numbers]" <?php if ( !empty($options['line_numbers']) ) { checked( $options['line_numbers'], "on" ); } ?> >
@@ -147,7 +144,7 @@ function SHighlighterForWPE_render_submenu_page() {
 
                                         <tr valign='top'>
                                             <th>
-                                                <?php _e( 'First line number:', 'syntax-highlighter-for-wp-editor' ); ?>
+                                                <?php _e( 'First line number:', SHWPE_TEXT ); ?>
                                             </th>
                                             <td>
                                                 <input type="text" name="SHighlighterForWPE_settings[first_line_number]" id="SHighlighterForWPE_settings[first_line_number]" size="1" value="<?php if ( !empty($options['first_line_number']) ) { echo $options['first_line_number']; } else { echo "0"; } ?>" >
@@ -156,23 +153,23 @@ function SHighlighterForWPE_render_submenu_page() {
 
                                         <tr valign='top'>
                                             <th>
-                                                <?php _e( 'The width of Tab:', 'syntax-highlighter-for-wp-editor' ); ?>
+                                                <?php _e( 'The width of Tab:', SHWPE_TEXT ); ?>
                                             </th>
                                             <td>
                                                 <input type="text" name="SHighlighterForWPE_settings[tab_size]" id="SHighlighterForWPE_settings[tab_size]" size="1" value="<?php if ( !empty($options['tab_size']) ) { echo $options['tab_size']; } else { echo "4"; } ?>" >
                                             </td>
                                         </tr>
                                     </table>
-                                    <?php submit_button( __( 'Save Changes', 'syntax-highlighter-for-wp-editor' ), 'primary', 'submit', true ); ?>
+                                    <?php submit_button( __( 'Save Changes', SHWPE_TEXT ), 'primary', 'submit', true ); ?>
                                 </div>
                             </div>
 
                             <div class="postbox" id="Preview">
-                                <h3 class="title"><?php _e( 'Preview', 'syntax-highlighter-for-wp-editor' ); ?></h3>
+                                <h3 class="title"><?php _e( 'Preview', SHWPE_TEXT ); ?></h3>
                                 <div class="inside">
-                                    <p><?php _e( 'Click "Save Changes" to update this preview.', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                                    <p><?php _e( 'Click "Save Changes" to update this preview.', SHWPE_TEXT ); ?></p>
                                     <textarea readonly id="SHighlighterForWPE"><?php echo $example; ?></textarea>
-                                    <p><?php _e( 'This is an example of HTML language.', 'syntax-highlighter-for-wp-editor' ); ?></p>
+                                    <p><?php _e( 'This is an example of HTML language.', SHWPE_TEXT ); ?></p>
                                 </div>
                             </div>
 
