@@ -137,6 +137,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+= 3.2 =
+* Added the Readme.txt file for translation contribution.
+* Added global constant for plugin text-domain.
+* Translations updated.
+* Ad banner replaced with new.
 = 3.1 =
 * Added prefixes to the stylesheet and script names when using wp_enqueue_style() and wp_enqueue_script().
 * Added constant for storing the plugin version number.
