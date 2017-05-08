@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: Syntax Highlighter for WP Editor\n"
-"POT-Creation-Date: 2016-11-01 18:41+0300\n"
+"Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
+"POT-Creation-Date: 2017-05-07 13:27+0300\n"
 "PO-Revision-Date: 2016-03-25 05:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -14,112 +14,295 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: syntax-highlighter-for-wp-editor.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;"
+"esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#. Plugin Name of the plugin/theme
-#: inc/php/settings_page.php:44 syntax-highlighter-for-wp-editor.php:85
-msgid "Syntax Highlighter for WP Editor"
+#: inc/php/core.php:31 inc/php/page.php:40
+msgid "Settings"
 msgstr ""
 
-#: inc/php/settings_page.php:47
-msgid ""
-"by <a href=\"http://www.arthurgareginyan.com\" target=\"_blank\">Arthur "
-"Gareginyan</a>"
-msgstr ""
-
-#: inc/php/settings_page.php:58
-msgid "About"
-msgstr ""
-
-#: inc/php/settings_page.php:60
-msgid ""
-"This plugin replaces the defaults WordPress Theme and Plugin Editor with an "
-"enhanced editor with syntax highlighting and line numbering"
-msgstr ""
-
-#: inc/php/settings_page.php:65
-msgid "Using"
-msgstr ""
-
-#: inc/php/settings_page.php:67
-msgid ""
-"To use, select the desired settings, then click \"Save Changes\". It's that "
-"simple!"
-msgstr ""
-
-#: inc/php/settings_page.php:72
-msgid "Help"
-msgstr ""
-
-#: inc/php/settings_page.php:74
-msgid "Got something to say? Need help?"
-msgstr ""
-
-#: inc/php/settings_page.php:80
+#: inc/php/core.php:47
 msgid "Donate"
 msgstr ""
 
-#: inc/php/settings_page.php:82
-msgid ""
-"I'm an independent developer, without a regular income, so every little "
-"contribution helps cover my costs and lets me spend more time building "
-"things for people like you to enjoy."
+#. Plugin Name of the plugin/theme
+#: inc/php/core.php:62 inc/php/page.php:25
+msgid "Syntax Highlighter for Theme/Plugin Editor"
 msgstr ""
 
-#: inc/php/settings_page.php:86
+#: inc/php/messages.php:30
+msgid "Hello. I'm Arthur, the author of this plugin."
+msgstr ""
+
+#: inc/php/messages.php:32
+#, php-format
+msgid "Thank you for installing my plugin! I hope you will love it %s"
+msgstr ""
+
+#: inc/php/messages.php:67
+msgid "You have installed an old version of this plugin."
+msgstr ""
+
+#: inc/php/messages.php:68
+msgid "Please update the plugin to the latest version, and all will be fine."
+msgstr ""
+
+#: inc/php/page.php:28
+#, php-format
+msgid "by %s Arthur Gareginyan %s"
+msgstr ""
+
+#: inc/php/page.php:41 inc/php/page.php:61
+msgid "Usage"
+msgstr ""
+
+#: inc/php/page.php:42
+msgid "F.A.Q."
+msgstr ""
+
+#: inc/php/page.php:43 inc/php/page.php:166
+msgid "Author"
+msgstr ""
+
+#: inc/php/page.php:44 inc/php/page.php:175 inc/php/settings.php:28 inc/php/settings.php:154
+msgid "Support"
+msgstr ""
+
+#: inc/php/page.php:45
+msgid "Family"
+msgstr ""
+
+#: inc/php/page.php:63
+msgid ""
+"To replace the default Theme/Plugin editor with an enhanced editor that provided by this plugin, simply "
+"follow these steps:"
+msgstr ""
+
+#: inc/php/page.php:65
+msgid "Go to the \"Settings\" tab."
+msgstr ""
+
+#: inc/php/page.php:66
+msgid "Select the desired settings and click the \"Save Changes\" button."
+msgstr ""
+
+#: inc/php/page.php:67
+msgid "Enjoy your fancy Theme/Plugin Editor."
+msgstr ""
+
+#: inc/php/page.php:67
+msgid "It's that simple!"
+msgstr ""
+
+#: inc/php/page.php:69
+msgid "Note!"
+msgstr ""
+
+#: inc/php/page.php:69
+msgid "If you want more options then tell me and I will be happy to add it."
+msgstr ""
+
+#: inc/php/page.php:78
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: inc/php/page.php:100
+msgid "Will this plugin work on my WordPress.COM website?"
+msgstr ""
+
+#: inc/php/page.php:101
+msgid "Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites."
+msgstr ""
+
+#: inc/php/page.php:103
+msgid "Can I use this plugin on my language?"
+msgstr ""
+
+#: inc/php/page.php:105
+#, php-format
+msgid ""
+"Yes. But If your language is not available then you can make one. This plugin is ready for translation. "
+"The<code>.pot</code>file is included and placed in the <code>languages</code> folder. Many of plugin "
+"users would be delighted if you shared your translation with the community. Just send the translation "
+"files (<code>*.po, *.mo</code>) to me at the %s and I will include the translation within the next "
+"plugin update."
+msgstr ""
+
+#: inc/php/page.php:110
+msgid "How does it work?"
+msgstr ""
+
+#: inc/php/page.php:111
+msgid ""
+"On the \"Settings\" tab, select the desired settings and click the \"Save Changes\" button. Enjoy your "
+"fancy Theme/Plugin Editor. It's that simple!"
+msgstr ""
+
+#: inc/php/page.php:113
+msgid "Does this plugin provide a syntax highlighting for the Post/Page Editor?"
+msgstr ""
+
+#: inc/php/page.php:115
+#, php-format
+msgid ""
+"No, only the Theme/Plugin Editor supports. For the Post/Page Editor you can use my another plugin that "
+"called the %s Syntax Highlighter for Post/Page HTML Editor %s."
+msgstr ""
+
+#: inc/php/page.php:121
+msgid "My theme uses a file type that is not supported by this plugin, how can I get it added?"
+msgstr ""
+
+#: inc/php/page.php:122
+msgid ""
+"If there is a filetype that is not supported by this plugin, just visit the support page and fill out "
+"the support form. I will do my best to include it in the next release of plugin."
+msgstr ""
+
+#: inc/php/page.php:124
+msgid "Does this plugin requires any modification of the theme?"
+msgstr ""
+
+#: inc/php/page.php:125
+msgid "Absolutely not. This plugin is configurable entirely from the plugin settings page."
+msgstr ""
+
+#: inc/php/page.php:127
+msgid "Does this require any knowledge of HTML or CSS?"
+msgstr ""
+
+#: inc/php/page.php:128
+msgid ""
+"This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use plugin settings "
+"page. But you need to know the HTML or CSS in order to add/remove/modify the HTML or CSS code by using "
+"this plugin."
+msgstr ""
+
+#: inc/php/page.php:130
+msgid "It's not working. What could be wrong?"
+msgstr ""
+
+#: inc/php/page.php:131
+msgid ""
+"As with every plugin, it's possible that things don't work. The most common reason for this is a web "
+"browser's cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to "
+"reduce bandwidth usage and server load. This is called the browser's cache.​ Clearing your browser's "
+"cache may solve the problem."
+msgstr ""
+
+#: inc/php/page.php:132
+msgid ""
+"It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's "
+"support forum on WordPress.org, I'd be happy to give it a look and try to help out. Please include as "
+"much information as possible, including a link to your website where the problem can be seen."
+msgstr ""
+
+#: inc/php/page.php:134
+msgid "Where to report bug if found?"
+msgstr ""
+
+#: inc/php/page.php:136
+#, php-format
+msgid "Please visit the %s Dedicated Plugin Page on GitHub %s and report."
+msgstr ""
+
+#: inc/php/page.php:142
+msgid "Where to share any ideas or suggestions to make the plugin better?"
+msgstr ""
+
+#: inc/php/page.php:144
+#, php-format
+msgid ""
+"Any suggestions are very welcome! Please send me an email to %s arthurgareginyan@gmail.com %s. Thank you!"
+msgstr ""
+
+#: inc/php/page.php:150
+msgid "I love this plugin! Can I help somehow?"
+msgstr ""
+
+#: inc/php/page.php:152
+#, php-format
+msgid ""
+"Yes, any financial contributions are welcome! Just visit %s my website %s, click on the donate button, "
+"and thank you!"
+msgstr ""
+
+#: inc/php/settings.php:21
+msgid "About"
+msgstr ""
+
+#: inc/php/settings.php:23
+msgid ""
+"This plugin replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax "
+"highlighting and line numbering"
+msgstr ""
+
+#: inc/php/settings.php:30 inc/php/settings.php:156
+msgid ""
+"I'm an independent developer, without a regular income, so every little contribution helps cover my "
+"costs and lets me spend more time building things for people like you to enjoy."
+msgstr ""
+
+#: inc/php/settings.php:31 inc/php/settings.php:157
+msgid "Donate with PayPal"
+msgstr ""
+
+#: inc/php/settings.php:32 inc/php/settings.php:158
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/php/settings_page.php:107
+#: inc/php/settings.php:37
+msgid "Help"
+msgstr ""
+
+#: inc/php/settings.php:39
+msgid "Got something to say? Need help?"
+msgstr ""
+
+#: inc/php/settings.php:84
 msgid "Main Settings"
 msgstr ""
 
-#: inc/php/settings_page.php:109
+#: inc/php/settings.php:86
 msgid "There you can configure this plugin."
 msgstr ""
 
-#: inc/php/settings_page.php:115
+#: inc/php/settings.php:92
 msgid "Color theme:"
 msgstr ""
 
-#: inc/php/settings_page.php:132
+#: inc/php/settings.php:109
 msgid "Theme which you like to view."
 msgstr ""
 
-#: inc/php/settings_page.php:138
+#: inc/php/settings.php:115
 msgid "Display line numbers:"
 msgstr ""
 
-#: inc/php/settings_page.php:147
+#: inc/php/settings.php:124
 msgid "First line number:"
 msgstr ""
 
-#: inc/php/settings_page.php:156
+#: inc/php/settings.php:133
 msgid "The width of Tab:"
 msgstr ""
 
-#: inc/php/settings_page.php:163
+#: inc/php/settings.php:140
 msgid "Save Changes"
 msgstr ""
 
-#: inc/php/settings_page.php:168
+#: inc/php/settings.php:145
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings_page.php:170
-msgid "Click \"Save Changes\" to update this preview."
+#: inc/php/settings.php:147
+msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 
-#: inc/php/settings_page.php:172
+#: inc/php/settings.php:149
 msgid "This is an example of HTML language."
-msgstr ""
-
-#: syntax-highlighter-for-wp-editor.php:73
-msgid "Settings"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
@@ -128,8 +311,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Replaces the defaults WordPress Theme and Plugin Editor with an enhanced "
-"editor with syntax highlighting and line numbering."
+"Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting "
+"and line numbering."
 msgstr ""
 
 #. Author of the plugin/theme

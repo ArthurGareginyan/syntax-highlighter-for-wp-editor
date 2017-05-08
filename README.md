@@ -56,6 +56,12 @@ This plugin is open-sourced software licensed under the [GNU General Public Lice
 Commercial licensing (e.g. for projects that can’t use an open-source license) is available upon request.
 
 
+## Credits
+
+* The icon of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
+* The banner of plugin is a copyrighted image created by [Arthur Gareginyan](http://www.arthurgareginyan.com). (C) All rights reserved.
+
+
 ## Author
 
 Arthur Garegnyan
