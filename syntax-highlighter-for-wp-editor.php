@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 4.0.1
+ * Version: 4.1
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
@@ -50,19 +50,23 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Define global constants
  *
- * @since 3.2
+ * @since 4.1
  */
-defined('SHWPE_DIR') or define('SHWPE_DIR', dirname(plugin_basename(__FILE__)));
-defined('SHWPE_BASE') or define('SHWPE_BASE', plugin_basename(__FILE__));
-defined('SHWPE_URL') or define('SHWPE_URL', plugin_dir_url(__FILE__));
-defined('SHWPE_PATH') or define('SHWPE_PATH', plugin_dir_path(__FILE__));
-defined('SHWPE_TEXT') or define('SHWPE_TEXT', 'syntax-highlighter-for-wp-editor');
-defined('SHWPE_VERSION') or define('SHWPE_VERSION', '4.0.1');
+defined( 'SHWPE_DIR' ) or define( 'SHWPE_DIR', dirname( plugin_basename( __FILE__ ) ) );
+defined( 'SHWPE_BASE' ) or define( 'SHWPE_BASE', plugin_basename( __FILE__ ) );
+defined( 'SHWPE_URL' ) or define( 'SHWPE_URL', plugin_dir_url( __FILE__ ) );
+defined( 'SHWPE_PATH' ) or define( 'SHWPE_PATH', plugin_dir_path( __FILE__ ) );
+defined( 'SHWPE_TEXT' ) or define( 'SHWPE_TEXT', 'syntax-highlighter-for-wp-editor' );
+defined( 'SHWPE_SLUG' ) or define( 'SHWPE_SLUG', 'syntax-highlighter-for-wp-editor' );
+defined( 'SHWPE_PREFIX' ) or define( 'SHWPE_PREFIX', 'SHighlighterForWPE' );
+defined( 'SHWPE_SETTINGS' ) or define( 'SHWPE_SETTINGS', 'SHighlighterForWPE' );
+defined( 'SHWPE_NAME' ) or define( 'SHWPE_NAME', 'Syntax Highlighter for Theme/Plugin Editor' );
+defined( 'SHWPE_VERSION' ) or define( 'SHWPE_VERSION', get_file_data( __FILE__, array( 'Version' ) ) );
 
 /**
  * Load the plugin modules

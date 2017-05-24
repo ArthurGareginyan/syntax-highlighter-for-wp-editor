@@ -5,7 +5,7 @@
  * @uthor       Arthur Gareginyan
  * @link        http://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       4.0
+ * @since       4.1
  */
 
 
@@ -14,12 +14,12 @@ jQuery(document).ready(function($) {
     "use strict";
 
     // Get values for variables
-    var line_numbers = ( scriptParams["line_numbers"] == 'true' );
-    var first_line_number = parseInt( scriptParams["first_line_number"] );
-    var tab_size = parseInt( scriptParams["tab_size"] );
-    var theme = scriptParams["theme"];
-    var mode = scriptParams["mode"];
-    var readonly = scriptParams["readonly"];
+    var line_numbers = ( SHighlighterForWPE_scriptParams["line_numbers"] == 'true' );
+    var first_line_number = parseInt( SHighlighterForWPE_scriptParams["first_line_number"] );
+    var tab_size = parseInt( SHighlighterForWPE_scriptParams["tab_size"] );
+    var theme = SHighlighterForWPE_scriptParams["theme"];
+    var mode = SHighlighterForWPE_scriptParams["mode"];
+    var readonly = SHighlighterForWPE_scriptParams["readonly"];
 
     // Find textareas on page
     $('textarea').each(function(index, elements) {

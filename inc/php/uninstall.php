@@ -5,14 +5,14 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Delete options on uninstall
  *
- * @since 0.1
+ * @since 4.1
  */
 function SHighlighterForWPE_uninstall() {
-    delete_option( 'SHighlighterForWPE_settings' );
+    delete_option( SHWPE_SETTINGS . '_settings' );
 }
-register_uninstall_hook( __FILE__, 'SHighlighterForWPE_uninstall' );
+register_uninstall_hook( __FILE__, SHWPE_PREFIX . '_uninstall' );

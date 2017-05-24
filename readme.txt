@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.7
-Stable tag: 4.0.1
+Stable tag: 4.1
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -113,6 +113,9 @@ A. As with every plugin, it's possible that things don't work. The most common r
 
 It's impossible to tell what could be wrong exactly, but if you post a support request in the plugin's support forum on WordPress.org, I'd be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.
 
+= Q. The last WordPress update is preventing me from editing my website that is using this plugin. Why is this? =
+A. This plugin can not cause such problem. More likely, the problem are related to the settings of the website. It could just be a cache, so please try to clear your website's cache (may be you using a caching plugin, or some web service such as the CloudFlare) and then the cache of your web browser. Also please try to re-login to the website, this too can help.
+
 = Q. Where to report bug if found? =
 A. Please visit the [Dedicated Plugin Page on GitHub](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor) and report.
 
@@ -155,6 +158,17 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.1 =
+* Added new constants: "_SLUG", "_PREFIX", "_SETTINGS" and "_NAME".
+* Value of the "_VERSION" constant replaced with information from the plugin header data.
+* All references to the plugin name, slug, prefix are replaced with constants.
+* Added function that render checkboxes and fields for saving plugin settings to database.
+* Added prefix to the name of the variable in 'wp_localize_script' WP function, to prevent conflicts.
+* The "_load_scripts_base" function improved.
+* The "name" attribute removed from the "<form>" tag.
+* Code formatting improved.
+* F.A.Q. section updated.
 
 = 4.0.1 =
 * Fixed the bug due to which the the "Warning: Illegal string offset 'version' in" and the "Warning: Illegal string offset 'old_version' in" warnings are displayed. (Thanks to Sven Brill)
@@ -261,11 +275,15 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Upgrade Notice ==
+
 = 4.0 =
 Please update to new release!
+
 = 3.0 =
 Please update to new release!
+
 = 2.0 =
 Please update to new release!
+
 = 1.0 =
 Please update to first stable release!

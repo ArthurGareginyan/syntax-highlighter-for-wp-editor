@@ -5,12 +5,12 @@
  *
  * @since 0.1
  */
-defined('ABSPATH') or die("Restricted access!");
+defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Render Settings Page
  *
- * @since 3.2
+ * @since 4.1
  */
 function SHighlighterForWPE_render_submenu_page() {
 
@@ -22,7 +22,7 @@ function SHighlighterForWPE_render_submenu_page() {
     ?>
     <div class="wrap">
         <h2>
-            <?php _e( 'Syntax Highlighter for Theme/Plugin Editor', SHWPE_TEXT ); ?>
+            <?php echo SHWPE_NAME; ?>
             <span>
                 <?php printf(
                               __( 'by %s Arthur Gareginyan %s', SHWPE_TEXT ),
@@ -45,7 +45,6 @@ function SHighlighterForWPE_render_submenu_page() {
                 <li><a href="#tab-family" data-toggle="tab"><?php _e( 'Family', SHWPE_TEXT ); ?></a></li>
             </ul>
             <!-- END-TABS NAVIGATION MENU -->
-
 
             <!-- TAB 1 -->
             <div class="tab-page fade active in" id="tab-core">
@@ -80,7 +79,7 @@ function SHighlighterForWPE_render_submenu_page() {
 
                         <div class="panel-group" id="collapse-group">
                             <?php
-                                $loopvalue = '11';
+                                $loopvalue = '12';
                                 for ( $i = 1; $i <= $loopvalue; $i++ ) {
                                     echo '<div class="panel panel-default">
                                             <div class="panel-heading">
@@ -131,24 +130,27 @@ function SHighlighterForWPE_render_submenu_page() {
                         <div class="answer-8"><?php _e( 'As with every plugin, it\'s possible that things don\'t work. The most common reason for this is a web browser\'s cache. Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load. This is called the browser\'s cache.​ Clearing your browser\'s cache may solve the problem.', SHWPE_TEXT ); ?><br><br>
                                               <?php _e( 'It\'s impossible to tell what could be wrong exactly, but if you post a support request in the plugin\'s support forum on WordPress.org, I\'d be happy to give it a look and try to help out. Please include as much information as possible, including a link to your website where the problem can be seen.', SHWPE_TEXT ); ?></div>
 
-                        <div class="question-9 question-red"><?php _e( 'Where to report bug if found?', SHWPE_TEXT ); ?></div>
-                        <div class="answer-9"><?php printf(
+                        <div class="question-9 question-red"><?php _e( 'The last WordPress update is preventing me from editing my website that is using this plugin. Why is this?', SHWPE_TEXT ); ?></div>
+                        <div class="answer-9"><?php _e( 'This plugin can not cause such problem. More likely, the problem are related to the settings of the website. It could just be a cache, so please try to clear your website\'s cache (may be you using a caching plugin, or some web service such as the CloudFlare) and then the cache of your web browser. Also please try to re-login to the website, this too can help.', SHWPE_TEXT ); ?></div>
+
+                        <div class="question-10 question-red"><?php _e( 'Where to report bug if found?', SHWPE_TEXT ); ?></div>
+                        <div class="answer-10"><?php printf(
                                                             __( 'Please visit the %s Dedicated Plugin Page on GitHub %s and report.', SHWPE_TEXT ),
                                                                 '<a href="https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor" target="_blank">',
                                                                 '</a>'
                                                           );
                                               ?></div>
 
-                        <div class="question-10"><?php _e( 'Where to share any ideas or suggestions to make the plugin better?', SHWPE_TEXT ); ?></div>
-                        <div class="answer-10"><?php printf(
+                        <div class="question-11"><?php _e( 'Where to share any ideas or suggestions to make the plugin better?', SHWPE_TEXT ); ?></div>
+                        <div class="answer-11"><?php printf(
                                                             __( 'Any suggestions are very welcome! Please send me an email to %s arthurgareginyan@gmail.com %s. Thank you!', SHWPE_TEXT ),
                                                                 '<a href="mailto:arthurgareginyan@gmail.com?subject=Syntax Highlighter for Theme/Plugin Editor">',
                                                                 '</a>'
                                                            );
                                               ?></div>
 
-                        <div class="question-11"><?php _e( 'I love this plugin! Can I help somehow?', SHWPE_TEXT ); ?></div>
-                        <div class="answer-11"><?php printf(
+                        <div class="question-12"><?php _e( 'I love this plugin! Can I help somehow?', SHWPE_TEXT ); ?></div>
+                        <div class="answer-12"><?php printf(
                                                             __( 'Yes, any financial contributions are welcome! Just visit %s my website %s, click on the donate button, and thank you!', SHWPE_TEXT ),
                                                                 '<a href="http://www.arthurgareginyan.com/donate.html" target="_blank">',
                                                                 '</a>'

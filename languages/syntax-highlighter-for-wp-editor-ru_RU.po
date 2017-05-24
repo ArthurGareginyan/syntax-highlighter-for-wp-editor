@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2017-05-07 13:27+0300\n"
-"PO-Revision-Date: 2017-05-07 17:41+0300\n"
+"POT-Creation-Date: 2017-05-24 05:56+0300\n"
+"PO-Revision-Date: 2017-05-24 05:56+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -29,11 +29,6 @@ msgstr "Настройки"
 msgid "Donate"
 msgstr "Поддержать разработку"
 
-#. Plugin Name of the plugin/theme
-#: inc/php/core.php:62 inc/php/page.php:25
-msgid "Syntax Highlighter for Theme/Plugin Editor"
-msgstr "Syntax Highlighter for Theme/Plugin Editor"
-
 #: inc/php/messages.php:30
 msgid "Hello. I'm Arthur, the author of this plugin."
 msgstr "Привет! Я Артур, автор этого плагина."
@@ -56,7 +51,7 @@ msgstr "Пожалуйста, обновите плагин до последн�
 msgid "by %s Arthur Gareginyan %s"
 msgstr "от %s Артура Гарегинян %s"
 
-#: inc/php/page.php:41 inc/php/page.php:61
+#: inc/php/page.php:41 inc/php/page.php:60
 msgid "Usage"
 msgstr "Применение"
 
@@ -64,12 +59,12 @@ msgstr "Применение"
 msgid "F.A.Q."
 msgstr "F.A.Q."
 
-#: inc/php/page.php:43 inc/php/page.php:166
+#: inc/php/page.php:43 inc/php/page.php:168
 msgid "Author"
 msgstr "Автор"
 
-#: inc/php/page.php:44 inc/php/page.php:175 inc/php/settings.php:28
-#: inc/php/settings.php:154
+#: inc/php/page.php:44 inc/php/page.php:177 inc/php/settings.php:28
+#: inc/php/settings.php:156
 msgid "Support"
 msgstr "Поддержка"
 
@@ -77,7 +72,7 @@ msgstr "Поддержка"
 msgid "Family"
 msgstr "Семья"
 
-#: inc/php/page.php:63
+#: inc/php/page.php:62
 msgid ""
 "To replace the default Theme/Plugin editor with an enhanced editor that "
 "provided by this plugin, simply follow these steps:"
@@ -85,41 +80,41 @@ msgstr ""
 "Для того чтобы заменить редактор Тем/Плагинов на расширенный редактор, "
 "представленный этим плагином, просто выполните следующие шаги:"
 
-#: inc/php/page.php:65
+#: inc/php/page.php:64
 msgid "Go to the \"Settings\" tab."
 msgstr "Перейдите на вкладку «Настройки»."
 
-#: inc/php/page.php:66
+#: inc/php/page.php:65
 msgid "Select the desired settings and click the \"Save Changes\" button."
 msgstr "Выберите нужные настройки и нажмите кнопку «Сохранить изменения»."
 
-#: inc/php/page.php:67
+#: inc/php/page.php:66
 msgid "Enjoy your fancy Theme/Plugin Editor."
 msgstr ""
 
-#: inc/php/page.php:67
+#: inc/php/page.php:66
 msgid "It's that simple!"
 msgstr "Вот так просто!"
 
-#: inc/php/page.php:69
+#: inc/php/page.php:68
 msgid "Note!"
 msgstr "Примечание!"
 
-#: inc/php/page.php:69
+#: inc/php/page.php:68
 msgid "If you want more options then tell me and I will be happy to add it."
 msgstr ""
 "Если вы хотите больше опций, то скажите мне об этом и я буду счастлив "
 "добавить их."
 
-#: inc/php/page.php:78
+#: inc/php/page.php:77
 msgid "Frequently Asked Questions"
 msgstr "Часто задаваемые вопросы"
 
-#: inc/php/page.php:100
+#: inc/php/page.php:99
 msgid "Will this plugin work on my WordPress.COM website?"
 msgstr "Этот плагин будет работать на моем сайте WordPress.COM?"
 
-#: inc/php/page.php:101
+#: inc/php/page.php:100
 msgid ""
 "Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) "
 "websites."
@@ -127,11 +122,11 @@ msgstr ""
 "К сожалению, этот плагин доступен для использования только на самостоятельно "
 "размещённых веб-сайтах (WordPress.ORG)."
 
-#: inc/php/page.php:103
+#: inc/php/page.php:102
 msgid "Can I use this plugin on my language?"
 msgstr "Можно ли использовать этот плагин на моём языке?"
 
-#: inc/php/page.php:105
+#: inc/php/page.php:104
 #, php-format
 msgid ""
 "Yes. But If your language is not available then you can make one. This "
@@ -142,22 +137,22 @@ msgid ""
 "include the translation within the next plugin update."
 msgstr ""
 
-#: inc/php/page.php:110
+#: inc/php/page.php:109
 msgid "How does it work?"
 msgstr "Как оно работает?"
 
-#: inc/php/page.php:111
+#: inc/php/page.php:110
 msgid ""
 "On the \"Settings\" tab, select the desired settings and click the \"Save "
 "Changes\" button. Enjoy your fancy Theme/Plugin Editor. It's that simple!"
 msgstr ""
 
-#: inc/php/page.php:113
+#: inc/php/page.php:112
 msgid ""
 "Does this plugin provide a syntax highlighting for the Post/Page Editor?"
 msgstr ""
 
-#: inc/php/page.php:115
+#: inc/php/page.php:114
 #, php-format
 msgid ""
 "No, only the Theme/Plugin Editor supports. For the Post/Page Editor you can "
@@ -165,24 +160,24 @@ msgid ""
 "HTML Editor %s."
 msgstr ""
 
-#: inc/php/page.php:121
+#: inc/php/page.php:120
 msgid ""
 "My theme uses a file type that is not supported by this plugin, how can I "
 "get it added?"
 msgstr ""
 
-#: inc/php/page.php:122
+#: inc/php/page.php:121
 msgid ""
 "If there is a filetype that is not supported by this plugin, just visit the "
 "support page and fill out the support form. I will do my best to include it "
 "in the next release of plugin."
 msgstr ""
 
-#: inc/php/page.php:124
+#: inc/php/page.php:123
 msgid "Does this plugin requires any modification of the theme?"
 msgstr "Этот плагин требует изменения темы?"
 
-#: inc/php/page.php:125
+#: inc/php/page.php:124
 msgid ""
 "Absolutely not. This plugin is configurable entirely from the plugin "
 "settings page."
@@ -190,11 +185,11 @@ msgstr ""
 "Абсолютно нет. Этот плагин настраивается полностью на странице настроек "
 "плагина."
 
-#: inc/php/page.php:127
+#: inc/php/page.php:126
 msgid "Does this require any knowledge of HTML or CSS?"
 msgstr "Требуются ли какие-либо знания HTML или CSS?"
 
-#: inc/php/page.php:128
+#: inc/php/page.php:127
 msgid ""
 "This plugin can be configured with no knowledge of HTML or CSS, using an "
 "easy-to-use plugin settings page. But you need to know the HTML or CSS in "
@@ -205,11 +200,11 @@ msgstr ""
 "для того, чтобы добавить/удалить/изменить код HTML или CSS, используя этот "
 "плагин."
 
-#: inc/php/page.php:130
+#: inc/php/page.php:129
 msgid "It's not working. What could be wrong?"
 msgstr "Оно не работает. Что может быть не так?"
 
-#: inc/php/page.php:131
+#: inc/php/page.php:130
 msgid ""
 "As with every plugin, it's possible that things don't work. The most common "
 "reason for this is a web browser's cache. Every web browser stores a cache "
@@ -218,7 +213,7 @@ msgid ""
 "browser's cache may solve the problem."
 msgstr ""
 
-#: inc/php/page.php:132
+#: inc/php/page.php:131
 msgid ""
 "It's impossible to tell what could be wrong exactly, but if you post a "
 "support request in the plugin's support forum on WordPress.org, I'd be happy "
@@ -226,33 +221,48 @@ msgid ""
 "possible, including a link to your website where the problem can be seen."
 msgstr ""
 
+#: inc/php/page.php:133
+msgid ""
+"The last WordPress update is preventing me from editing my website that is "
+"using this plugin. Why is this?"
+msgstr ""
+
 #: inc/php/page.php:134
+msgid ""
+"This plugin can not cause such problem. More likely, the problem are related "
+"to the settings of the website. It could just be a cache, so please try to "
+"clear your website's cache (may be you using a caching plugin, or some web "
+"service such as the CloudFlare) and then the cache of your web browser. Also "
+"please try to re-login to the website, this too can help."
+msgstr ""
+
+#: inc/php/page.php:136
 msgid "Where to report bug if found?"
 msgstr "Где можно сообщить об ошибке?"
 
-#: inc/php/page.php:136
+#: inc/php/page.php:138
 #, php-format
 msgid "Please visit the %s Dedicated Plugin Page on GitHub %s and report."
 msgstr ""
 "Пожалуйста, посетите %s страницу плагина на GitHub %s и сообщите об ошибке."
 
-#: inc/php/page.php:142
+#: inc/php/page.php:144
 msgid "Where to share any ideas or suggestions to make the plugin better?"
 msgstr ""
 "Где можно поделиться идеями или предложениями, чтобы сделать плагин лучше?"
 
-#: inc/php/page.php:144
+#: inc/php/page.php:146
 #, php-format
 msgid ""
 "Any suggestions are very welcome! Please send me an email to %s "
 "arthurgareginyan@gmail.com %s. Thank you!"
 msgstr ""
 
-#: inc/php/page.php:150
+#: inc/php/page.php:152
 msgid "I love this plugin! Can I help somehow?"
 msgstr "Я очень люблю этот плагин! Могу Я чем-то помочь?"
 
-#: inc/php/page.php:152
+#: inc/php/page.php:154
 #, php-format
 msgid ""
 "Yes, any financial contributions are welcome! Just visit %s my website %s, "
@@ -271,7 +281,7 @@ msgstr ""
 "Этот плагин заменяет стандартный WordPress редактор тем и плагинов на "
 "улучшенный редактор с подсветкой синтаксиса и нумерацией строк"
 
-#: inc/php/settings.php:30 inc/php/settings.php:156
+#: inc/php/settings.php:30 inc/php/settings.php:158
 msgid ""
 "I'm an independent developer, without a regular income, so every little "
 "contribution helps cover my costs and lets me spend more time building "
@@ -281,11 +291,11 @@ msgstr ""
 "вклад помогает мне покрыть затраты и позволяет тратить больше времени на "
 "создание программ для людей как вы."
 
-#: inc/php/settings.php:31 inc/php/settings.php:157
+#: inc/php/settings.php:31 inc/php/settings.php:159
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/settings.php:32 inc/php/settings.php:158
+#: inc/php/settings.php:32 inc/php/settings.php:160
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
@@ -297,50 +307,54 @@ msgstr "Помощь"
 msgid "Got something to say? Need help?"
 msgstr "Есть что сказать? Нужна помощь?"
 
-#: inc/php/settings.php:84
+#: inc/php/settings.php:62
 msgid "Main Settings"
 msgstr "Основные Настройки"
 
-#: inc/php/settings.php:86
+#: inc/php/settings.php:64
 msgid "There you can configure this plugin."
 msgstr "Здесь вы можете настроить этот плагин."
 
-#: inc/php/settings.php:92
-msgid "Color theme:"
-msgstr "Цветовая схема:"
+#: inc/php/settings.php:70
+msgid "Color theme"
+msgstr ""
 
-#: inc/php/settings.php:109
+#: inc/php/settings.php:87
 msgid "Theme which you like to view."
 msgstr "Тема, которую вы хотите использовать."
 
-#: inc/php/settings.php:115
-msgid "Display line numbers:"
-msgstr "Отображать номера строк:"
+#: inc/php/settings.php:92
+msgid "Display line numbers"
+msgstr ""
 
-#: inc/php/settings.php:124
-msgid "First line number:"
-msgstr "Номер первой строки:"
+#: inc/php/settings.php:99
+msgid "First line number"
+msgstr ""
 
-#: inc/php/settings.php:133
-msgid "The width of Tab:"
-msgstr "Ширина Таба:"
+#: inc/php/settings.php:108
+msgid "The width of Tab"
+msgstr ""
 
-#: inc/php/settings.php:140
+#: inc/php/settings.php:118
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: inc/php/settings.php:145
+#: inc/php/settings.php:124
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/php/settings.php:147
+#: inc/php/settings.php:126
 msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 "Нажмите кнопку «Сохранить изменения», чтобы обновить этот пред. просмотр."
 
-#: inc/php/settings.php:149
+#: inc/php/settings.php:151
 msgid "This is an example of HTML language."
 msgstr "Это пример HTML языка."
+
+#. Plugin Name of the plugin/theme
+msgid "Syntax Highlighter for Theme/Plugin Editor"
+msgstr "Syntax Highlighter for Theme/Plugin Editor"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor"
@@ -361,6 +375,18 @@ msgstr "Артур Гарегинян"
 #. Author URI of the plugin/theme
 msgid "http://www.arthurgareginyan.com"
 msgstr "http://www.arthurgareginyan.com"
+
+#~ msgid "Color theme:"
+#~ msgstr "Цветовая схема:"
+
+#~ msgid "Display line numbers:"
+#~ msgstr "Отображать номера строк:"
+
+#~ msgid "First line number:"
+#~ msgstr "Номер первой строки:"
+
+#~ msgid "The width of Tab:"
+#~ msgstr "Ширина Таба:"
 
 #~ msgid "Click \"Save Changes\" to update this preview."
 #~ msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот просмотр."
