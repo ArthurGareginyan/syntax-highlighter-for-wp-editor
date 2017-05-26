@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.1
+ * @since 4.2
  */
 ?>
     <!-- SIDEBAR -->
@@ -54,7 +54,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <?php settings_fields( SHWPE_SETTINGS . '_settings_group' ); ?>
 
                     <?php
-                        // Get options from the BD
+                        // Get options from the database
                         $options = get_option( SHWPE_SETTINGS . '_settings' );
                     ?>
 

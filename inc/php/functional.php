@@ -8,7 +8,7 @@
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
- * Render checkboxes and fields for saving settings data to BD
+ * Render checkboxes and fields for saving settings data to database
  *
  * @since 4.1
  */

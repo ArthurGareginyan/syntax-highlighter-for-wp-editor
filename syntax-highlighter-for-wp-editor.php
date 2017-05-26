@@ -5,27 +5,25 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 4.1
+ * Version: 4.2
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
  *
  * Copyright 2016-2017 Arthur Gareginyan (email : arthurgareginyan@gmail.com)
  *
- * This file is part of "Syntax Highlighter for Theme/Plugin Editor".
- *
- * "Syntax Highlighter for Theme/Plugin Editor" is free software: you can redistribute it and/or modify
+ * This plugin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * "Syntax Highlighter for Theme/Plugin Editor" is distributed in the hope that it will be useful,
+ * This plugin is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with "Syntax Highlighter for Theme/Plugin Editor".  If not, see <http://www.gnu.org/licenses/>.
+ * along with this plugin. If not, see <http://www.gnu.org/licenses/>.
  *
  *
  *               █████╗ ██████╗ ████████╗██╗  ██╗██╗   ██╗██████╗
@@ -55,27 +53,34 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Define global constants
  *
- * @since 4.1
+ * @since 4.2
  */
-defined( 'SHWPE_DIR' ) or define( 'SHWPE_DIR', dirname( plugin_basename( __FILE__ ) ) );
-defined( 'SHWPE_BASE' ) or define( 'SHWPE_BASE', plugin_basename( __FILE__ ) );
-defined( 'SHWPE_URL' ) or define( 'SHWPE_URL', plugin_dir_url( __FILE__ ) );
-defined( 'SHWPE_PATH' ) or define( 'SHWPE_PATH', plugin_dir_path( __FILE__ ) );
-defined( 'SHWPE_TEXT' ) or define( 'SHWPE_TEXT', 'syntax-highlighter-for-wp-editor' );
-defined( 'SHWPE_SLUG' ) or define( 'SHWPE_SLUG', 'syntax-highlighter-for-wp-editor' );
-defined( 'SHWPE_PREFIX' ) or define( 'SHWPE_PREFIX', 'SHighlighterForWPE' );
-defined( 'SHWPE_SETTINGS' ) or define( 'SHWPE_SETTINGS', 'SHighlighterForWPE' );
-defined( 'SHWPE_NAME' ) or define( 'SHWPE_NAME', 'Syntax Highlighter for Theme/Plugin Editor' );
-defined( 'SHWPE_VERSION' ) or define( 'SHWPE_VERSION', get_file_data( __FILE__, array( 'Version' ) ) );
+$plugin_data = get_file_data( __FILE__, array( 'name'=>'Plugin Name', 'version'=>'Version', 'text'=>'Text Domain' ) );
+function SHighlighterForWPE_define_constants( $constant_name, $value ) {
+    $constant_name = 'SHWPE_' . $constant_name;
+    if ( !defined( $constant_name ) )
+        define( $constant_name, $value );
+}
+SHighlighterForWPE_define_constants( 'DIR', dirname( plugin_basename( __FILE__ ) ) );
+SHighlighterForWPE_define_constants( 'BASE', plugin_basename( __FILE__ ) );
+SHighlighterForWPE_define_constants( 'URL', plugin_dir_url( __FILE__ ) );
+SHighlighterForWPE_define_constants( 'PATH', plugin_dir_path( __FILE__ ) );
+SHighlighterForWPE_define_constants( 'SLUG', dirname( plugin_basename( __FILE__ ) ) );
+SHighlighterForWPE_define_constants( 'NAME', $plugin_data['name'] );
+SHighlighterForWPE_define_constants( 'VERSION', $plugin_data['version'] );
+SHighlighterForWPE_define_constants( 'TEXT', $plugin_data['text'] );
+SHighlighterForWPE_define_constants( 'PREFIX', 'SHighlighterForWPE' );
+SHighlighterForWPE_define_constants( 'SETTINGS', 'SHighlighterForWPE' );
 
 /**
  * Load the plugin modules
  *
- * @since 4.0
+ * @since 4.2
  */
 require_once( SHWPE_PATH . 'inc/php/core.php' );
-require_once( SHWPE_PATH . 'inc/php/enqueue.php' );
+require_once( SHWPE_PATH . 'inc/php/upgrade.php' );
 require_once( SHWPE_PATH . 'inc/php/version.php' );
+require_once( SHWPE_PATH . 'inc/php/enqueue.php' );
 require_once( SHWPE_PATH . 'inc/php/functional.php' );
 require_once( SHWPE_PATH . 'inc/php/page.php' );
 require_once( SHWPE_PATH . 'inc/php/messages.php' );
