@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2017-05-24 05:56+0300\n"
+"POT-Creation-Date: 2017-06-04 13:33+0300\n"
 "PO-Revision-Date: 2016-03-25 05:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Author"
 msgstr ""
 
-#: inc/php/page.php:44 inc/php/page.php:177 inc/php/settings.php:28 inc/php/settings.php:156
+#: inc/php/page.php:44 inc/php/page.php:177 inc/php/settings.php:29 inc/php/settings.php:157
 msgid "Support"
 msgstr ""
 
@@ -248,69 +248,73 @@ msgid ""
 "highlighting and line numbering"
 msgstr ""
 
-#: inc/php/settings.php:30 inc/php/settings.php:158
+#: inc/php/settings.php:24
+msgid "Version"
+msgstr ""
+
+#: inc/php/settings.php:31 inc/php/settings.php:159
 msgid ""
 "I'm an independent developer, without a regular income, so every little contribution helps cover my "
 "costs and lets me spend more time building things for people like you to enjoy."
 msgstr ""
 
-#: inc/php/settings.php:31 inc/php/settings.php:159
+#: inc/php/settings.php:32 inc/php/settings.php:160
 msgid "Donate with PayPal"
 msgstr ""
 
-#: inc/php/settings.php:32 inc/php/settings.php:160
+#: inc/php/settings.php:33 inc/php/settings.php:161
 msgid "Thanks for your support!"
 msgstr ""
 
-#: inc/php/settings.php:37
+#: inc/php/settings.php:38
 msgid "Help"
 msgstr ""
 
-#: inc/php/settings.php:39
+#: inc/php/settings.php:40
 msgid "Got something to say? Need help?"
 msgstr ""
 
-#: inc/php/settings.php:62
+#: inc/php/settings.php:63
 msgid "Main Settings"
 msgstr ""
 
-#: inc/php/settings.php:64
+#: inc/php/settings.php:65
 msgid "There you can configure this plugin."
 msgstr ""
 
-#: inc/php/settings.php:70
+#: inc/php/settings.php:71
 msgid "Color theme"
 msgstr ""
 
-#: inc/php/settings.php:87
+#: inc/php/settings.php:88
 msgid "Theme which you like to view."
 msgstr ""
 
-#: inc/php/settings.php:92
+#: inc/php/settings.php:93
 msgid "Display line numbers"
 msgstr ""
 
-#: inc/php/settings.php:99
+#: inc/php/settings.php:100
 msgid "First line number"
 msgstr ""
 
-#: inc/php/settings.php:108
+#: inc/php/settings.php:109
 msgid "The width of Tab"
 msgstr ""
 
-#: inc/php/settings.php:118
+#: inc/php/settings.php:119
 msgid "Save Changes"
 msgstr ""
 
-#: inc/php/settings.php:124
+#: inc/php/settings.php:125
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings.php:126
+#: inc/php/settings.php:127
 msgid "Click the \"Save Changes\" button to update this preview."
 msgstr ""
 
-#: inc/php/settings.php:151
+#: inc/php/settings.php:152
 msgid "This is an example of HTML language."
 msgstr ""
 

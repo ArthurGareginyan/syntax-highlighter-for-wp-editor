@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Arthur Gareginyan
  * Author URI: http://www.arthurgareginyan.com
- * Version: 4.2
+ * Version: 4.3
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
@@ -79,7 +79,7 @@ SHighlighterForWPE_define_constants( 'SETTINGS', 'SHighlighterForWPE' );
  */
 require_once( SHWPE_PATH . 'inc/php/core.php' );
 require_once( SHWPE_PATH . 'inc/php/upgrade.php' );
-require_once( SHWPE_PATH . 'inc/php/version.php' );
+require_once( SHWPE_PATH . 'inc/php/versioning.php' );
 require_once( SHWPE_PATH . 'inc/php/enqueue.php' );
 require_once( SHWPE_PATH . 'inc/php/functional.php' );
 require_once( SHWPE_PATH . 'inc/php/page.php' );
