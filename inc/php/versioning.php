@@ -18,6 +18,7 @@ function SHighlighterForWPE_versioning() {
     //                       SETTING VARIABLES                       //
     ///////////////////////////////////////////////////////////////////
 
+    // Put value of constants to variables for easier access
     $version_files = SHWPE_VERSION;
     $settings = SHWPE_SETTINGS;
 

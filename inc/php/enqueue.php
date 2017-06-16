@@ -10,16 +10,24 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Base for the _load_scripts hook
  *
- * @since 4.1
+ * @since 4.4
  */
 function SHighlighterForWPE_load_scripts_base( $options ) {
 
+    // Put value of constants to variables for easier access
+    $slug = SHWPE_SLUG;
+    $prefix = SHWPE_PREFIX;
+    $url = SHWPE_URL;
+
+    // Load jQuery library
+    wp_enqueue_script( 'jquery' );
+
     // CodeMirror library
-    wp_enqueue_script( SHWPE_PREFIX . '-codemirror-js', SHWPE_URL . 'inc/lib/codemirror/codemirror-compressed.js' );
-    wp_enqueue_style( SHWPE_PREFIX . '-codemirror-css', SHWPE_URL . 'inc/lib/codemirror/codemirror.css' );
-    wp_enqueue_script( SHWPE_PREFIX . '-codemirror-setting-js', SHWPE_URL . 'inc/js/codemirror-settings.js', array(), false, true );
+    wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/codemirror-compressed.js' );
+    wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/codemirror.css' );
+    wp_enqueue_script( $prefix . '-codemirror-setting-js', $url . 'inc/js/codemirror-settings.js', array(), false, true );
     if ( $options['theme'] != "default" ) {
-        wp_enqueue_style( SHWPE_PREFIX . '-codemirror-theme-css', SHWPE_URL . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css' );
+        wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css' );
     }
 
     // Check the extension of loaded file and change the Mode of CodeMirror
@@ -73,49 +81,55 @@ function SHighlighterForWPE_load_scripts_base( $options ) {
                            'mode' => $mode,
                            'readonly' => $readonly,
                            );
-    wp_localize_script( SHWPE_PREFIX . '-codemirror-setting-js', SHWPE_PREFIX . '_scriptParams', $script_params );
+    wp_localize_script( $prefix . '-codemirror-setting-js', $prefix . '_scriptParams', $script_params );
 
 }
 
 /**
  * Load scripts and style sheet for settings page
  *
- * @since 4.1
+ * @since 4.4
  */
 function SHighlighterForWPE_load_scripts_admin( $hook ) {
+
+    // Put value of constants to variables for easier access
+    $slug = SHWPE_SLUG;
+    $prefix = SHWPE_PREFIX;
+    $url = SHWPE_URL;
+    $settings = SHWPE_SETTINGS;
 
     // If is a Plugin/Theme Editors page
     if ( 'plugin-editor.php' == $hook || 'theme-editor.php' == $hook )  {
 
         // Read options from BD
-        $options = get_option( SHWPE_SETTINGS . '_settings' );
+        $options = get_option( $settings . '_settings' );
 
         // Style sheet
-        wp_enqueue_style( SHWPE_PREFIX . '-editor-css', SHWPE_URL . 'inc/css/editor.css' );
+        wp_enqueue_style( $prefix . '-editor-css', $url . 'inc/css/editor.css' );
 
         SHighlighterForWPE_load_scripts_base( $options );
     }
 
     // If is a settings page of this plugin
-    $settings_page = 'settings_page_' . SHWPE_SLUG;
+    $settings_page = 'settings_page_' . $slug;
     if ( $settings_page == $hook ) {
 
         // Read options from BD
-        $options = get_option( SHWPE_SETTINGS . '_settings' );
+        $options = get_option( $settings . '_settings' );
 
         // Style sheet
-        wp_enqueue_style( SHWPE_PREFIX . '-admin-css', SHWPE_URL . 'inc/css/admin.css' );
+        wp_enqueue_style( $prefix . '-admin-css', $url . 'inc/css/admin.css' );
 
         // JavaScript
-        wp_enqueue_script( SHWPE_PREFIX . '-admin-js', SHWPE_URL . 'inc/js/admin.js', array(), false, true );
+        wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), false, true );
 
         // Bootstrap library
-        wp_enqueue_style( SHWPE_PREFIX . '-bootstrap-css', SHWPE_URL . 'inc/lib/bootstrap/bootstrap.css' );
-        wp_enqueue_style( SHWPE_PREFIX . '-bootstrap-theme-css', SHWPE_URL . 'inc/lib/bootstrap/bootstrap-theme.css' );
-        wp_enqueue_script( SHWPE_PREFIX . '-bootstrap-js', SHWPE_URL . 'inc/lib/bootstrap/bootstrap.js' );
+        wp_enqueue_style( $prefix . '-bootstrap-css', $url . 'inc/lib/bootstrap/bootstrap.css' );
+        wp_enqueue_style( $prefix . '-bootstrap-theme-css', $url . 'inc/lib/bootstrap/bootstrap-theme.css' );
+        wp_enqueue_script( $prefix . '-bootstrap-js', $url . 'inc/lib/bootstrap/bootstrap.js' );
 
         // Other libraries
-        wp_enqueue_script( SHWPE_PREFIX . '-bootstrap-checkbox-js', SHWPE_URL . 'inc/lib/bootstrap-checkbox.js' );
+        wp_enqueue_script( $prefix . '-bootstrap-checkbox-js', $url . 'inc/lib/bootstrap-checkbox.js' );
 
         SHighlighterForWPE_load_scripts_base( $options );
     }
