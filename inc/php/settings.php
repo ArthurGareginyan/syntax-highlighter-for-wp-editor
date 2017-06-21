@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.4
+ * @since 4.4.1
  */
 ?>
     <!-- SIDEBAR -->
@@ -125,8 +125,8 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                             <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $text ); ?></p>
                             <?php
                                 // Put the example in a variable
-                                $example = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+                                $example = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Code Example</title>
@@ -142,7 +142,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
         tabs.
     </div>
 
-    <p><a href="http://wordpress.org/">WordPress</a></p>
+    <p><a href="https://wordpress.org/">WordPress</a></p>
 </body>
 </html>';
                             ?>
