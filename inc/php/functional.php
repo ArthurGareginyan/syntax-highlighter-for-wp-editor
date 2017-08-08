@@ -10,30 +10,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render checkboxes and fields for saving settings data to database
  *
- * @since 4.1
+ * @since 4.5
  */
 function SHighlighterForWPE_setting( $name, $label, $help=null, $field=null, $placeholder=null, $size=null ) {
 
-    // Read options from BD
+    // Read options from database and declare variables
     $options = get_option( SHWPE_SETTINGS . '_settings' );
-
-    if ( !empty( $options[$name] ) ) {
-        $value = esc_textarea( $options[$name] );
-    } else {
-        $value = "";
-    }
+    $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
 
     // Generate the table
-    if ( !empty( $options[$name] ) ) {
-        $checked = "checked='checked'";
-    } else {
-        $checked = "";
-    }
+    $checked = !empty( $options[$name] ) ? "checked='checked'" : '';
 
     if ( $field == "check" ) {
-        $input = "<input type='checkbox' name='" . SHWPE_SETTINGS . "_settings[$name]' id='" . SHWPE_SETTINGS . "_settings[$name]' $checked >";
+        $input = "<input type='checkbox' name='" . SHWPE_SETTINGS . "_settings[$name]' id='" . SHWPE_SETTINGS . "_settings[$name]' $checked class='$name' >";
     } elseif ( $field == "field" ) {
-        $input = "<input type='text' name='" . SHWPE_SETTINGS . "_settings[$name]' id='" . SHWPE_SETTINGS . "_settings[$name]' size='$size' value='$value' placeholder='$placeholder' >";
+        $input = "<input type='text' name='" . SHWPE_SETTINGS . "_settings[$name]' id='" . SHWPE_SETTINGS . "_settings[$name]' size='$size' value='$value' placeholder='$placeholder' class='$name' >";
     }
 
     // Put table to the variables $out and $help_out

@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
 Tested up to: 4.8
-Stable tag: 4.4.1
+Stable tag: 4.5
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,13 +12,14 @@ Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor 
 
 
 == Description ==
+
 An easy to use, with intuitive interface, WordPress plugin that replaces the default Theme and Plugin Source Code Editor with an enhanced editor by a [CodeMirror library](https://codemirror.net/). The WordPress default Theme Editor (in Appearance => Editor) and Plugin Editor (in Plugins => Editor) is great for doing some custom changes to your Themes or Plugins files, although it is rather limited. This is where the "Syntax Highlighter for Theme/Plugin Editor" can help. With an enhanced source code editor you can see a code with syntax highlighting, and with line numbering, so you can easily read your code and detect any errors.
 
 This plugin give you finer control over editor, it can be configured on the plugin settings page. You can chose from 36 different color themes for your editor. If you want more options then tell me and I will be happy to add it.
 
 This plugin is just plug and play, no tedious configurations or hacks, just install, enable and start using your new enhanced Theme and Plugin Editor.
 
-= Features =
+**Features**
 
 * Lightweight and fast
 * Secure code with using clear coding standards
@@ -46,7 +47,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * JavaScript (.js)
 * Markdown (.txt)
 
-= Translation =
+**Translation**
 
 This plugin is ready for translation and has already been translated into several languages.
 
@@ -55,16 +56,17 @@ This plugin is ready for translation and has already been translated into severa
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/syntax-highlighter-for-wp-editor).
 
->**Contribution**
->
->Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
->
->* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
->* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/syntax-highlighter-for-wp-editor?rate=5#postform) this plugin.
->* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor) if you have any ideas or suggestions to make this plugin better.
+**Contribution**
+
+Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
+
+* [Donate](https://www.arthurgareginyan.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/syntax-highlighter-for-wp-editor?rate=5#postform) this plugin.
+* [Share with me](mailto:arthurgareginyan@gmail.com) or view the [GitHub Repo](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor) if you have any ideas or suggestions to make this plugin better.
 
 
 == Installation ==
+
 Install "Syntax Highlighter for Theme/Plugin Editor" just as you would any other WordPress Plugin.
 
 Automatically via WordPress Admin Panel:
@@ -88,6 +90,7 @@ After installation and activation, the "`Syntax Highlighter for Theme/Plugin Edi
 
 
 == Frequently Asked Questions ==
+
 = Q. Will this plugin work on my WordPress.COM website? =
 A. Sorry, this plugin is available for use only on self-hosted (WordPress.ORG) websites.
 
@@ -129,6 +132,7 @@ A. Yes, any financial contributions are welcome! Just visit [my website](https:/
 
 
 == Screenshots ==
+
 1. Plugin settings page.
 2. Default WP Plugin Editor.
 3. Plugin Editor that provided by this plugin (color theme: ambiance).
@@ -137,6 +141,8 @@ A. Yes, any financial contributions are welcome! Just visit [my website](https:/
 
 
 == Other Notes ==
+
+****
 
 "Syntax Highlighter for Theme/Plugin Editor" is one of the personal software projects of [Arthur Gareginyan](https://www.arthurgareginyan.com).
 
@@ -160,6 +166,16 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.5 =
+* Stylesheet in the admin.css file improved.
+* The '!important' declarations in the admin.css file removed.
+* Code formatting in the admin.js file improved.
+* Code commenting improved.
+* Load of the additional remote CSS file removed from the admin.js file.
+* Changed the sorting of enqueueing of scripts.
+* The ''Family' page tab renamed to 'Store'.
+* Added ad banner of my store website.
 
 = 4.4.1 =
 * The HTTPS mixed content issue fixed by changing all links to HTTPS.

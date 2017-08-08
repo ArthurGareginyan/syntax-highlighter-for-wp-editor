@@ -10,21 +10,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Render Settings Tab
  *
- * @since 4.4.1
+ * @since 4.5
  */
 ?>
     <!-- SIDEBAR -->
     <div class="inner-sidebar">
         <div id="side-sortables" class="meta-box-sortabless ui-sortable">
 
-            <div id="about" class="postbox">
+            <div class="postbox about">
                 <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'This plugin replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering', $text ); ?></p>
                 </div>
             </div>
 
-            <div id="support" class="postbox">
+            <div class="postbox support">
                 <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'I\'m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
@@ -33,12 +33,14 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 </div>
             </div>
 
-            <div id="help" class="postbox">
+            <div class="postbox help">
                 <h3 class="title"><?php _e( 'Help', $text ); ?></h3>
                 <div class="inside">
                     <p><?php _e( 'If you have a question, please read the information in the FAQ section.', $text ); ?></p>
                 </div>
             </div>
+
+            <div class="include-banner"></div>
 
         </div>
     </div>
@@ -57,7 +59,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         $options = get_option( SHWPE_SETTINGS . '_settings' );
                     ?>
 
-                    <div class="postbox" id="Settings">
+                    <div class="postbox" id="settings">
                         <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
                             <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
@@ -119,7 +121,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         </div>
                     </div>
 
-                    <div class="postbox" id="Preview">
+                    <div class="postbox" id="preview">
                         <h3 class="title"><?php _e( 'Preview', $text ); ?></h3>
                         <div class="inside">
                             <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $text ); ?></p>
@@ -133,7 +135,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 </head>
 <body>
     <h1>Code Example</h1>
-    
+
     <p><?php echo "Hello World!"; ?></p>
 
     <div class="foobar">
