@@ -2,22 +2,18 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Base for the _load_scripts hook
- *
- * @since 4.5
  */
-function SHighlighterForWPE_load_scripts_base( $options ) {
+function spacexchimp_p009_load_scripts_base( $options ) {
 
     // Put value of constants to variables for easier access
-    $slug = SHWPE_SLUG;
-    $prefix = SHWPE_PREFIX;
-    $url = SHWPE_URL;
+    $slug = SPACEXCHIMP_P009_SLUG;
+    $prefix = SPACEXCHIMP_P009_PREFIX;
+    $url = SPACEXCHIMP_P009_URL;
 
     // Load jQuery library
     wp_enqueue_script( 'jquery' );
@@ -91,16 +87,14 @@ function SHighlighterForWPE_load_scripts_base( $options ) {
 
 /**
  * Load scripts and style sheet for settings page
- *
- * @since 4.5
  */
-function SHighlighterForWPE_load_scripts_admin( $hook ) {
+function spacexchimp_p009_load_scripts_admin( $hook ) {
 
     // Put value of constants to variables for easier access
-    $slug = SHWPE_SLUG;
-    $prefix = SHWPE_PREFIX;
-    $url = SHWPE_URL;
-    $settings = SHWPE_SETTINGS;
+    $slug = SPACEXCHIMP_P009_SLUG;
+    $prefix = SPACEXCHIMP_P009_PREFIX;
+    $url = SPACEXCHIMP_P009_URL;
+    $settings = SPACEXCHIMP_P009_SETTINGS;
 
     // If is a Plugin/Theme Editors page
     if ( 'plugin-editor.php' == $hook || 'theme-editor.php' == $hook )  {
@@ -111,7 +105,7 @@ function SHighlighterForWPE_load_scripts_admin( $hook ) {
         // Style sheet
         wp_enqueue_style( $prefix . '-editor-css', $url . 'inc/css/editor.css' );
 
-        SHighlighterForWPE_load_scripts_base( $options );
+        spacexchimp_p009_load_scripts_base( $options );
     }
 
     // If is a settings page of this plugin
@@ -126,6 +120,9 @@ function SHighlighterForWPE_load_scripts_admin( $hook ) {
         wp_enqueue_style( $prefix . '-bootstrap-theme-css', $url . 'inc/lib/bootstrap/bootstrap-theme.css' );
         wp_enqueue_script( $prefix . '-bootstrap-js', $url . 'inc/lib/bootstrap/bootstrap.js' );
 
+        // Font Awesome library
+        wp_enqueue_style( $prefix . '-font-awesome-css', $url . 'inc/lib/font-awesome/css/font-awesome.css', 'screen' );
+
         // Other libraries
         wp_enqueue_script( $prefix . '-bootstrap-checkbox-js', $url . 'inc/lib/bootstrap-checkbox.js' );
 
@@ -135,8 +132,8 @@ function SHighlighterForWPE_load_scripts_admin( $hook ) {
         // JavaScript
         wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), false, true );
 
-        SHighlighterForWPE_load_scripts_base( $options );
+        spacexchimp_p009_load_scripts_base( $options );
     }
 
 }
-add_action( 'admin_enqueue_scripts', SHWPE_PREFIX . '_load_scripts_admin' );
+add_action( 'admin_enqueue_scripts', 'spacexchimp_p009_load_scripts_admin' );

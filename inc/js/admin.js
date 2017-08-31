@@ -2,10 +2,9 @@
  * Plugin JavaScript and jQuery code for the admin pages of website
  *
  * @package     Syntax Highlighter for Theme/Plugin Editor
- * @uthor       Arthur Gareginyan
+ * @author      Arthur Gareginyan
  * @link        https://www.arthurgareginyan.com
  * @copyright   Copyright (c) 2016-2017 Arthur Gareginyan. All Rights Reserved.
- * @since       4.6
  */
 
 
@@ -19,9 +18,6 @@ jQuery(document).ready(function($) {
             $('.updated').fadeOut();
         }, 3000);
     }
-
-    // Enable Bootstrap Checkboxes
-    $(':checkbox').checkboxpicker();
 
     // Add dynamic content to page tabs. Needed for having an up to date content.
     $('.include-tab-author').load('https://www.spacexchimp.com/assets/dynamic-content/plugins.html #include-tab-author');
@@ -37,6 +33,23 @@ jQuery(document).ready(function($) {
          } else {
              $(this).addClass('panel-info');
          }
+    });
+
+    // Enable switches
+    $('.control-switch').checkboxpicker();
+
+    // Enable number fields
+    $('.control-number .btn-danger').on('click', function(){
+        var input = $(this).parent().siblings('input');
+        var value = parseInt(input.val());
+        input.val(value - 1);
+        input.change();
+    });
+    $('.control-number .btn-success').on('click', function(){
+        var input = $(this).parent().siblings('input');
+        var value = parseInt(input.val());
+        input.val(value + 1);
+        input.change();
     });
 
 });

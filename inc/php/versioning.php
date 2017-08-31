@@ -2,25 +2,21 @@
 
 /**
  * Prevent Direct Access
- *
- * @since 0.1
  */
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
  * Function for managing information about the version number of the plugin
- *
- * @since 4.3
  */
-function SHighlighterForWPE_versioning() {
+function spacexchimp_p009_versioning() {
 
     ///////////////////////////////////////////////////////////////////
     //                       SETTING VARIABLES                       //
     ///////////////////////////////////////////////////////////////////
 
     // Put value of constants to variables for easier access
-    $version_files = SHWPE_VERSION;
-    $settings = SHWPE_SETTINGS;
+    $version_files = SPACEXCHIMP_P009_VERSION;
+    $settings = SPACEXCHIMP_P009_SETTINGS;
 
     // Read the plugin service information from the database and put it into an array
     $info = get_option( $settings . '_service_info' );
@@ -105,4 +101,4 @@ function SHighlighterForWPE_versioning() {
     }
 
 }
-SHighlighterForWPE_versioning();
+spacexchimp_p009_versioning();
