@@ -186,15 +186,15 @@ function spacexchimp_p009_render_submenu_page() {
                     <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
                     <div class="inside">
                         <img src="<?php echo SPACEXCHIMP_P009_URL . 'inc/img/thanks.png'; ?>" alt="Thanks!" class="pull-right">
-                            <p><?php _e( 'If you appreciate my work, you can buy me a coffee!', $text ); ?></p>
-                            <p><?php _e( 'I spend a lot of time and effort trying to make sure that the themes, plugins and other things I build are useful, and the ultimate proof of that for me is that you actually want to use them. But, I’m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
-                            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="btn btn-default button-labeled">
-                                    <span class="btn-label">
-                                        <img src="<?php echo SPACEXCHIMP_P009_URL . 'inc/img/paypal.svg'; ?>" alt="PayPal">
-                                    </span>
-                                    <?php _e( 'Donate with PayPal', $text ); ?>
-                            </a>
-                            <p><?php _e( 'Thank you for your support!', $text ); ?></p>
+                        <p><?php _e( 'If you appreciate my work, you can buy me a coffee!', $text ); ?></p>
+                        <p><?php _e( 'I spend a lot of time and effort trying to make sure that the themes, plugins and other things I build are useful, and the ultimate proof of that for me is that you actually want to use them. But, I’m an independent developer, without a regular income, so every little contribution helps cover my costs and lets me spend more time building things for people like you to enjoy.', $text ); ?></p>
+                        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="btn btn-default button-labeled">
+                                <span class="btn-label">
+                                    <img src="<?php echo SPACEXCHIMP_P009_URL . 'inc/img/paypal.svg'; ?>" alt="PayPal">
+                                </span>
+                                <?php _e( 'Donate with PayPal', $text ); ?>
+                        </a>
+                        <p><?php _e( 'Thank you for your support!', $text ); ?></p>
                     </div>
                 </div>
             </div>

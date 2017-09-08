@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Arthur Gareginyan
  * Author URI: https://www.arthurgareginyan.com
- * Version: 4.7
+ * Version: 4.8
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
@@ -71,8 +71,8 @@ spacexchimp_p009_define_constants( 'SLUG', dirname( plugin_basename( __FILE__ ) 
 spacexchimp_p009_define_constants( 'NAME', $plugin_data['name'] );
 spacexchimp_p009_define_constants( 'VERSION', $plugin_data['version'] );
 spacexchimp_p009_define_constants( 'TEXT', $plugin_data['text'] );
-spacexchimp_p009_define_constants( 'PREFIX', 'SHighlighterForWPE' );
-spacexchimp_p009_define_constants( 'SETTINGS', 'SHighlighterForWPE' );
+spacexchimp_p009_define_constants( 'PREFIX', 'spacexchimp_p009' );
+spacexchimp_p009_define_constants( 'SETTINGS', 'spacexchimp_p009' );
 
 /**
  * Load the plugin modules
