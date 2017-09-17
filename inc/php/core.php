@@ -70,7 +70,7 @@ function spacexchimp_p009_register_submenu_page() {
 
     $parent_slug = 'spacexchimp';
     $page_title  = SPACEXCHIMP_P009_NAME;
-    $menu_title  = __( 'Theme / Plugin Editor', SPACEXCHIMP_P015_TEXT );
+    $menu_title  = __( 'Theme / Plugin Editor', SPACEXCHIMP_P009_TEXT );
     $capability  = 'manage_options';
     $menu_slug   = 'spacexchimp/' . SPACEXCHIMP_P009_SLUG;
     $function    = 'spacexchimp_p009_render_submenu_page';

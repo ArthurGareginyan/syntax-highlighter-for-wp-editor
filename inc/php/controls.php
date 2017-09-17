@@ -136,3 +136,50 @@ function spacexchimp_p009_control_number( $name, $label, $help=null, $default=nu
     // Print a help text
     spacexchimp_p009_control_help( $help );
 }
+
+/**
+ * Generator of the switches for saving plugin settings to database
+ */
+function spacexchimp_p009_control_list( $name, $items, $label, $help, $default ) {
+
+    // Read options from database and declare variables
+    $options = get_option( SPACEXCHIMP_P009_SETTINGS . '_settings' );
+    $option = !empty( $options[$name] ) ? $options[$name] : '';
+    $list_item = '';
+
+    foreach ( $items as $item_key => $item_value ) {
+        if ( empty( $option ) AND $item_key == $default ) {
+            $selected = "selected='selected'";
+        } elseif ( $option == $item_key ) {
+            $selected = "selected='selected'";
+        } else {
+            $selected = "";
+        }
+        $list_item .= "<option
+                               id='$item_key'
+                               value='$item_key'
+                               $selected
+                       >$item_value</option>";
+    }
+
+    // Generate a part of table
+    $out = "<tr>
+                <th scope='row'>
+                    $label
+                </th>
+                <td>
+                    <select
+                            name='" . SPACEXCHIMP_P009_SETTINGS . "_settings[$name]'
+                            class='control-list $name'
+                    >
+                        $list_item
+                    </select>
+                </td>
+            </tr>";
+
+    // Print the generated part of table
+    echo $out;
+
+    // Print a help text
+    spacexchimp_p009_control_help( $help );
+}

@@ -16,11 +16,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                 <form action="options.php" method="post" enctype="multipart/form-data">
                     <?php settings_fields( SPACEXCHIMP_P009_SETTINGS . '_settings_group' ); ?>
 
-                    <?php
-                        // Get options from the database
-                        $options = get_option( SPACEXCHIMP_P009_SETTINGS . '_settings' );
-                    ?>
-
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
                         <i class="fa fa-save" aria-hidden="true"></i>
                         <span><?php _e( 'Save changes', $text ); ?></span>
@@ -31,31 +26,50 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         <div class="inside">
                             <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
                             <table class="form-table">
-
-                                <tr>
-                                    <th>
-                                        <?php _e( 'Color theme', $text ); ?>
-                                    </th>
-                                    <td>
-                                        <select name="spacexchimp_p009_settings[theme]">
-                                            <?php
-                                                $themes = array('default', '3024-day', '3024-night', 'ambiance-mobile', 'ambiance', 'base16-dark', 'base16-light', 'blackboard', 'cobalt', 'colorforth', 'eclipse', 'elegant', 'erlang-dark', 'lesser-dark', 'liquibyte', 'mbo', 'mdn-like', 'midnight', 'monokai', 'neat', 'neo', 'night', 'paraiso-dark', 'paraiso-light', 'pastel-on-dark', 'rubyblue', 'solarized', 'the-matrix', 'tomorrow-night-bright', 'tomorrow-night-eighties', 'ttcn', 'twilight', 'vibrant-ink', 'xq-dark', 'xq-light', 'zenburn');
-                                                foreach ( $themes as $option ) {
-                                                    $selected = selected( $options['theme'], $option );
-                                                    echo '<option value="' . $option . '" id="' . $option . '"' . $selected . ' >' . $option . '</option>';
-                                                }
-                                            ?>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class='help-text'>
-                                        <?php _e( 'You can choose the theme which you like to view.', $text ); ?>
-                                    </td>
-                                </tr>
-
                                 <?php
+                                    spacexchimp_p009_control_list( 'theme',
+                                                                    array(
+                                                                           'default'                 => 'Default',
+                                                                           '3024-day'                => '3024 day',
+                                                                           '3024-night'              => '3024 night',
+                                                                           'ambiance-mobile'         => 'Ambiance mobile',
+                                                                           'ambiance'                => 'Ambiance',
+                                                                           'base16-dark'             => 'Base16 dark',
+                                                                           'base16-light'            => 'Base16 light',
+                                                                           'blackboard'              => 'Blackboard',
+                                                                           'cobalt'                  => 'Cobalt',
+                                                                           'colorforth'              => 'Colorforth',
+                                                                           'eclipse'                 => 'Eclipse',
+                                                                           'elegant'                 => 'Elegant',
+                                                                           'erlang-dark'             => 'Erlang dark',
+                                                                           'lesser-dark'             => 'Lesser dark',
+                                                                           'liquibyte'               => 'Liquibyte',
+                                                                           'mbo'                     => 'MBO',
+                                                                           'mdn-like'                => 'MDN like',
+                                                                           'midnight'                => 'Midnight',
+                                                                           'monokai'                 => 'Monokai',
+                                                                           'neat'                    => 'Neat',
+                                                                           'neo'                     => 'Neo',
+                                                                           'night'                   => 'Night',
+                                                                           'paraiso-dark'            => 'Paraiso dark',
+                                                                           'paraiso-light'           => 'Paraiso light',
+                                                                           'pastel-on-dark'          => 'Pastel on dark',
+                                                                           'rubyblue'                => 'Rubyblue',
+                                                                           'solarized'               => 'Solarized',
+                                                                           'the-matrix'              => 'The matrix',
+                                                                           'tomorrow-night-bright'   => 'Tomorrow night bright',
+                                                                           'tomorrow-night-eighties' => 'Tomorrow night eighties',
+                                                                           'ttcn'                    => 'TTCN',
+                                                                           'twilight'                => 'Twilight',
+                                                                           'vibrant-ink'             => 'Vibrant ink',
+                                                                           'xq-dark'                 => 'XQ dark',
+                                                                           'xq-light'                => 'XQ light',
+                                                                           'zenburn'                 => 'Zenburn'
+                                                                         ),
+                                                                   __( 'Color theme', $text ),
+                                                                   __( 'You can choose the theme which you like to view.', $text ),
+                                                                   'default'
+                                                                 );
                                     spacexchimp_p009_control_switch( 'line_numbers',
                                                                      __( 'Line numbers', $text ),
                                                                      __( 'Display the line numbers in the code block.', $text )
