@@ -85,7 +85,7 @@ Manually via FTP access:
 4. Log into Admin Panel of your WordPress website.
 5. Activate this plugin through the "`Plugins`" tab.
 
-After installation and activation, the "`Theme / Plugin Editor`" menu item will appear in the "`Space X-Chimp`" section of Admin Panel. Click on it in order to view the plugin settings page.
+After installation and activation, the "`Theme / Plugin Editor`" menu item will appear in the "`Settings`" section of Admin Panel. Click on it in order to view the plugin settings page.
 
 [More help installing plugins](http://codex.wordpress.org/Managing_Plugins#Installing_Plugins "WordPress Codex: Installing Plugins")
 
@@ -100,7 +100,7 @@ A. Yes. This plugin is ready for translation and has already been translated int
 
 = Q. How does it work? =
 A. Simply go to the plugin settings page, select the desired settings and click the "Save changes" button. Enjoy your fancy Theme/Plugin Editor. It's that simple!
-You can find the plugin settings page at "`WP Admin Panel`" -> "`Space X-Chimp`" -> "`Theme / Plugin Editor`".
+You can find the plugin settings page at "`WP Admin Panel`" -> "`Settings`" -> "`Theme / Plugin Editor`".
 
 = Q. Does this plugin provide a syntax highlighting for the Post/Page Editor? =
 A. No, only the Theme/Plugin Editor supports. For the Post/Page Editor you can use my another plugin that called the [Syntax Highlighter for Post/Page HTML Editor](https://wordpress.org/plugins/syntax-highlighter-for-postpage-html-editor).
