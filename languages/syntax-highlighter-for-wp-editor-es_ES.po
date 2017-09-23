@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2017-09-15 14:28+0300\n"
-"PO-Revision-Date: 2017-09-15 14:28+0300\n"
+"POT-Creation-Date: 2017-09-23 04:50+0300\n"
+"PO-Revision-Date: 2017-09-23 04:50+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -28,7 +28,7 @@ msgstr "Ajustes"
 msgid "Donate"
 msgstr "Donar"
 
-#: inc/php/core.php:73
+#: inc/php/core.php:52
 msgid "Theme / Plugin Editor"
 msgstr "Theme / Plugin Editor"
 
@@ -66,7 +66,7 @@ msgstr "Uso"
 msgid "F.A.Q."
 msgstr "Preguntas ?"
 
-#: inc/php/page.php:46 inc/php/settings.php:113 inc/php/sidebar.php:23
+#: inc/php/page.php:46 inc/php/settings.php:127 inc/php/sidebar.php:23
 msgid "Support"
 msgstr "Soporte"
 
@@ -345,7 +345,7 @@ msgstr ""
 msgid "Support Me"
 msgstr ""
 
-#: inc/php/page.php:193 inc/php/settings.php:120 inc/php/sidebar.php:30
+#: inc/php/page.php:193 inc/php/settings.php:134 inc/php/sidebar.php:30
 msgid "Donate with PayPal"
 msgstr "Donar con PayPal"
 
@@ -381,64 +381,64 @@ msgstr ""
 msgid "Thank you for your support!"
 msgstr "¡Gracias por tu apoyo!"
 
-#: inc/php/settings.php:26 inc/php/settings.php:78
+#: inc/php/settings.php:21 inc/php/settings.php:92
 msgid "Save changes"
 msgstr "Guardar Cambios"
 
-#: inc/php/settings.php:30
+#: inc/php/settings.php:25
 msgid "Main Settings"
 msgstr "Ajustes Principales"
 
-#: inc/php/settings.php:32
+#: inc/php/settings.php:27
 msgid "There you can configure this plugin."
 msgstr "Aquí puedes configurar este complemento."
 
-#: inc/php/settings.php:37
+#: inc/php/settings.php:69
 msgid "Color theme"
 msgstr ""
 
-#: inc/php/settings.php:54
+#: inc/php/settings.php:70
 msgid "You can choose the theme which you like to view."
 msgstr ""
 
-#: inc/php/settings.php:60
+#: inc/php/settings.php:74
 msgid "Line numbers"
 msgstr ""
 
-#: inc/php/settings.php:61
+#: inc/php/settings.php:75
 msgid "Display the line numbers in the code block."
 msgstr ""
 
-#: inc/php/settings.php:64
+#: inc/php/settings.php:78
 msgid "First line number"
 msgstr ""
 
-#: inc/php/settings.php:65
+#: inc/php/settings.php:79
 msgid "You can set the number of the first line."
 msgstr ""
 
-#: inc/php/settings.php:69
+#: inc/php/settings.php:83
 msgid "Size of Tab"
 msgstr ""
 
-#: inc/php/settings.php:70
+#: inc/php/settings.php:84
 msgid "The width (in spaces) of Tab. Default is 4."
 msgstr ""
 
-#: inc/php/settings.php:81
+#: inc/php/settings.php:95
 msgid "Preview"
 msgstr "Vista Previa"
 
-#: inc/php/settings.php:83
+#: inc/php/settings.php:97
 msgid "Click the \"Save changes\" button to update this preview."
 msgstr ""
 "Has clic en el botón \"Guardar Cambios\" para actualizar esta vista previa."
 
-#: inc/php/settings.php:108
+#: inc/php/settings.php:122
 msgid "This is an example of HTML language."
 msgstr ""
 
-#: inc/php/settings.php:115 inc/php/sidebar.php:25
+#: inc/php/settings.php:129 inc/php/sidebar.php:25
 msgid ""
 "I'm an independent developer, without a regular income, so every little "
 "contribution helps cover my costs and lets me spend more time building "
@@ -448,7 +448,7 @@ msgstr ""
 "pequeña contribución ayuda a cubrir mis costos y me deja pasar más tiempo "
 "construyendo cosas para que personas como tú las disfruten."
 
-#: inc/php/settings.php:122 inc/php/sidebar.php:32
+#: inc/php/settings.php:136 inc/php/sidebar.php:32
 msgid "Thanks for your support!"
 msgstr "¡Gracias por tu apoyo!"
 

@@ -109,7 +109,7 @@ function spacexchimp_p009_load_scripts_admin( $hook ) {
     }
 
     // If is a settings page of this plugin
-    $settings_page = 'space-x-chimp_page_spacexchimp/' . $slug;
+    $settings_page = 'settings_page_' . $slug;
     if ( $settings_page == $hook ) {
 
         // Read options from database
