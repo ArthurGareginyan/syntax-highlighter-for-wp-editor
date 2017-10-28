@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2017-09-23 04:50+0300\n"
-"PO-Revision-Date: 2017-09-23 04:50+0300\n"
+"POT-Creation-Date: 2017-09-24 16:30+0300\n"
+"PO-Revision-Date: 2017-09-24 16:31+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -52,7 +52,7 @@ msgstr "Actualiza el complemento a la versión más reciente y todo estará bien
 #: inc/php/page.php:30
 #, php-format
 msgid "by %s Space X-Chimp Studio %s"
-msgstr ""
+msgstr "por %s Space X-Chimp Studio %s"
 
 #: inc/php/page.php:36
 msgid "Version"
@@ -76,7 +76,7 @@ msgstr "Tienda"
 
 #: inc/php/page.php:63
 msgid "Usage Instructions"
-msgstr ""
+msgstr "Instrucciones de uso"
 
 #: inc/php/page.php:65
 msgid ""
@@ -343,7 +343,7 @@ msgstr ""
 
 #: inc/php/page.php:185
 msgid "Support Me"
-msgstr ""
+msgstr "Apoyarme!"
 
 #: inc/php/page.php:193 inc/php/settings.php:134 inc/php/sidebar.php:30
 msgid "Donate with PayPal"
@@ -355,6 +355,8 @@ msgid ""
 "Hello! My name is %s Arthur Gareginyan %s and I'm the founder of %s Space X-"
 "Chimp Studio %s."
 msgstr ""
+"¡Hola! Mi nombre es %s Arthur Gareginyan %s y soy el fundador de %s Space X-"
+"Chimp Studio %s."
 
 #: inc/php/page.php:206
 msgid ""
@@ -362,6 +364,9 @@ msgid ""
 "I'm really passionate about my work, I like what I'm doing and hope that you "
 "will be enriched by my projects too."
 msgstr ""
+"Mi intención es crear proyectos que hagan de este mundo un lugar mejor. Soy "
+"realmente apasionado por mi trabajo, me gusta lo que estoy haciendo y espero "
+"que tú también te enriquezcas con mis proyectos."
 
 #: inc/php/page.php:207
 msgid ""
@@ -372,10 +377,16 @@ msgid ""
 "cover my costs and lets me spend more time building things for people like "
 "you to enjoy."
 msgstr ""
+"Paso mucho tiempo y esfuerzo tratando de asegurarme que los temas, "
+"complementos y otras cosas que construyo sean útiles, y la prueba definitiva "
+"para mí de que son útiles, es que realmente desea utilizarlos. Pero, soy un "
+"desarrollador independiente, sin un ingreso regular, por lo que cada pequeña "
+"contribución me ayuda a cubrir mis costos y me deja pasar más tiempo "
+"construyendo cosas para que la gente como tú lo disfrute."
 
 #: inc/php/page.php:208
 msgid "If you appreciate my work, you can buy me a coffee!"
-msgstr ""
+msgstr "Si aprecias mi trabajo, puedes comprarme un café!"
 
 #: inc/php/page.php:209
 msgid "Thank you for your support!"
@@ -474,7 +485,7 @@ msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "Syntax Highlighter for Theme/Plugin Editor"
-msgstr ""
+msgstr "Syntax Highlighter for Theme/Plugin Editor"
 
 #. Plugin URI of the plugin/theme
 msgid "https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor"
