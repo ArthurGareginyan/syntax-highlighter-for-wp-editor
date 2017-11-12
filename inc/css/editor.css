@@ -9,6 +9,7 @@
 
 
 .CodeMirror {
+    width: calc(100% - 220px) !important;
     height: 100% !important;
     border: 1px solid grey;
 }

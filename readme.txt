@@ -3,8 +3,8 @@ Contributors: Arthur Gareginyan
 Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editing, editor, code, php, xml, html ,css, javascript, markdown, codemirror, code mirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax,
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS
 Requires at least: 3.9
-Tested up to: 4.8
-Stable tag: 4.13
+Tested up to: 4.9
+Stable tag: 4.14
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -57,6 +57,16 @@ This plugin is ready for translation and has already been translated into severa
 * Spanish (translation by Patricio Toledo)
 
 If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/syntax-highlighter-for-wp-editor).
+
+**System requirements**
+
+* [PHP](https://php.net) version **5.2** or higher.
+* [MySQL](https://www.mysql.com) version **5.0** or higher.
+
+**Recommendations:**
+
+* [PHP](https://php.net) version **7.0** or higher.
+* [MySQL](https://www.mysql.com) version **5.6** or higher.
 
 **Contribution**
 
@@ -168,6 +178,10 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.14 =
+* The plugin is fully tested and optimized for compatibility with WordPress version 4.9.
+* CSS code improved.
 
 = 4.13 =
 * German translation added. (Thanks to Michael)
