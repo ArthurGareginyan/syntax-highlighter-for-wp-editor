@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.18
+ * Version: 4.19
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
@@ -55,6 +55,7 @@ function spacexchimp_p009_define_constants( $constant_name, $value ) {
     if ( !defined( $constant_name ) )
         define( $constant_name, $value );
 }
+spacexchimp_p009_define_constants( 'FILE', __FILE__ );
 spacexchimp_p009_define_constants( 'DIR', dirname( plugin_basename( __FILE__ ) ) );
 spacexchimp_p009_define_constants( 'BASE', plugin_basename( __FILE__ ) );
 spacexchimp_p009_define_constants( 'URL', plugin_dir_url( __FILE__ ) );
