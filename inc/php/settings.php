@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <div class="postbox" id="settings">
                         <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'There you can configure this plugin.', $text ); ?></p>
+                            <p class="note"><?php _e( 'Here you can configure this plugin.', $text ); ?></p>
                             <table class="form-table">
                                 <?php
                                     spacexchimp_p009_control_list( 'theme',
