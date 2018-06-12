@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.20
+Stable tag: 4.21
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -179,9 +179,14 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 == Changelog ==
 
+= 4.21 =
+* CodeMirror library updated to the latest version v5.38.0. The directory structure is changed (files are better organized). Added a test files for the CodeMirror modes.
+* Updated the method of loading the modes and themes of the CodeMirror library.
+* On the page 'page.php' the constants '_NAME' and '_VERSION' are replaced by '$name' and '$version'.
+
 = 4.20 =
 * Fixed a bug due to which the plugin data that stored in the database to not be deleted during the uninstallation of the plugin.
-* The contents of the file 'uninstall.php is moved to the file 'core.php'. The file 'uninstall.php' is deleted.
+* The contents of the file 'uninstall.php' is moved to the file 'core.php'. The file 'uninstall.php' is deleted.
 * Some texts are corrected.
 
 = 4.19 =

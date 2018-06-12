@@ -24,7 +24,7 @@ function spacexchimp_p009_render_submenu_page() {
     ?>
     <div class="wrap">
         <h2>
-            <?php echo SPACEXCHIMP_P009_NAME; ?>
+            <?php echo $name; ?>
             <span>
                 <?php printf(
                               __( 'by %s Space X-Chimp %s', $text ),
@@ -33,7 +33,7 @@ function spacexchimp_p009_render_submenu_page() {
                              );
                 ?>
             </span>
-            <p class="version"><?php _e( 'Version', $text ); ?> <?php echo SPACEXCHIMP_P009_VERSION; ?></p>
+            <p class="version"><?php _e( 'Version', $text ); ?> <?php echo $version; ?></p>
         </h2>
 
         <div id="poststuff" class="metabox-holder has-right-sidebar">
