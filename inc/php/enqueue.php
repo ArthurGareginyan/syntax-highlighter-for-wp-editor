@@ -87,7 +87,7 @@ function spacexchimp_p009_load_scripts_base( $options ) {
                            'mode' => $mode,
                            'readonly' => $readonly
                            );
-    wp_localize_script( $prefix . '-codemirror-setting-js', $prefix . '_scriptParams', $script_params );
+    wp_localize_script( $prefix . '-codemirror-settings-js', $prefix . '_scriptParams', $script_params );
 
 }
 
