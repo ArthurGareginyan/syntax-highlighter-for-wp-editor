@@ -20,11 +20,9 @@ jQuery(document).ready(function($) {
     var mode = spacexchimp_p009_scriptParams["mode"];
     var readonly = spacexchimp_p009_scriptParams["readonly"];
 
-    // Find textareas on page
+    // Find textareas on page and replace them with the CodeMirror editor
     $('textarea').each(function(index, elements) {
-
-        // Change editor to CodeMirror
-        var editor = CodeMirror.fromTextArea( elements , {
+        var editor = CodeMirror.fromTextArea( elements, {
             lineNumbers: line_numbers,
             firstLineNumber: first_line_number,
             matchBrackets: true,
@@ -33,10 +31,6 @@ jQuery(document).ready(function($) {
             theme: theme,
             mode: mode
         });
-
-        // Refresh CodeMirror editor
-        editor.refresh();
-
     });
 
 });

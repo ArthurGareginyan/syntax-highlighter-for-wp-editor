@@ -27,6 +27,14 @@ function spacexchimp_p009_load_scripts_base( $options ) {
     foreach ( $modes as $mode ) {
         wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );
     }
+    $addons = array(
+                    'display' => array( 'autorefresh' )
+                   );
+    foreach ( $addons as $addons_group_name => $addons_group ) {
+        foreach ( $addons_group as $addon ) {
+            wp_enqueue_script( $prefix . '-codemirror-addon-' . $addon . '-js', $url . 'inc/lib/codemirror/addon/' . $addons_group_name . '/' . $addon . '.js', array(), $version, false );
+        }
+    }
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     if ( $theme != "default" ) {
         wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $theme . '.css', array(), $version, 'all' );
