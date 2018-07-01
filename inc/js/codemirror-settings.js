@@ -1,5 +1,5 @@
 /*
- * Settings of CodeMirror editor
+ * CodeMirror editor settings
  *
  * @package     Syntax Highlighter for Theme/Plugin Editor
  * @author      Arthur Gareginyan
@@ -21,15 +21,16 @@ jQuery(document).ready(function($) {
     var readonly = spacexchimp_p009_scriptParams["readonly"];
 
     // Find textareas on page and replace them with the CodeMirror editor
-    $('textarea').each(function(index, elements) {
-        var editor = CodeMirror.fromTextArea( elements, {
+    $('textarea').each(function(index, element){
+        var editor = CodeMirror.fromTextArea(element, {
             lineNumbers: line_numbers,
             firstLineNumber: first_line_number,
             matchBrackets: true,
             indentUnit: tab_size,
-            readOnly: readonly,
             theme: theme,
-            mode: mode
+            mode: mode,
+            autoRefresh: true,
+            readOnly: readonly
         });
     });
 

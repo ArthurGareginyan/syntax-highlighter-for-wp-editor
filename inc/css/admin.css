@@ -546,3 +546,6 @@ td.help-text {
     height: 100% !important;
     border: 1px solid grey;
 }
+#preview .CodeMirror .CodeMirror-lines {
+    cursor: default;
+}

@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.22
+Stable tag: 4.23
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -161,7 +161,7 @@ A. Yes, any contributions are very welcome! Please visit [our donation page](htt
 **License**
 
 This plugin is licensed under the [GNU General Public License, version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.html) and is distributed free of charge.
-Commercial licensing (e.g. for projects that can’t use an open-source licence) is available upon request.
+Commercial licensing (e.g. for projects that can’t use an open-source license) is available upon request.
 
 **Credits**
 
@@ -178,6 +178,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source licence)
 
 
 == Changelog ==
+
+= 4.23 =
+* Fixed localization of the word "licence". (Thanks to Garrett Hyder @garrett-eclipse)
+* Fixed: CodeMirror addon 'autorefresh.js' was added to one of the previous versions of the plugin, but it was not enabled.
+* Added CSS code which prevents the mouse cursor from changing the shape when hovering over the "Preview" area with an example code.
 
 = 4.22 =
 * Added code for loading the addons of the CodeMirror library.
