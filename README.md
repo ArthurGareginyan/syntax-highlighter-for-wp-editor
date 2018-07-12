@@ -1,6 +1,6 @@
 # Syntax Highlighter for WP Editor
 
-**Free Premium WordPress Plugin**
+**Free WordPress Plugin**
 
 ![screenshot](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor/blob/master/assets/banner-772x250.png)
 
