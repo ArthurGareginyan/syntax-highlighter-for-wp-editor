@@ -6,27 +6,23 @@
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
- * Base for the _load_scripts hook
+ * Callback to enqueue the CodeMirror library
  */
-function spacexchimp_p009_load_scripts_base( $options ) {
+function spacexchimp_p009_load_scripts_codemirror( $options ) {
 
     // Put value of constants to variables for easier access
-    $slug = SPACEXCHIMP_P009_SLUG;
     $prefix = SPACEXCHIMP_P009_PREFIX;
     $url = SPACEXCHIMP_P009_URL;
     $version = SPACEXCHIMP_P009_VERSION;
 
-    // Load jQuery library
-    wp_enqueue_script( 'jquery' );
-
-    // CodeMirror library
+    // Enqueue main files of the CodeMirror library
     wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/lib/codemirror.css', array(), $version, 'all' );
     wp_enqueue_script( $prefix . '-codemirror-js', $url . 'inc/lib/codemirror/lib/codemirror.js', array(), $version, false );
+
+    // Enqueue settings file
     wp_enqueue_script( $prefix . '-codemirror-settings-js', $url . 'inc/js/codemirror-settings.js', array(), $version, true );
-    $modes = array( 'clike', 'css', 'htmlmixed', 'javascript', 'markdown', 'php', 'xml' );
-    foreach ( $modes as $mode ) {
-        wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );
-    }
+
+    // Enqueue addons
     $addons = array(
                     'display' => array( 'autorefresh' )
                    );
@@ -35,10 +31,44 @@ function spacexchimp_p009_load_scripts_base( $options ) {
             wp_enqueue_script( $prefix . '-codemirror-addon-' . $addon . '-js', $url . 'inc/lib/codemirror/addon/' . $addons_group_name . '/' . $addon . '.js', array(), $version, false );
         }
     }
+
+    // Enqueue modes
+    $modes = array(
+                    'clike',
+                    'css',
+                    'htmlmixed',
+                    'javascript',
+                    'markdown',
+                    'php',
+                    'xml'
+                  );
+    foreach ( $modes as $mode ) {
+        wp_enqueue_script( $prefix . '-codemirror-mode-' . $mode . '-js', $url . 'inc/lib/codemirror/mode/' . $mode . '/' . $mode . '.js', array(), $version, true );
+    }
+
+    // Enqueue theme
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
     if ( $theme != "default" ) {
         wp_enqueue_style( $prefix . '-codemirror-theme-css', $url . 'inc/lib/codemirror/theme/' . $theme . '.css', array(), $version, 'all' );
     }
+
+}
+
+/**
+ * Base for the _load_scripts hook
+ */
+function spacexchimp_p009_load_scripts_base( $options ) {
+
+    // Put value of constants to variables for easier access
+    $prefix = SPACEXCHIMP_P009_PREFIX;
+    $url = SPACEXCHIMP_P009_URL;
+    $version = SPACEXCHIMP_P009_VERSION;
+
+    // Load jQuery library
+    wp_enqueue_script( 'jquery' );
+
+    // Call the function that enqueue the CodeMirror library
+    spacexchimp_p009_load_scripts_codemirror( $options );
 
     // Check the extension of loaded file and change the Mode of CodeMirror
     global $file;

@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.23
+Stable tag: 4.24
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -178,6 +178,12 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.24 =
+* The code block that enqueue the CodeMirror library files is moved to a separate function '_load_scripts_codemirror' within the 'enqueue.php' file.
+* Enqueue of the CodeMirror addons is moved to the beginning of the queue, before enqueuing the CodeMirror mods.
+* The extra mention of the constant '_SLUG'  is removed from the file 'enqueue.php'.
+* All translation files are updated.
 
 = 4.23 =
 * Fixed localization of the word "licence". (Thanks to Garrett Hyder @garrett-eclipse)
