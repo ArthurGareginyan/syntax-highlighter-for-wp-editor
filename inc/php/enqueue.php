@@ -8,12 +8,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 /**
  * Callback to enqueue the CodeMirror library
  */
-function spacexchimp_p009_load_scripts_codemirror( $options ) {
-
-    // Put value of constants to variables for easier access
-    $prefix = SPACEXCHIMP_P009_PREFIX;
-    $url = SPACEXCHIMP_P009_URL;
-    $version = SPACEXCHIMP_P009_VERSION;
+function spacexchimp_p009_load_scripts_codemirror( $options, $prefix, $url, $version ) {
 
     // Enqueue main files of the CodeMirror library
     wp_enqueue_style( $prefix . '-codemirror-css', $url . 'inc/lib/codemirror/lib/codemirror.css', array(), $version, 'all' );
@@ -55,20 +50,19 @@ function spacexchimp_p009_load_scripts_codemirror( $options ) {
 }
 
 /**
- * Base for the _load_scripts hook
+ * Callback for the dynamic JavaScript
  */
-function spacexchimp_p009_load_scripts_base( $options ) {
+function spacexchimp_p009_load_scripts_dynamic_js( $options, $prefix ) {
 
-    // Put value of constants to variables for easier access
-    $prefix = SPACEXCHIMP_P009_PREFIX;
-    $url = SPACEXCHIMP_P009_URL;
-    $version = SPACEXCHIMP_P009_VERSION;
-
-    // Load jQuery library
-    wp_enqueue_script( 'jquery' );
-
-    // Call the function that enqueue the CodeMirror library
-    spacexchimp_p009_load_scripts_codemirror( $options );
+    // Get settings and put them in variables
+    $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
+    $first_line_number = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
+    $tab_size = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
+    if ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) {
+        $line_numbers = "true";
+    } else {
+        $line_numbers = "false";
+    }
 
     // Check the extension of loaded file and change the Mode of CodeMirror
     global $file;
@@ -108,15 +102,7 @@ function spacexchimp_p009_load_scripts_base( $options ) {
         $readonly = 'true';
     }
 
-    // Dynamic JS. Create JS object and injected it into the JS file
-    $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
-    $first_line_number = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
-    $tab_size = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
-    if ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) {
-        $line_numbers = "true";
-    } else {
-        $line_numbers = "false";
-    }
+    // Create an array (JS object) with all the settings
     $script_params = array(
                            'theme' => $theme,
                            'line_numbers' => $line_numbers,
@@ -125,8 +111,9 @@ function spacexchimp_p009_load_scripts_base( $options ) {
                            'mode' => $mode,
                            'readonly' => $readonly
                            );
-    wp_localize_script( $prefix . '-codemirror-settings-js', $prefix . '_scriptParams', $script_params );
 
+    // Inject the array into the JavaScript file
+    wp_localize_script( $prefix . '-codemirror-settings-js', $prefix . '_scriptParams', $script_params );
 }
 
 /**
@@ -147,10 +134,17 @@ function spacexchimp_p009_load_scripts_admin( $hook ) {
         // Read options from database
         $options = get_option( $settings . '_settings' );
 
+        // Load jQuery library
+        wp_enqueue_script( 'jquery' );
+
         // Style sheet
         wp_enqueue_style( $prefix . '-editor-css', $url . 'inc/css/editor.css', array(), $version, 'all' );
 
-        spacexchimp_p009_load_scripts_base( $options );
+        // Call the function that enqueue the CodeMirror library
+        spacexchimp_p009_load_scripts_codemirror( $options, $prefix, $url, $version );
+
+        // Call the function that contains the dynamic JavaScript
+        spacexchimp_p009_load_scripts_dynamic_js( $options, $prefix );
     }
 
     // If is a settings page of this plugin
@@ -159,6 +153,9 @@ function spacexchimp_p009_load_scripts_admin( $hook ) {
 
         // Read options from database
         $options = get_option( $settings . '_settings' );
+
+        // Load jQuery library
+        wp_enqueue_script( 'jquery' );
 
         // Bootstrap library
         wp_enqueue_style( $prefix . '-bootstrap-css', $url . 'inc/lib/bootstrap/bootstrap.css', array(), $version, 'all' );
@@ -177,8 +174,11 @@ function spacexchimp_p009_load_scripts_admin( $hook ) {
         // JavaScript
         wp_enqueue_script( $prefix . '-admin-js', $url . 'inc/js/admin.js', array(), $version, true );
 
-        // Call the function that contain a basis of scripts
-        spacexchimp_p009_load_scripts_base( $options );
+        // Call the function that enqueue the CodeMirror library
+        spacexchimp_p009_load_scripts_codemirror( $options, $prefix, $url, $version );
+
+        // Call the function that contains the dynamic JavaScript
+        spacexchimp_p009_load_scripts_dynamic_js( $options, $prefix );
     }
 
 }
