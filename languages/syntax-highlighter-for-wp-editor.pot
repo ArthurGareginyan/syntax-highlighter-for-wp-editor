@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2018-07-24 00:39+0300\n"
+"POT-Creation-Date: 2018-08-07 01:42+0300\n"
 "PO-Revision-Date: 2016-03-25 05:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -64,7 +64,7 @@ msgstr ""
 msgid "F.A.Q."
 msgstr ""
 
-#: inc/php/page.php:46 inc/php/settings.php:127 inc/php/sidebar.php:39
+#: inc/php/page.php:46 inc/php/settings.php:96 inc/php/sidebar.php:39
 msgid "Support"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "Support Us"
 msgstr ""
 
-#: inc/php/page.php:201 inc/php/settings.php:134 inc/php/sidebar.php:46
+#: inc/php/page.php:201 inc/php/settings.php:103 inc/php/sidebar.php:46
 msgid "Donate with PayPal"
 msgstr ""
 
@@ -272,67 +272,67 @@ msgstr ""
 msgid "Thank you for your support!"
 msgstr ""
 
-#: inc/php/settings.php:21 inc/php/settings.php:92
+#: inc/php/settings.php:27 inc/php/settings.php:61
 msgid "Save changes"
 msgstr ""
 
-#: inc/php/settings.php:25
+#: inc/php/settings.php:31
 msgid "Main Settings"
 msgstr ""
 
-#: inc/php/settings.php:27
+#: inc/php/settings.php:33
 msgid "Here you can configure this plugin."
 msgstr ""
 
-#: inc/php/settings.php:69
+#: inc/php/settings.php:38
 msgid "Color theme"
 msgstr ""
 
-#: inc/php/settings.php:70
+#: inc/php/settings.php:39
 msgid "You can choose the theme which you like to view."
 msgstr ""
 
-#: inc/php/settings.php:74
-msgid "Line numbers"
+#: inc/php/settings.php:43
+msgid "Line numbering"
 msgstr ""
 
-#: inc/php/settings.php:75
+#: inc/php/settings.php:44
 msgid "Display the line numbers in the code block."
 msgstr ""
 
-#: inc/php/settings.php:78
+#: inc/php/settings.php:47
 msgid "First line number"
 msgstr ""
 
-#: inc/php/settings.php:79
+#: inc/php/settings.php:48
 msgid "You can set the number of the first line."
 msgstr ""
 
-#: inc/php/settings.php:83
-msgid "Size of Tab"
+#: inc/php/settings.php:52
+msgid "Tab character size"
 msgstr ""
 
-#: inc/php/settings.php:84
-msgid "The width (in spaces) of Tab. Default is 4."
+#: inc/php/settings.php:53
+msgid "The width (in spaces) of the Tab character. Default is 4."
 msgstr ""
 
-#: inc/php/settings.php:95
+#: inc/php/settings.php:64
 msgid "Preview"
 msgstr ""
 
-#: inc/php/settings.php:97
+#: inc/php/settings.php:66
 msgid "Click the \"Save changes\" button to update this preview."
 msgstr ""
 
-#: inc/php/settings.php:122
+#: inc/php/settings.php:91
 msgid "This is an example of HTML language."
 msgstr ""
 
-#: inc/php/settings.php:129 inc/php/sidebar.php:41
+#: inc/php/settings.php:98 inc/php/sidebar.php:41
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr ""
 
-#: inc/php/settings.php:136 inc/php/sidebar.php:48
+#: inc/php/settings.php:105 inc/php/sidebar.php:48
 msgid "Thanks for your support!"
 msgstr ""
 
