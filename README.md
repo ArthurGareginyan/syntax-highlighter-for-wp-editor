@@ -4,26 +4,33 @@
 
 ![screenshot](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor/blob/master/assets/banner-772x250.png)
 
-An easy to use WordPress plugin that replaces the default Theme and Plugin Source Code Editor with an enhanced editor by a [CodeMirror library](https://codemirror.net/). The WordPress default Theme Editor (in Appearance => Editor) and Plugin Editor (in Plugins => Editor) is great for doing some custom changes to your Themes or Plugins files, although it is rather limited. This is where the "Syntax Highlighter for WP Editor" can help. With an enhanced source code editor you can see a code with syntax highlighting, and with line numbering, so you can easily read your code and detect any errors.
+An easy to use, with intuitive interface, WordPress plugin that replaces the default Theme and Plugin Source Code Editor with an enhanced editor by a [CodeMirror library](https://codemirror.net/). The WordPress default Theme Editor (in Appearance => Editor) and Plugin Editor (in Plugins => Editor) is great for doing some custom changes to your Themes or Plugins files, although it is rather limited. This is where the "Syntax Highlighter for Theme/Plugin Editor" can help. With an enhanced source code editor you can see a code with syntax highlighting, and with line numbering, so you can easily read your code and detect any errors.
 
-This plugin give you finer control over editor, it can be configured on the plugin settings page. You can chose from 36 different color themes for your editor.
+This plugin give you finer control over editor, it can be configured on the plugin settings page. You can chose from 36 different color themes for your editor. If you want more options, let us know and we will be happy to add them.
 
 This plugin is just plug and play, no tedious configurations or hacks, just install, enable and start using your new enhanced Theme and Plugin Editor.
 
+**Features**
 
-## Features
-
-* Syntax highlighting by CodeMirror library
-* Changeable Color Theme (36)
-* Line numbering
-* Input areas allow for tab indentation
-* Easy to use Settings Page
-* Live preview on Settings Page
-* Ready for translation (.pot file included)
-* Russian translation
+* Lightweight and fast
+* Secure code with using clear coding standards
+* Intuitive interface with many settings
+* Cross browser compatible (work smooth in any modern browser)
+* Compatible with all WordPress themes
+* RTL compatible (right to left)
+* Translation ready
 * Published on [WordPess.org](http://wordpess.org/)
 
-**Supported languages and links:**
+**Key features include...**
+
+* Code syntax highlighting
+* Huge selection of color schemes (36 themes)
+* Line numbering
+* Editor allow for Tab indentation
+* Live preview
+* And much, much more!
+
+**Supported languages:**
 
 * XML
 * HTML
@@ -32,7 +39,35 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * JavaScript (.js)
 * Markdown (.txt)
 
-**Got more ideas? Tell me!**
+**Translation**
+
+This plugin is ready for translation and has already been translated into several languages.
+
+* English (default)
+* Russian (translation by [Milena Kiseleva](https://www.instagram.com/milava_kiseleva/))
+* German (translation by Michael)
+* Spanish (translation by Patricio Toledo)
+* Dutch (translation by Peter Leenders)
+
+If you want to help translate this plugin then please visit the [translation page](https://translate.wordpress.org/projects/wp-plugins/syntax-highlighter-for-wp-editor).
+
+**Minimum system requirements:**
+
+* [PHP](https://php.net) version **5.2** or higher.
+* [MySQL](https://www.mysql.com) version **5.0** or higher.
+
+**Recommended system requirements:**
+
+* [PHP](https://php.net) version **7.0** or higher.
+* [MySQL](https://www.mysql.com) version **5.6** or higher.
+
+**Contribution**
+
+Developing plugins is long and tedious work. If you benefit or enjoy this plugin please take the time to:
+
+* [Donate](https://www.spacexchimp.com/donate.html) to support ongoing development. Your contribution would be greatly appreciated.
+* [Rate and Review](https://wordpress.org/support/view/plugin-reviews/syntax-highlighter-for-wp-editor?rate=5#postform) this plugin.
+* [Share with us](https://www.spacexchimp.com/contact.html) or view the [GitHub Repo](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor) if you have any ideas or suggestions to make this plugin better.
 
 
 ## Contributing
