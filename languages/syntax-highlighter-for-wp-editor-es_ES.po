@@ -3,15 +3,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2018-08-07 01:42+0300\n"
-"PO-Revision-Date: 2018-08-07 01:42+0300\n"
+"POT-Creation-Date: 2018-10-09 09:40+0300\n"
+"PO-Revision-Date: 2018-10-09 09:40+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: Spanish\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: syntax-highlighter-for-wp-editor.php\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -83,7 +83,7 @@ msgid "To replace the default Theme/Plugin editor with an enhanced editor that p
 msgstr ""
 
 #: inc/php/page.php:67
-msgid "Go to the \"Settings\" tab."
+msgid "Go to the \"Settings\" tab on this page."
 msgstr "Debes ir a la pestaña “Ajustes”."
 
 #: inc/php/page.php:68
@@ -108,7 +108,7 @@ msgstr "¡Nota!"
 
 #: inc/php/page.php:73
 #, php-format
-msgid "If you want more options then %s tell us %s and we will be happy to add it."
+msgid "If you want more options, then %s let us know %s and we will be happy to add them."
 msgstr "Si quieres más opciones, %s díganos %s y estaremos encantados de añadirlo."
 
 #: inc/php/page.php:87
@@ -378,8 +378,8 @@ msgstr "Space X-Chimp"
 msgid "https://www.spacexchimp.com"
 msgstr "https://www.spacexchimp.com"
 
-#~ msgid "Hello! My name is %s Arthur Gareginyan %s and I'm the founder of %s Space X-Chimp %s."
-#~ msgstr "¡Hola! Mi nombre es %s Arthur Gareginyan %s y soy el fundador de %s Space X-Chimp %s."
+#~ msgid "Hello! My name is %s Arthur %s and I'm the founder of %s Space X-Chimp %s."
+#~ msgstr "¡Hola! Mi nombre es %s Arthur %s y soy el fundador de %s Space X-Chimp %s."
 
 #~ msgid "My intention is to create projects that will make this world a better place. I'm really passionate about my work, I like what I'm doing and hope that you will be enriched by my projects too."
 #~ msgstr "Mi intención es crear proyectos que hagan de este mundo un lugar mejor. Soy realmente apasionado por mi trabajo, me gusta lo que estoy haciendo y espero que tú también te enriquezcas con mis proyectos."

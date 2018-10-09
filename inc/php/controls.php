@@ -6,7 +6,7 @@
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 
 /**
- * Generator of the help text under controls
+ * Generator of the help text under options
  */
 function spacexchimp_p009_control_help( $help=null ) {
 
@@ -28,7 +28,7 @@ function spacexchimp_p009_control_help( $help=null ) {
 }
 
 /**
- * Generator of the fields for saving settings data to database
+ * Generator of the field option for saving plugin settings to database
  */
 function spacexchimp_p009_control_field( $name, $label, $help=null, $placeholder=null ) {
 
@@ -61,7 +61,7 @@ function spacexchimp_p009_control_field( $name, $label, $help=null, $placeholder
 }
 
 /**
- * Generator of the switches for saving plugin settings to database
+ * Generator of the switch option for saving plugin settings to database
  */
 function spacexchimp_p009_control_switch( $name, $label, $help=null ) {
 
@@ -93,7 +93,7 @@ function spacexchimp_p009_control_switch( $name, $label, $help=null ) {
 }
 
 /**
- * Generator of the number fields with minus and plus buttons for saving plugin settings to database
+ * Generator of the number option for saving plugin settings to database
  */
 function spacexchimp_p009_control_number( $name, $label, $help=null, $default=null ) {
 
@@ -138,7 +138,7 @@ function spacexchimp_p009_control_number( $name, $label, $help=null, $default=nu
 }
 
 /**
- * Generator of the switches for saving plugin settings to database
+ * Generator of the list option for saving plugin settings to database
  */
 function spacexchimp_p009_control_list( $name, $items, $label, $help, $default ) {
 

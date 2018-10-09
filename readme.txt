@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.26
+Stable tag: 4.27
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,7 +15,7 @@ Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor 
 
 An easy to use, with intuitive interface, WordPress plugin that replaces the default Theme and Plugin Source Code Editor with an enhanced editor by a [CodeMirror library](https://codemirror.net/). The WordPress default Theme Editor (in Appearance => Editor) and Plugin Editor (in Plugins => Editor) is great for doing some custom changes to your Themes or Plugins files, although it is rather limited. This is where the "Syntax Highlighter for Theme/Plugin Editor" can help. With an enhanced source code editor you can see a code with syntax highlighting, and with line numbering, so you can easily read your code and detect any errors.
 
-This plugin give you finer control over editor, it can be configured on the plugin settings page. You can chose from 36 different color themes for your editor. If you want more options, let us know and we will be happy to add them.
+This plugin give you finer control over editor, it can be configured on the plugin settings page. You can chose from 36 different color themes for your editor. If you want more options, then let us know and we will be happy to add them.
 
 This plugin is just plug and play, no tedious configurations or hacks, just install, enable and start using your new enhanced Theme and Plugin Editor.
 
@@ -176,9 +176,16 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 * [Developer website](https://www.spacexchimp.com)
 * [Dedicated plugin page on GitHub](https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor)
+* [Dedicated plugin page on WordPress.org](https://wordpress.org/plugins/syntax-highlighter-for-wp-editor/)
 
 
 == Changelog ==
+
+= 4.27 =
+* Content of the "Usage Instructions" section updated.
+* CSS code, which is located in the file "admin.css" and is related to the "FAQ" section, is improved.
+* Code commenting improved.
+* Translation files are updated.
 
 = 4.26 =
 * The list of CodeMirror themes is moved to a separate function '_get_codemirror_theme_pairs' within the 'functions.php' file.
@@ -313,7 +320,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Code commenting improved.
 * Load of the additional remote CSS file removed from the admin.js file.
 * Changed the sorting of enqueueing of scripts.
-* The ''Family' page tab renamed to 'Store'.
+* The 'Family' page tab renamed to 'Store'.
 * Added ad banner of my store website.
 
 = 4.4.1 =
