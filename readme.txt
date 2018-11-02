@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 4.9
-Stable tag: 4.28
+Stable tag: 4.29
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -180,6 +180,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.29 =
+* Improvement: Design of the plugin settings page is improved.
 
 = 4.28 =
 * Improvement: Design of the plugin settings page is improved.
