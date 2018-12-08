@@ -3,7 +3,7 @@ Contributors: Arthur Gareginyan
 Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editing, editor, code, php, xml, html ,css, javascript, markdown, codemirror, code mirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax,
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
-Tested up to: 4.9
+Tested up to: 5.0
 Stable tag: 4.29
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
