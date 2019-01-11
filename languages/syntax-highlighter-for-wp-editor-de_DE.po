@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2018-10-09 09:40+0300\n"
-"PO-Revision-Date: 2018-10-09 09:40+0300\n"
+"POT-Creation-Date: 2019-01-11 20:48+0200\n"
+"PO-Revision-Date: 2019-01-11 20:48+0200\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: syntax-highlighter-for-wp-editor.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -101,10 +101,6 @@ msgstr ""
 #: inc/php/page.php:70
 msgid "It's that simple!"
 msgstr "Es ist ganz einfach!"
-
-#: inc/php/page.php:72
-msgid "Note!"
-msgstr "Achtung!"
 
 #: inc/php/page.php:73
 #, php-format
@@ -377,6 +373,9 @@ msgstr "Space X-Chimp"
 #. Author URI of the plugin/theme
 msgid "https://www.spacexchimp.com"
 msgstr "https://www.spacexchimp.com"
+
+#~ msgid "Note!"
+#~ msgstr "Achtung!"
 
 #~ msgid "Hello! My name is %s Arthur %s and I'm the founder of %s Space X-Chimp %s."
 #~ msgstr "Hallo! Meine name ist %s Arthur %s und ich bin der Gründer von %s Space X-Chimp %s."

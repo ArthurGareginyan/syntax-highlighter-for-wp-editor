@@ -32,7 +32,7 @@ function spacexchimp_p009_control_help( $help=null ) {
  */
 function spacexchimp_p009_control_field( $name, $label, $help=null, $placeholder=null ) {
 
-    // Read options from database and declare variables
+    // Retrieve options from database and declare variables
     $options = get_option( SPACEXCHIMP_P009_SETTINGS . '_settings' );
     $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
 
@@ -65,7 +65,7 @@ function spacexchimp_p009_control_field( $name, $label, $help=null, $placeholder
  */
 function spacexchimp_p009_control_switch( $name, $label, $help=null ) {
 
-    // Read options from database and declare variables
+    // Retrieve options from database and declare variables
     $options = get_option( SPACEXCHIMP_P009_SETTINGS . '_settings' );
     $checked = !empty( $options[$name] ) ? "checked='checked'" : '';
 
@@ -97,7 +97,7 @@ function spacexchimp_p009_control_switch( $name, $label, $help=null ) {
  */
 function spacexchimp_p009_control_number( $name, $label, $help=null, $default=null ) {
 
-    // Read options from database and declare variables
+    // Retrieve options from database and declare variables
     $options = get_option( SPACEXCHIMP_P009_SETTINGS . '_settings' );
     $value = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
 
@@ -142,7 +142,7 @@ function spacexchimp_p009_control_number( $name, $label, $help=null, $default=nu
  */
 function spacexchimp_p009_control_list( $name, $items, $label, $help, $default ) {
 
-    // Read options from database and declare variables
+    // Retrieve options from database and declare variables
     $options = get_option( SPACEXCHIMP_P009_SETTINGS . '_settings' );
     $option = !empty( $options[$name] ) ? $options[$name] : '';
     $list_item = '';
