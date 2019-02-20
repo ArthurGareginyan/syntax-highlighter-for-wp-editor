@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
             <div class="postbox about">
                 <h3 class="title"><?php _e( 'About', $text ); ?></h3>
                 <div class="inside">
-                    <p><?php _e( 'This plugin replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering', $text ); ?></p>
+                    <p><?php _e( 'This plugin replaces the defaults WordPress Theme/Plugin Editor with an enhanced editor with syntax highlighting, line numbering, etc.', $text ); ?></p>
                 </div>
             </div>
 

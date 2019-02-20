@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Syntax Highlighter for Theme/Plugin Editor
  * Plugin URI: https://github.com/ArthurGareginyan/syntax-highlighter-for-wp-editor
- * Description: Replaces the defaults WordPress Theme and Plugin Editor with an enhanced editor with syntax highlighting and line numbering.
+ * Description: Replaces the defaults WordPress Theme/Plugin Editor with an enhanced editor with syntax highlighting, line numbering, etc.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.30
+ * Version: 4.31
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
