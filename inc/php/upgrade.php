@@ -28,7 +28,7 @@ function spacexchimp_p009_upgrade_4_8() {
     $service_info_new = is_array( $service_info_old ) ? $service_info_old : array();
     $service_info_new['upgrade'] = $upgrade_number_new;
 
-    // Exit if the upgrade is not needed or alreade done
+    // Exit if the upgrade is not needed or already done
     if ( $upgrade_number_current >= $upgrade_number_new ) return;
 
     // Update service info in the database
@@ -45,7 +45,7 @@ function spacexchimp_p009_upgrade_4_8() {
     // Setting array with new data
     $settings_new = is_array( $settings_current ) ? $settings_current : array();
 
-    // Exit if the upgrade is not needed or alreade done
+    // Exit if the upgrade is not needed or already done
     if ( empty( $settings_current ) ) return;
 
     // Update plugin setting in the database
