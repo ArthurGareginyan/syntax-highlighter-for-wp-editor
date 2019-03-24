@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.1
-Stable tag: 4.34
+Stable tag: 4.35
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -183,6 +183,14 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.35 - 2019-03-24 =
+* Framework updated: Added function "_plugin", which returns an array with the contents of plugin constants. The mention of plugin constants is replaced by the use of the function "_plugin".
+* Framework updated: The function "_settings_link" is improved.
+* Framework updated: The function "_plugin_row_meta" is improved.
+* Framework updated: Code formatting improved.
+* Framework updated: Code commenting improved.
+* Framework updated: All translation files are updated.
 
 = 4.34 - 2019-03-18 =
 * Improvement: Notification display system updated

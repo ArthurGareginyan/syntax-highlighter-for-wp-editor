@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2019-03-18 21:19+0300\n"
+"POT-Creation-Date: 2019-03-23 04:35+0300\n"
 "PO-Revision-Date: 2016-03-25 05:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,65 +18,65 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/php/core.php:23 inc/php/page.php:47
+#: inc/php/core.php:32 inc/php/page.php:43
 msgid "Settings"
 msgstr ""
 
-#: inc/php/core.php:37
+#: inc/php/core.php:54
 msgid "Donate"
 msgstr ""
 
-#: inc/php/core.php:52
+#: inc/php/core.php:78
 msgid "Theme / Plugin Editor"
 msgstr ""
 
-#: inc/php/messages.php:35 inc/php/tabs/support.php:25
+#: inc/php/messages.php:33 inc/php/tabs/support.php:25
 msgid "Hello!"
 msgstr ""
 
-#: inc/php/messages.php:36
+#: inc/php/messages.php:34
 msgid "We are the team of Space X-Chimp."
 msgstr ""
 
-#: inc/php/messages.php:41
+#: inc/php/messages.php:39
 #, php-format
 msgid "Thank you for installing our plugin! We hope you will love it! %s"
 msgstr ""
 
-#: inc/php/messages.php:93
+#: inc/php/messages.php:90
 msgid "You have installed an old version of this plugin."
 msgstr ""
 
-#: inc/php/messages.php:94
+#: inc/php/messages.php:91
 msgid "Please update the plugin to the latest version, and all will be fine."
 msgstr ""
 
-#: inc/php/messages.php:129
+#: inc/php/messages.php:126
 msgid "Settings saved successfully."
 msgstr ""
 
-#: inc/php/page.php:34
+#: inc/php/page.php:30
 #, php-format
 msgid "by %s Space X-Chimp %s"
 msgstr ""
 
-#: inc/php/page.php:40
+#: inc/php/page.php:36
 msgid "Version"
 msgstr ""
 
-#: inc/php/page.php:48
+#: inc/php/page.php:44
 msgid "Usage"
 msgstr ""
 
-#: inc/php/page.php:49
+#: inc/php/page.php:45
 msgid "F.A.Q."
 msgstr ""
 
-#: inc/php/page.php:50 inc/php/sidebar.php:39 inc/php/tabs/settings.php:96
+#: inc/php/page.php:46 inc/php/sidebar.php:39 inc/php/tabs/settings.php:96
 msgid "Support"
 msgstr ""
 
-#: inc/php/page.php:51
+#: inc/php/page.php:47
 msgid "Store"
 msgstr ""
 

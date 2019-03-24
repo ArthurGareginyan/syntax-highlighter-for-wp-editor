@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme/Plugin Editor with an enhanced editor with syntax highlighting, line numbering, etc.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.34
+ * Version: 4.35
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
@@ -52,7 +52,7 @@ $plugin_data = get_file_data( __FILE__,
                             );
 function spacexchimp_p009_define_constants( $constant_name, $value ) {
     $constant_name = 'SPACEXCHIMP_P009_' . $constant_name;
-    if ( !defined( $constant_name ) )
+    if ( ! defined( $constant_name ) )
         define( $constant_name, $value );
 }
 spacexchimp_p009_define_constants( 'FILE', __FILE__ );
@@ -68,13 +68,38 @@ spacexchimp_p009_define_constants( 'PREFIX', 'spacexchimp_p009' );
 spacexchimp_p009_define_constants( 'SETTINGS', 'spacexchimp_p009' );
 
 /**
+ * A useful function that returns an array with the contents of plugin constants
+ */
+function spacexchimp_p009_plugin() {
+    $array = array(
+        'file'     => SPACEXCHIMP_P009_FILE,
+        'dir'      => SPACEXCHIMP_P009_DIR,
+        'base'     => SPACEXCHIMP_P009_BASE,
+        'url'      => SPACEXCHIMP_P009_URL,
+        'path'     => SPACEXCHIMP_P009_PATH,
+        'slug'     => SPACEXCHIMP_P009_SLUG,
+        'name'     => SPACEXCHIMP_P009_NAME,
+        'version'  => SPACEXCHIMP_P009_VERSION,
+        'text'     => SPACEXCHIMP_P009_TEXT,
+        'prefix'   => SPACEXCHIMP_P009_PREFIX,
+        'settings' => SPACEXCHIMP_P009_SETTINGS
+    );
+    return $array;
+}
+
+/**
+ * Put value of plugin constants into an array for easier access
+ */
+$plugin = spacexchimp_p009_plugin();
+
+/**
  * Load the plugin modules
  */
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/core.php' );
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/upgrade.php' );
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/versioning.php' );
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/enqueue.php' );
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/functional.php' );
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/controls.php' );
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/page.php' );
-require_once( SPACEXCHIMP_P009_PATH . 'inc/php/messages.php' );
+require_once( $plugin['path'] . 'inc/php/core.php' );
+require_once( $plugin['path'] . 'inc/php/upgrade.php' );
+require_once( $plugin['path'] . 'inc/php/versioning.php' );
+require_once( $plugin['path'] . 'inc/php/enqueue.php' );
+require_once( $plugin['path'] . 'inc/php/functional.php' );
+require_once( $plugin['path'] . 'inc/php/controls.php' );
+require_once( $plugin['path'] . 'inc/php/page.php' );
+require_once( $plugin['path'] . 'inc/php/messages.php' );

@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
             <div class="meta-box-sortabless">
 
                 <form action="options.php" method="post" enctype="multipart/form-data">
-                    <?php settings_fields( SPACEXCHIMP_P009_SETTINGS . '_settings_group' ); ?>
+                    <?php settings_fields( $plugin['settings'] . '_settings_group' ); ?>
 
                     <?php
                         // Preparing an array with the names of themes
@@ -24,33 +24,33 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 
                     <button type="submit" name="submit" id="submit" class="btn btn-info btn-lg button-save-top">
                         <i class="fa fa-save" aria-hidden="true"></i>
-                        <span><?php _e( 'Save changes', $text ); ?></span>
+                        <span><?php _e( 'Save changes', $plugin['text'] ); ?></span>
                     </button>
 
                     <div class="postbox" id="settings">
-                        <h3 class="title"><?php _e( 'Main Settings', $text ); ?></h3>
+                        <h3 class="title"><?php _e( 'Main Settings', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Here you can configure this plugin.', $text ); ?></p>
+                            <p class="note"><?php _e( 'Here you can configure this plugin.', $plugin['text'] ); ?></p>
                             <table class="form-table">
                                 <?php
                                     spacexchimp_p009_control_list( 'theme',
                                                                     $themes_plus,
-                                                                   __( 'Color theme', $text ),
-                                                                   __( 'You can choose the theme which you like to view.', $text ),
+                                                                   __( 'Color theme', $plugin['text'] ),
+                                                                   __( 'You can choose the theme which you like to view.', $plugin['text'] ),
                                                                    'default'
                                                                  );
                                     spacexchimp_p009_control_switch( 'line_numbers',
-                                                                     __( 'Line numbering', $text ),
-                                                                     __( 'Display the line numbers in the code block.', $text )
+                                                                     __( 'Line numbering', $plugin['text'] ),
+                                                                     __( 'Display the line numbers in the code block.', $plugin['text'] )
                                                                    );
                                     spacexchimp_p009_control_number( 'first_line_number',
-                                                                     __( 'First line number', $text ),
-                                                                     __( 'You can set the number of the first line.', $text ),
+                                                                     __( 'First line number', $plugin['text'] ),
+                                                                     __( 'You can set the number of the first line.', $plugin['text'] ),
                                                                      '0'
                                                                    );
                                     spacexchimp_p009_control_number( 'tab_size',
-                                                                     __( 'Tab character size', $text ),
-                                                                     __( 'The width (in spaces) of the Tab character. Default is 4.', $text ),
+                                                                     __( 'Tab character size', $plugin['text'] ),
+                                                                     __( 'The width (in spaces) of the Tab character. Default is 4.', $plugin['text'] ),
                                                                      '4'
                                                                    );
                                 ?>
@@ -58,12 +58,12 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                         </div>
                     </div>
 
-                    <input type="submit" name="submit" id="submit" class="btn btn-default btn-lg button-save-main" value="<?php _e( 'Save changes', $text ); ?>">
+                    <input type="submit" name="submit" id="submit" class="btn btn-default btn-lg button-save-main" value="<?php _e( 'Save changes', $plugin['text'] ); ?>">
 
                     <div class="postbox" id="preview">
-                        <h3 class="title"><?php _e( 'Preview', $text ); ?></h3>
+                        <h3 class="title"><?php _e( 'Preview', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $text ); ?></p>
+                            <p class="note"><?php _e( 'Click the "Save changes" button to update this preview.', $plugin['text'] ); ?></p>
                             <?php
                                 // Put the example in a variable
                                 $example = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -88,21 +88,21 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
 </html>';
                             ?>
                             <textarea readonly id="SHighlighterForWPE"><?php echo $example; ?></textarea>
-                            <p><?php _e( 'This is an example of HTML language.', $text ); ?></p>
+                            <p><?php _e( 'This is an example of HTML language.', $plugin['text'] ); ?></p>
                         </div>
                     </div>
 
                     <div class="postbox" id="support-addition">
-                        <h3 class="title"><?php _e( 'Support', $text ); ?></h3>
+                        <h3 class="title"><?php _e( 'Support', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <p><?php _e( 'Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy.', $text ); ?></p>
+                            <p><?php _e( 'Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy.', $plugin['text'] ); ?></p>
                             <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8A88KC7TFF6CS" target="_blank" class="btn btn-default button-labeled">
                                 <span class="btn-label">
-                                    <img src="<?php echo SPACEXCHIMP_P009_URL . 'inc/img/paypal.svg'; ?>" alt="PayPal">
+                                    <img src="<?php echo $plugin['url'] . 'inc/img/paypal.svg'; ?>" alt="PayPal">
                                 </span>
-                                <?php _e( 'Donate with PayPal', $text ); ?>
+                                <?php _e( 'Donate with PayPal', $plugin['text'] ); ?>
                             </a>
-                            <p><?php _e( 'Thanks for your support!', $text ); ?></p>
+                            <p><?php _e( 'Thanks for your support!', $plugin['text'] ); ?></p>
                         </div>
                     </div>
 
