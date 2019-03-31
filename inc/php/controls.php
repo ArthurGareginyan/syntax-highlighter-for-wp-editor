@@ -28,42 +28,6 @@ function spacexchimp_p009_control_help( $help=null ) {
 }
 
 /**
- * Generator of the field option for saving plugin settings to database
- */
-function spacexchimp_p009_control_field( $name, $label, $help=null, $placeholder=null ) {
-
-    // Put value of plugin constants into an array for easier access
-    $plugin = spacexchimp_p009_plugin();
-
-    // Retrieve options from database and declare variables
-    $options = get_option( $plugin['settings'] . '_settings' );
-    $value = !empty( $options[$name] ) ? esc_textarea( $options[$name] ) : '';
-
-    // Generate a part of table
-    $out = "<tr>
-                <th scope='row'>
-                    $label
-                </th>
-                <td>
-                    <input
-                        type='text'
-                        name='" . $plugin['settings'] . "_settings[$name]'
-                        id='" . $plugin['settings'] . "_settings[$name]'
-                        value='$value'
-                        placeholder='$placeholder'
-                        class='control-field $name'
-                    >
-                </td>
-            </tr>";
-
-    // Print the generated part of table
-    echo $out;
-
-    // Print a help text
-    spacexchimp_p009_control_help( $help );
-}
-
-/**
  * Generator of the switch option for saving plugin settings to database
  */
 function spacexchimp_p009_control_switch( $name, $label, $help=null ) {

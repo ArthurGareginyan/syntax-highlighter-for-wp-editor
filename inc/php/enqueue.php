@@ -66,13 +66,9 @@ function spacexchimp_p009_load_scripts_dynamic_js() {
     // Retrieve options from database and declare variables
     $options = get_option( $plugin['settings'] . '_settings' );
     $theme = !empty( $options['theme'] ) ? $options['theme'] : 'default';
+    $line_numbers = ( !empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) ? 'true' : 'false';
     $first_line_number = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
     $tab_size = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
-    if ( ! empty( $options['line_numbers'] ) && ( $options['line_numbers'] == "on" ) ) {
-        $line_numbers = "true";
-    } else {
-        $line_numbers = "false";
-    }
 
     // Check the extension of loaded file and change the Mode of CodeMirror
     global $file;
