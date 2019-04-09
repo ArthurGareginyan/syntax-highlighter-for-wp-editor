@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2019-03-31 16:17+0300\n"
-"PO-Revision-Date: 2019-03-31 16:17+0300\n"
+"POT-Creation-Date: 2019-04-09 12:09+0300\n"
+"PO-Revision-Date: 2019-04-09 12:09+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -73,7 +73,7 @@ msgstr "Utilisation"
 msgid "F.A.Q."
 msgstr "FAQ."
 
-#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:103
+#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:106
 msgid "Support"
 msgstr "Support"
 
@@ -101,16 +101,16 @@ msgstr "Aide"
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr "Si vous avez une question, veuillez lire les informations dans la section FAQ."
 
-#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:105
+#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:108
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr "Toute contribution même minime nous aident à couvrir nos frais et nous laisse plus de temps pour ajouter des fonctionnalités que les utilisateurs comme vous apprécient."
 
-#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:110
+#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:113
 #: inc/php/tabs/support.php:21
 msgid "Donate with PayPal"
 msgstr "Faire un don avec PayPal"
 
-#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:112
+#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:115
 msgid "Thanks for your support!"
 msgstr "Merci pour votre soutien!"
 
@@ -490,17 +490,17 @@ msgstr "Vous pouvez poser votre question sur %s cette page %s."
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr ""
 
-#: inc/php/tabs/settings.php:28 inc/php/tabs/settings.php:64
+#: inc/php/tabs/settings.php:28 inc/php/tabs/settings.php:67
 msgid "Save changes"
 msgstr "Enregistrer les modifications"
 
 #: inc/php/tabs/settings.php:33
-msgid "Main Settings"
-msgstr "Paramètres principaux"
+msgid "Code editor settings"
+msgstr ""
 
 #: inc/php/tabs/settings.php:35
-msgid "Here you can configure this plugin."
-msgstr "Ici vous pouvez configurer ce plugin."
+msgid "Here you can customize the code editor."
+msgstr ""
 
 #: inc/php/tabs/settings.php:40
 msgid "Color theme"
@@ -511,38 +511,42 @@ msgid "You can choose the theme which you like to view."
 msgstr "Vous pouvez choisir le thème que vous souhaitez voir."
 
 #: inc/php/tabs/settings.php:45
+msgid "Options"
+msgstr ""
+
+#: inc/php/tabs/settings.php:48
 msgid "Line numbering"
 msgstr "Numérotation des lignes"
 
-#: inc/php/tabs/settings.php:46
+#: inc/php/tabs/settings.php:49
 msgid "Display the line numbers in the code block."
 msgstr "Affichez les numéros de ligne dans le bloc de code."
 
-#: inc/php/tabs/settings.php:49
+#: inc/php/tabs/settings.php:52
 msgid "First line number"
 msgstr "Numéro de la première ligne"
 
-#: inc/php/tabs/settings.php:50
+#: inc/php/tabs/settings.php:53
 msgid "You can set the number of the first line."
 msgstr "Vous pouvez définir le numéro de la première ligne."
 
-#: inc/php/tabs/settings.php:54
+#: inc/php/tabs/settings.php:57
 msgid "Tab character size"
 msgstr "Taille des caractères de tabulation"
 
-#: inc/php/tabs/settings.php:55
+#: inc/php/tabs/settings.php:58
 msgid "The width (in spaces) of the Tab character. Default is 4."
 msgstr "Largeur (dans les espaces) du caractère Tab. La valeur par défaut est 4."
 
-#: inc/php/tabs/settings.php:69
+#: inc/php/tabs/settings.php:72
 msgid "Preview"
 msgstr "Aperçu"
 
-#: inc/php/tabs/settings.php:71
+#: inc/php/tabs/settings.php:74
 msgid "Click the \"Save changes\" button to update this preview."
 msgstr "Cliquez sur le bouton \"Enregistrer les modifications\" pour mettre à jour cet aperçu."
 
-#: inc/php/tabs/settings.php:96
+#: inc/php/tabs/settings.php:99
 msgid "This is an example of HTML language."
 msgstr ""
 
@@ -607,3 +611,6 @@ msgstr "Cliquez sur le bouton \"Enregistrer les modifications\"."
 #, php-format
 msgid "If you want more options, then %s let us know %s and we will be happy to add them."
 msgstr "Si vous voulez plus d'options, alors %s nous le faire savoir %s et nous serons heureux de les ajouter."
+
+#~ msgid "Main Settings"
+#~ msgstr "Paramètres principaux"

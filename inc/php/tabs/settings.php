@@ -29,10 +29,10 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     </button>
                     <!-- END SUBMIT -->
 
-                    <div class="postbox" id="settings">
-                        <h3 class="title"><?php _e( 'Main Settings', $plugin['text'] ); ?></h3>
+                    <div class="postbox" id="options-group-editor">
+                        <h3 class="title"><?php _e( 'Code editor settings', $plugin['text'] ); ?></h3>
                         <div class="inside">
-                            <p class="note"><?php _e( 'Here you can configure this plugin.', $plugin['text'] ); ?></p>
+                            <p class="note"><?php _e( 'Here you can customize the code editor.', $plugin['text'] ); ?></p>
                             <table class="form-table">
                                 <?php
                                     spacexchimp_p009_control_list( 'theme',
@@ -41,6 +41,9 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                                                                    __( 'You can choose the theme which you like to view.', $plugin['text'] ),
                                                                    'default'
                                                                  );
+                                    spacexchimp_p009_control_separator(
+                                                                        __( 'Options', $plugin['text'] )
+                                                                      );
                                     spacexchimp_p009_control_switch( 'line_numbers',
                                                                      __( 'Line numbering', $plugin['text'] ),
                                                                      __( 'Display the line numbers in the code block.', $plugin['text'] )

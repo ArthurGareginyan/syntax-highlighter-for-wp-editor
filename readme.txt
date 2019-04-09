@@ -4,7 +4,7 @@ Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editi
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
 Tested up to: 5.1
-Stable tag: 4.36
+Stable tag: 4.37
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -183,6 +183,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.37 - Apr 9, 2019 =
+* Improvement: The options on the plugin settings page are better named, described, sorted and grouped.
 
 = 4.36 - Mar 31, 2019 =
 * Framework updated: The function "_control_field" is deleted because of uselessness.
