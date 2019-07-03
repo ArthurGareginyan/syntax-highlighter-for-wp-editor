@@ -21,7 +21,7 @@ This plugin is just plug and play, no tedious configurations or hacks, just inst
 * Translation ready
 * Published on [WordPess.org](http://wordpess.org/)
 
-**Key features include...**
+**Key features include**
 
 * Code syntax highlighting
 * Huge selection of color schemes (36 themes)
