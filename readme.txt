@@ -3,8 +3,8 @@ Contributors: Arthur Gareginyan
 Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editing, editor, code, php, xml, html ,css, javascript, markdown, codemirror, code mirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 3.9
-Tested up to: 5.2
-Stable tag: 4.38
+Tested up to: 5.3
+Stable tag: 4.39
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -183,6 +183,11 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+= 4.39 - Nov 11, 2019 =
+* Maintenance: Compatibility with upcoming WordPress 5.3.
+* Framework update: Bootstrap library updated to the latest version; v3.4.1.
+* Framework update: The list control has been redesigned.
 
 = 4.38 - Oct 2, 2019 =
 * French translation updated. (Thanks to Hervé Bouzin)
