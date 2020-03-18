@@ -2,7 +2,7 @@
 Contributors: Arthur Gareginyan
 Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editing, editor, code, php, xml, html ,css, javascript, markdown, codemirror, code mirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax
 Donate link: https://www.spacexchimp.com/donate.html
-Requires at least: 3.9
+Requires at least: 4.9
 Tested up to: 5.3
 Stable tag: 4.40
 License: GPL3
@@ -62,11 +62,13 @@ If you want to help translate this plugin, please visit the [translation page](h
 
 **Minimum system requirements:**
 
+* [WordPress](https://wordpress.org) version **4.9** or higher.
 * [PHP](https://secure.php.net) version **5.2** or higher.
 * [MySQL](https://www.mysql.com) version **5.0** or higher.
 
 **Recommended system requirements:**
 
+* [WordPress](https://wordpress.org) version **5.0** or higher.
 * [PHP](https://secure.php.net) version **7.0** or higher.
 * [MySQL](https://www.mysql.com) version **5.6** or higher.
 
