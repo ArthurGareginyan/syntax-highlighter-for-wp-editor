@@ -52,7 +52,7 @@ function spacexchimp_p009_plugin_row_meta( $links, $file ) {
         // Declare variables
         $url_donate = "https://www.spacexchimp.com/donate.html";
         $text_donate = __( 'Donate', $plugin['text'] );
-        $link_donate = '<a href="' . $url_donate . '" target="_blank"><span class="dashicons dashicons-heart"></span> ' . $text_donate . '</a>';
+        $link_donate = '<a href="' . $url_donate . '" target="_blank"><span class="dashicons dashicons-heart" style="color:pink;"></span> ' . $text_donate . '</a>';
 
         $new_links = array(
                            'donate' => $link_donate
