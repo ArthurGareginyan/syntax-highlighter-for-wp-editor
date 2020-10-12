@@ -5,7 +5,7 @@
  * Description: Replaces the defaults WordPress Theme/Plugin Editor with an enhanced editor with syntax highlighting, line numbering, etc.
  * Author: Space X-Chimp
  * Author URI: https://www.spacexchimp.com
- * Version: 4.43
+ * Version: 4.44
  * License: GPL3
  * Text Domain: syntax-highlighter-for-wp-editor
  * Domain Path: /languages/
