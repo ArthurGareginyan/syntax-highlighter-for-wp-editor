@@ -620,11 +620,13 @@ td.help-text {
 #preview p {
     margin-top: 10px;
 }
-
-/* CodeMirror Editor */
-.CodeMirror {
-    height: 100% !important;
+#preview .CodeMirror {
     border: 1px solid grey;
+}
+#preview .CodeMirror,
+#preview .CodeMirror-scroll,
+#preview .CodeMirror-gutters {
+    height: auto !important;
 }
 #preview .CodeMirror .CodeMirror-lines {
     cursor: default;
