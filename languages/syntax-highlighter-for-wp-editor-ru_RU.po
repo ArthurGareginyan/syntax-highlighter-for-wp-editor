@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Syntax Highlighter for Theme/Plugin Editor\n"
-"POT-Creation-Date: 2019-04-09 12:09+0300\n"
-"PO-Revision-Date: 2019-04-09 12:09+0300\n"
+"POT-Creation-Date: 2020-10-23 15:30+0300\n"
+"PO-Revision-Date: 2020-10-23 15:30+0300\n"
 "Last-Translator: Arthur Gareginyan\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: syntax-highlighter-for-wp-editor.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -32,7 +32,7 @@ msgstr "Поддержать"
 msgid "Theme / Plugin Editor"
 msgstr "Theme / Plugin Editor"
 
-#: inc/php/messages.php:33 inc/php/tabs/support.php:25
+#: inc/php/messages.php:33 inc/php/tabs/support.php:29
 msgid "Hello!"
 msgstr "Привет!"
 
@@ -74,7 +74,7 @@ msgstr "Применение"
 msgid "F.A.Q."
 msgstr "F.A.Q."
 
-#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:106
+#: inc/php/page.php:46 inc/php/sidebar.php:46 inc/php/tabs/settings.php:114
 msgid "Support"
 msgstr "Поддержка"
 
@@ -102,396 +102,396 @@ msgstr "Помощь"
 msgid "If you have a question, please read the information in the FAQ section."
 msgstr "Если у вас есть вопрос, пожалуйста ознакомьтесь с информацией в разделе FAQ."
 
-#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:108
+#: inc/php/sidebar.php:48 inc/php/tabs/settings.php:116
 msgid "Every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr "Каждый небольшой вклад помогает покрыть наши расходы и позволяет нам тратить больше времени на создание вещей, которыми могут наслаждаться удивительные люди, такие как вы."
 
-#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:113
-#: inc/php/tabs/support.php:21
+#: inc/php/sidebar.php:53 inc/php/tabs/settings.php:121
+#: inc/php/tabs/support.php:25
 msgid "Donate with PayPal"
 msgstr "Пожертвовать через PayPal"
 
-#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:115
+#: inc/php/sidebar.php:55 inc/php/tabs/settings.php:123
 msgid "Thanks for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/php/tabs/faq.php:13
+#: inc/php/tabs/faq.php:17
 msgid "Frequently Asked Questions"
 msgstr "Часто задаваемые вопросы"
 
-#: inc/php/tabs/faq.php:17
+#: inc/php/tabs/faq.php:21
 msgid "If you have a question, please read the Frequently Asked Questions below to see if the answer is here."
 msgstr "Если у вас есть вопрос, пожалуйста, прочтите часто задаваемые вопросы."
 
-#: inc/php/tabs/faq.php:42
+#: inc/php/tabs/faq.php:46
 msgid "Where can I find a documentation for this plugin?"
 msgstr ""
 
-#: inc/php/tabs/faq.php:47
+#: inc/php/tabs/faq.php:51
 #, php-format
 msgid "Please visit our %s Documentation site %s to view documentation."
 msgstr ""
 
-#: inc/php/tabs/faq.php:55
+#: inc/php/tabs/faq.php:59
 msgid "Will this plugin work on my wordpress.COM website?"
 msgstr "Будет ли этот плагин работать на моем веб-сайте wordpress.COM?"
 
-#: inc/php/tabs/faq.php:58
+#: inc/php/tabs/faq.php:62
 msgid "Sorry, this plugin is available for use only on self-hosted (wordpress.ORG) websites."
 msgstr "К сожалению, этот плагин доступен для использования только на самостоятельно размещённых веб-сайтах (wordpress.ORG)."
 
-#: inc/php/tabs/faq.php:60
+#: inc/php/tabs/faq.php:64
 msgid "Please note that there is a difference between wordpress.COM and wordpress.ORG."
 msgstr ""
 
-#: inc/php/tabs/faq.php:61
+#: inc/php/tabs/faq.php:65
 msgid "The wordpress.COM is a blog hosting service that offers a limited version of the popular self-hosted WordPress software."
 msgstr ""
 
-#: inc/php/tabs/faq.php:64
+#: inc/php/tabs/faq.php:68
 #, php-format
 msgid "You can learn more about the difference here: %s ."
 msgstr ""
 
-#: inc/php/tabs/faq.php:71
+#: inc/php/tabs/faq.php:75
 msgid "Will this plugin work/compatible with the theme I use?"
 msgstr ""
 
-#: inc/php/tabs/faq.php:74
+#: inc/php/tabs/faq.php:78
 msgid "This plugin is compatible with most themes."
 msgstr ""
 
-#: inc/php/tabs/faq.php:75
+#: inc/php/tabs/faq.php:79
 msgid "But, unfortunately, we cannot check it with all third-party themes (especially paid ones) for compatibility, therefore there are cases when this plugin does not work with a third-party theme."
 msgstr ""
 
-#: inc/php/tabs/faq.php:76
+#: inc/php/tabs/faq.php:80
 msgid "We constantly check this plugin for compatibility with third-party themes."
 msgstr ""
 
-#: inc/php/tabs/faq.php:77
+#: inc/php/tabs/faq.php:81
 msgid "If we find that this plugin is incompatible with a third-party theme, and if we can fix it on our part, we release an update of our plugin to fix the problem."
 msgstr ""
 
-#: inc/php/tabs/faq.php:79
+#: inc/php/tabs/faq.php:83
 msgid "If you find a conflict between our plugin and a third-party theme, please let us know and we will definitely release an update of our plugin to fix the problem."
 msgstr ""
 
-#: inc/php/tabs/faq.php:83
+#: inc/php/tabs/faq.php:87
 msgid "Will this plugin work/compatible with other plugins that I use?"
 msgstr ""
 
-#: inc/php/tabs/faq.php:86
+#: inc/php/tabs/faq.php:90
 msgid "This plugin is compatible with most plugins."
 msgstr ""
 
-#: inc/php/tabs/faq.php:87
+#: inc/php/tabs/faq.php:91
 msgid "But, unfortunately, we cannot check it with all third-party plugins (especially paid ones) for compatibility, therefore there are cases when this plugin does not work with a third-party plugin."
 msgstr ""
 
-#: inc/php/tabs/faq.php:88
+#: inc/php/tabs/faq.php:92
 msgid "We constantly check this plugin for compatibility with third-party plugins."
 msgstr ""
 
-#: inc/php/tabs/faq.php:89
+#: inc/php/tabs/faq.php:93
 msgid "If we find that this plugin is incompatible with a third-party plugin, and if we can fix it on our part, we release an update of our plugin to fix the problem."
 msgstr ""
 
-#: inc/php/tabs/faq.php:91
+#: inc/php/tabs/faq.php:95
 msgid "If you find a conflict between our plugin and a third-party plugin, please let us know and we will definitely release an update of our plugin to fix the problem."
 msgstr ""
 
-#: inc/php/tabs/faq.php:95
+#: inc/php/tabs/faq.php:99
 msgid "Can I use this plugin on my language?"
 msgstr "Можно ли использовать этот плагин на моём языке?"
 
-#: inc/php/tabs/faq.php:98
+#: inc/php/tabs/faq.php:102
 msgid "Yes."
 msgstr "Да."
 
-#: inc/php/tabs/faq.php:99
+#: inc/php/tabs/faq.php:103
 msgid "This plugin is ready for translation and has already been translated into several languages."
 msgstr "Этот плагин готов к переводу и уже переведен на несколько языков."
 
-#: inc/php/tabs/faq.php:100
+#: inc/php/tabs/faq.php:104
 msgid "But If your language is not available then you can make one."
 msgstr ""
 
-#: inc/php/tabs/faq.php:101
+#: inc/php/tabs/faq.php:105
 msgid "It is also possible that not all existing translations are up-to-date or correct, so you are welcome to make corrections."
 msgstr ""
 
-#: inc/php/tabs/faq.php:102
+#: inc/php/tabs/faq.php:106
 msgid "Many of plugin users would be delighted if you share your translation with the community."
 msgstr "Многие пользователи плагинов будут рады, если вы поделитесь своим переводом с сообществом."
 
-#: inc/php/tabs/faq.php:103
+#: inc/php/tabs/faq.php:107
 msgid "Thanks for your contribution!"
 msgstr "Спасибо за ваш вклад!"
 
-#: inc/php/tabs/faq.php:107
+#: inc/php/tabs/faq.php:111
 #, php-format
 msgid "If you want to help translate this plugin, please visit the %s."
 msgstr "Если вы хотите помочь перевести этот плагин, пожалуйста, посетите %s."
 
-#: inc/php/tabs/faq.php:111
+#: inc/php/tabs/faq.php:115
 msgid "You can also use the POT file that is included and placed in the \"languages\" folder to create a translation PO file."
 msgstr "Вы также можете использовать файл POT, который включён в плагин и помещён в папку «languages», чтобы создать PO файл перевода."
 
-#: inc/php/tabs/faq.php:114
+#: inc/php/tabs/faq.php:118
 #, php-format
 msgid "Just send the PO file to us ( %s ) and we will include this translation within the next plugin update."
 msgstr "Просто отправьте нам файл PO на %s и мы включим этот перевод в следующее обновление плагина."
 
-#: inc/php/tabs/faq.php:121
+#: inc/php/tabs/faq.php:125
 msgid "How does it work?"
 msgstr "Как это работает?"
 
-#: inc/php/tabs/faq.php:124
+#: inc/php/tabs/faq.php:128
 msgid "On the \"Settings\" tab, select the desired settings and click the \"Save changes\" button."
 msgstr "На вкладке «Настройки» выберите нужные параметры и нажмите кнопку «Сохранить изменения»."
 
-#: inc/php/tabs/faq.php:125 inc/php/tabs/usage.php:20
+#: inc/php/tabs/faq.php:129 inc/php/tabs/usage.php:24
 msgid "Enjoy your fancy Theme/Plugin Editor."
 msgstr "Наслаждайтесь своим модным редактором Theme/Plugin."
 
-#: inc/php/tabs/faq.php:126 inc/php/tabs/usage.php:20
+#: inc/php/tabs/faq.php:130 inc/php/tabs/usage.php:24
 msgid "It's that simple!"
 msgstr "Это так просто!"
 
-#: inc/php/tabs/faq.php:130
+#: inc/php/tabs/faq.php:134
 msgid "Does this plugin provide a syntax highlighting for the Post/Page Editor?"
 msgstr "Предоставляет ли этот плагин подсветку синтаксиса для редактора Post/Page?"
 
-#: inc/php/tabs/faq.php:133
+#: inc/php/tabs/faq.php:137
 msgid "No, only the Theme/Plugin Editor supports."
 msgstr "Нет, поддерживается только Theme/Plugin редактор."
 
-#: inc/php/tabs/faq.php:136
+#: inc/php/tabs/faq.php:140
 #, php-format
 msgid "For the Post/Page Editor you can use my another plugin that called the %s."
 msgstr "Для Post/Page редактора вы можете использовать другой наш плагин, который называется %s."
 
-#: inc/php/tabs/faq.php:143
+#: inc/php/tabs/faq.php:147
 msgid "Does this plugin requires any modification of the theme?"
 msgstr "Этот плагин требует изменения темы?"
 
-#: inc/php/tabs/faq.php:146
+#: inc/php/tabs/faq.php:150
 msgid "Absolutely not."
 msgstr "Абсолютно нет."
 
-#: inc/php/tabs/faq.php:147
+#: inc/php/tabs/faq.php:151
 msgid "This plugin is configurable entirely from the plugin settings page."
 msgstr "Этот плагин настраивается полностью на странице настроек плагина."
 
-#: inc/php/tabs/faq.php:151
+#: inc/php/tabs/faq.php:155
 msgid "Does this require any knowledge of HTML or CSS?"
 msgstr "Требуются ли какие-либо знания HTML или CSS?"
 
-#: inc/php/tabs/faq.php:154
+#: inc/php/tabs/faq.php:158
 msgid "This plugin can be configured with no knowledge of HTML or CSS, using an easy-to-use plugin settings page."
 msgstr "Этот плагин можно настроить без знания HTML или CSS, с помощью простой в использовании страницы настройки плагина."
 
-#: inc/php/tabs/faq.php:155
+#: inc/php/tabs/faq.php:159
 msgid "But you need to know the HTML or CSS in order to add/remove/modify the HTML or CSS code by using this plugin."
 msgstr "Но вам нужно знать HTML или CSS для того, чтобы добавить/удалить/изменить код HTML или CSS, используя этот плагин."
 
-#: inc/php/tabs/faq.php:159
+#: inc/php/tabs/faq.php:163
 msgid "It's not working."
 msgstr "Оно не работает."
 
-#: inc/php/tabs/faq.php:160
+#: inc/php/tabs/faq.php:164
 msgid "What could be wrong?"
 msgstr "Что может быть не так?"
 
-#: inc/php/tabs/faq.php:163
+#: inc/php/tabs/faq.php:167
 msgid "As with every plugin, it's possible that things don't work."
 msgstr "Как и в случае с любым другим плагином, что-то может не работать."
 
-#: inc/php/tabs/faq.php:164
+#: inc/php/tabs/faq.php:168
 msgid "It's impossible to tell what could be wrong exactly."
 msgstr "Невозможно точно сказать, что может быть не так."
 
-#: inc/php/tabs/faq.php:165
+#: inc/php/tabs/faq.php:169
 msgid "The most common reason for this is a web browser's cache."
 msgstr "Наиболее распространённой причиной этого является кеш веб-браузера."
 
-#: inc/php/tabs/faq.php:166
+#: inc/php/tabs/faq.php:170
 msgid "Every web browser stores a cache of the websites you visit (pages, images, and etc.) to reduce bandwidth usage and server load."
 msgstr "Каждый веб-браузер хранит кеш веб-сайтов, которые вы посещаете (страницы, изображения и т. д.) для того, чтобы уменьшить использование интернет канала и нагрузку на сервер."
 
-#: inc/php/tabs/faq.php:167
+#: inc/php/tabs/faq.php:171
 msgid "This is called the browser's cache."
 msgstr "Это называется кешем браузера."
 
-#: inc/php/tabs/faq.php:168
+#: inc/php/tabs/faq.php:172
 msgid "Clearing your browser's cache may solve the problem."
 msgstr "Очистка кеша браузера может решить проблему."
 
-#: inc/php/tabs/faq.php:170
+#: inc/php/tabs/faq.php:174
 msgid "If you post a support request in the plugin's support forum on WordPress.org, we'd be happy to give it a look and try to help out."
 msgstr "Если вы разместите запрос поддержки на форуме поддержки плагина на WordPress.org, то мы с радостью посмотрим и попытаемся помочь."
 
-#: inc/php/tabs/faq.php:171 inc/php/tabs/faq.php:208
+#: inc/php/tabs/faq.php:175 inc/php/tabs/faq.php:212
 msgid "Please include as much information as possible, including a link to your website where the problem can be seen."
 msgstr "Пожалуйста, укажите как можно больше информации, включая ссылку на ваш веб-сайт, на котором можно увидеть проблему."
 
-#: inc/php/tabs/faq.php:175
+#: inc/php/tabs/faq.php:179
 msgid "My theme uses a file type that is not supported by this plugin, how can I get it added?"
 msgstr "В моей теме используется тип файла, который не поддерживается этим плагином, как я могу его добавить?"
 
-#: inc/php/tabs/faq.php:178
+#: inc/php/tabs/faq.php:182
 msgid "If there is a filetype that is not supported by this plugin, please visit our contact page and fill out the contact form."
 msgstr "Если есть тип файла, который не поддерживается этим плагином, пожалуйста, посетите нашу страницу контактов и заполните контактную форму."
 
-#: inc/php/tabs/faq.php:179
+#: inc/php/tabs/faq.php:183
 msgid "We will do our best to include it in the next release of plugin."
 msgstr "Мы сделаем всё возможное, чтобы включить его в следующую версию плагина."
 
-#: inc/php/tabs/faq.php:183
+#: inc/php/tabs/faq.php:187
 msgid "The last WordPress update is preventing me from editing my website that is using this plugin."
 msgstr "Последнее обновление WordPress не позволяет мне редактировать мой веб-сайт, на котором используется этот плагин."
 
-#: inc/php/tabs/faq.php:184
+#: inc/php/tabs/faq.php:188
 msgid "Why is this?"
 msgstr "Почему так?"
 
-#: inc/php/tabs/faq.php:187
+#: inc/php/tabs/faq.php:191
 msgid "This plugin can not cause such problem."
 msgstr "Этот плагин не может вызвать такую проблему."
 
-#: inc/php/tabs/faq.php:188
+#: inc/php/tabs/faq.php:192
 msgid "More likely, the problem are related to the settings of the website."
 msgstr "Скорее всего, проблема связана с настройками веб-сайта."
 
-#: inc/php/tabs/faq.php:189
+#: inc/php/tabs/faq.php:193
 msgid "It could just be a cache, so please try to clear your website's cache (may be you using a caching plugin, or some web service such as the CloudFlare) and then the cache of your web browser."
 msgstr "Это может быть кеш, поэтому попробуйте очистить кеш вашего веб-сайта (возможно, вы используете плагин для кеширования или какой-либо веб-сервис, такой как CloudFlare), а затем кеш вашего веб-браузера."
 
-#: inc/php/tabs/faq.php:190
+#: inc/php/tabs/faq.php:194
 msgid "Also please try to re-login to the website, this too can help."
 msgstr "Также, пожалуйста, попробуйте повторно войти на веб-сайт, это тоже может помочь."
 
-#: inc/php/tabs/faq.php:194
+#: inc/php/tabs/faq.php:198
 msgid "Where to report bug if found?"
 msgstr "Где можно сообщить об ошибке?"
 
-#: inc/php/tabs/faq.php:197
+#: inc/php/tabs/faq.php:201
 msgid "Bug reports are very welcome!"
 msgstr ""
 
-#: inc/php/tabs/faq.php:200
+#: inc/php/tabs/faq.php:204
 #, php-format
 msgid "Please visit our %s contact page %s and report."
 msgstr ""
 
-#: inc/php/tabs/faq.php:205 inc/php/tabs/faq.php:233
+#: inc/php/tabs/faq.php:209 inc/php/tabs/faq.php:237
 msgid "Please do not forget to specify the name of the plugin."
 msgstr "Пожалуйста не забудьте указать название плагина."
 
-#: inc/php/tabs/faq.php:206 inc/php/tabs/faq.php:234 inc/php/tabs/faq.php:250
+#: inc/php/tabs/faq.php:210 inc/php/tabs/faq.php:238 inc/php/tabs/faq.php:254
 msgid "Thank you!"
 msgstr "Спасибо!"
 
-#: inc/php/tabs/faq.php:209
+#: inc/php/tabs/faq.php:213
 msgid "Describe in more detail what exactly you are seeing."
 msgstr ""
 
-#: inc/php/tabs/faq.php:210
+#: inc/php/tabs/faq.php:214
 msgid "Here are some examples:"
 msgstr ""
 
-#: inc/php/tabs/faq.php:213
+#: inc/php/tabs/faq.php:217
 msgid "Elements of the plugin settings page are not working."
 msgstr ""
 
-#: inc/php/tabs/faq.php:214
+#: inc/php/tabs/faq.php:218
 msgid "An error message is displayed on the plugin settings page."
 msgstr ""
 
-#: inc/php/tabs/faq.php:215
+#: inc/php/tabs/faq.php:219
 msgid "An error message is displayed on the front end of website."
 msgstr ""
 
-#: inc/php/tabs/faq.php:216
+#: inc/php/tabs/faq.php:220
 msgid "An error message is displayed on the back end of website."
 msgstr ""
 
-#: inc/php/tabs/faq.php:217
+#: inc/php/tabs/faq.php:221
 msgid "Website is crashed."
 msgstr ""
 
-#: inc/php/tabs/faq.php:222
+#: inc/php/tabs/faq.php:226
 msgid "Where to share any ideas or suggestions to make the plugin better?"
 msgstr "Где можно поделиться идеями или предложениями, чтобы сделать плагин лучше?"
 
-#: inc/php/tabs/faq.php:225
+#: inc/php/tabs/faq.php:229
 msgid "Any suggestions are very welcome!"
 msgstr "Любые предложения приветствуются!"
 
-#: inc/php/tabs/faq.php:228
+#: inc/php/tabs/faq.php:232
 #, php-format
 msgid "Please visit our %s contact page %s."
 msgstr ""
 
-#: inc/php/tabs/faq.php:238
+#: inc/php/tabs/faq.php:242
 msgid "I love this plugin!"
 msgstr "Мне нравится этот плагин!"
 
-#: inc/php/tabs/faq.php:239
+#: inc/php/tabs/faq.php:243
 msgid "Can I help somehow?"
 msgstr "Могу Я чем-то помочь?"
 
-#: inc/php/tabs/faq.php:242
+#: inc/php/tabs/faq.php:246
 msgid "Yes, any contributions are very welcome!"
 msgstr "Да, любой вклад приветствуется!"
 
-#: inc/php/tabs/faq.php:245
+#: inc/php/tabs/faq.php:249
 #, php-format
 msgid "Please visit our %s Support Us %s page."
 msgstr "Пожалуйста, посетите нашу страницу %s Поддержите нас %s ."
 
-#: inc/php/tabs/faq.php:254
+#: inc/php/tabs/faq.php:258
 msgid "Where can I find information about your licenses, payment process and refunds?"
 msgstr ""
 
-#: inc/php/tabs/faq.php:259
+#: inc/php/tabs/faq.php:263
 #, php-format
 msgid "Answers to common questions about our licenses, payment process and refunds can be found on our %s Common Questions %s page."
 msgstr ""
 
-#: inc/php/tabs/faq.php:267
+#: inc/php/tabs/faq.php:271
 msgid "Where can I find information about your customer support?"
 msgstr ""
 
-#: inc/php/tabs/faq.php:272
+#: inc/php/tabs/faq.php:276
 #, php-format
 msgid "Answers to common questions about our customer support can be found on our %s Common Questions %s page."
 msgstr ""
 
-#: inc/php/tabs/faq.php:280
+#: inc/php/tabs/faq.php:284
 msgid "Where can I find information about your affiliate program?"
 msgstr ""
 
-#: inc/php/tabs/faq.php:285
+#: inc/php/tabs/faq.php:289
 #, php-format
 msgid "Answers to common questions about our affiliate program can be found on our %s Common Questions %s page."
 msgstr ""
 
-#: inc/php/tabs/faq.php:293
+#: inc/php/tabs/faq.php:297
 msgid "My question wasn't answered here."
 msgstr "На мой вопрос здесь не было ответа."
 
-#: inc/php/tabs/faq.php:298
+#: inc/php/tabs/faq.php:302
 #, php-format
 msgid "You can ask your question on %s this page %s."
 msgstr "Вы можете задать ваш вопрос на %s этой странице %s."
 
-#: inc/php/tabs/faq.php:303
+#: inc/php/tabs/faq.php:307
 msgid "But please keep in mind that this plugin is free, and there is no a special support team, so we have no way to answer everyone."
 msgstr "Но имейте в виду, что этот плагин является бесплатным и без специальной поддержки, поэтому у нас нет возможности ответить на все вопросы."
 
-#: inc/php/tabs/settings.php:28 inc/php/tabs/settings.php:67
+#: inc/php/tabs/settings.php:28 inc/php/tabs/settings.php:75
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
@@ -539,76 +539,76 @@ msgstr "Ширина Таба"
 msgid "The width (in spaces) of the Tab character. Default is 4."
 msgstr "Ширина Таба (в пробелах). По умолчанию — 4."
 
-#: inc/php/tabs/settings.php:72
+#: inc/php/tabs/settings.php:80
 msgid "Preview"
 msgstr "Предварительный просмотр"
 
-#: inc/php/tabs/settings.php:74
+#: inc/php/tabs/settings.php:82
 msgid "Click the \"Save changes\" button to update this preview."
 msgstr "Нажмите кнопку «Сохранить изменения», чтобы обновить этот пред. просмотр."
 
-#: inc/php/tabs/settings.php:99
+#: inc/php/tabs/settings.php:107
 msgid "This is an example of HTML language."
 msgstr "Это пример HTML языка."
 
-#: inc/php/tabs/support.php:13
+#: inc/php/tabs/support.php:17
 msgid "Support Us"
 msgstr "Поддержать нас"
 
-#: inc/php/tabs/support.php:28
+#: inc/php/tabs/support.php:32
 #, php-format
 msgid "My name is %s Arthur %s, I'm the founder of %s Space X-Chimp %s, which unites a small international team of young people."
 msgstr "Меня зовут %s Артур %s и Я основатель %s Space X-Chimp %s, который объединяет небольшую международную команду молодых людей."
 
-#: inc/php/tabs/support.php:37
+#: inc/php/tabs/support.php:41
 msgid "Our intention is to create projects that will make this world a better place."
 msgstr ""
 
-#: inc/php/tabs/support.php:38
+#: inc/php/tabs/support.php:42
 msgid "Our motto is - «Follow your dreams and don’t give up»."
 msgstr ""
 
-#: inc/php/tabs/support.php:39
+#: inc/php/tabs/support.php:43
 msgid "We are really passionate about our work, we like what we are doing and hope that you will be enriched by our projects too."
 msgstr ""
 
-#: inc/php/tabs/support.php:42
+#: inc/php/tabs/support.php:46
 msgid "We spend a lot of time and effort trying to make sure that the themes, plugins and other things we build are useful, and the ultimate proof of that for us is that you actually want to use them."
 msgstr "Мы тратим много времени и усилий, пытаясь убедиться в том, что темы, плагины и другие вещи, которые мы создаём, полезны, и окончательное доказательство этого для нас то, что вы на самом деле хотите их использовать."
 
-#: inc/php/tabs/support.php:43
+#: inc/php/tabs/support.php:47
 msgid "But we are an independent developers, without a regular income, so every little contribution helps to cover our costs and allows us to spend more time creating things for awesome people like you to enjoy."
 msgstr "Но мы независимые разработчики, без регулярного дохода, так что каждый небольшой вклад помогает покрыть наши расходы и позволяет нам тратить больше времени на создание вещей, которыми могут наслаждаться удивительные люди, такие как вы."
 
-#: inc/php/tabs/support.php:46
+#: inc/php/tabs/support.php:50
 msgid "If you appreciate our work, you can buy us a cup of coffee!"
 msgstr "Если вы цените мою работу, то вы можете купить мне кофе!"
 
-#: inc/php/tabs/support.php:49
+#: inc/php/tabs/support.php:53
 msgid "Thank you for your support!"
 msgstr "Спасибо за вашу поддержку!"
 
-#: inc/php/tabs/usage.php:13
+#: inc/php/tabs/usage.php:17
 msgid "Usage Instructions"
 msgstr "Инструкция по использованию"
 
-#: inc/php/tabs/usage.php:15
+#: inc/php/tabs/usage.php:19
 msgid "To replace the default Theme/Plugin editor with an enhanced editor that provided by this plugin, simply follow these steps:"
 msgstr "Для того чтобы заменить редактор Theme/Plugin на расширенный редактор, представленный этим плагином, просто выполните следующие шаги:"
 
-#: inc/php/tabs/usage.php:17
+#: inc/php/tabs/usage.php:21
 msgid "Go to the \"Settings\" tab on this page."
 msgstr "Перейдите на вкладку «Настройки»."
 
-#: inc/php/tabs/usage.php:18
+#: inc/php/tabs/usage.php:22
 msgid "Select the desired settings."
 msgstr "Выберите нужные настройки."
 
-#: inc/php/tabs/usage.php:19
+#: inc/php/tabs/usage.php:23
 msgid "Click the \"Save changes\" button."
 msgstr "Нажмите кнопку «Сохранить изменения»."
 
-#: inc/php/tabs/usage.php:25
+#: inc/php/tabs/usage.php:29
 #, php-format
 msgid "If you want more options, then %s let us know %s and we will be happy to add them."
 msgstr "Если вы хотите больше вариантов, то %s сообщите нам %s и мы будем рады добавить их."
