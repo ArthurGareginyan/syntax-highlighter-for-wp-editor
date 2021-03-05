@@ -27,6 +27,9 @@ function spacexchimp_p009_options() {
     $array['first_line_number'] = !empty( $options['first_line_number'] ) ? $options['first_line_number'] : '0';
     $array['tab_size'] = !empty( $options['tab_size'] ) ? $options['tab_size'] : '4';
 
+    // Sanitize data
+
+
     // Return the processed data
     return $array;
 }
