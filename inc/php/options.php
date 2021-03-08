@@ -22,11 +22,11 @@ function spacexchimp_p009_options() {
 
     // Set default value if option is empty
     $list = array(
-        'hidden_scrollto' => '0',
-        'theme' => 'default',
-        'line_numbers' => '',
         'first_line_number' => '0',
+        'hidden_scrollto' => '0',
+        'line_numbers' => '',
         'tab_size' => '4',
+        'theme' => 'default',
     );
     foreach ( $list as $name => $default ) {
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
