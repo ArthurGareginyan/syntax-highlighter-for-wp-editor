@@ -3,7 +3,7 @@ Contributors: Arthur Gareginyan
 Tags: code editor, editor, file editor, plugin editor, theme editor, edit, editing, editor, code, php, xml, html ,css, javascript, markdown, codemirror, code mirror, hightlight, syntax highlighting, syntaxhighlighting, syntax highlighter, syntaxhighlighter, syntax
 Donate link: https://www.spacexchimp.com/donate.html
 Requires at least: 4.9
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 5.6
 Stable tag: 4.48
 License: GPL3
@@ -188,6 +188,9 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 
 == Changelog ==
+
+=
+* Maintenance: Ensure compatibility with upcoming WordPress 5.8.
 
 = 4.48 - Mar 8, 2021 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.7.
