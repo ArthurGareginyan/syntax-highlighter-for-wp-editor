@@ -191,6 +191,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 
 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.8.
+* Framework update: The CodeMirror library has been updated to the latest version v5.62.0.
 
 = 4.48 - Mar 8, 2021 =
 * Maintenance: Ensure compatibility with upcoming WordPress 5.7.
