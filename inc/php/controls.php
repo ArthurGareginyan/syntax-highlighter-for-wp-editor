@@ -74,7 +74,7 @@ function spacexchimp_p009_control_number( $name, $label, $help=null, $default=nu
 
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p009_options();
-    $value = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
+    $option = !empty( $options[$name] ) ? esc_attr( $options[$name] ) : $default;
 
     // Generate a part of table
     $out = "<tr>
@@ -92,7 +92,7 @@ function spacexchimp_p009_control_number( $name, $label, $help=null, $default=nu
                                 type='number'
                                 name='" . $plugin['settings'] . "_settings[$name]'
                                 id='" . $plugin['settings'] . "_settings[$name]'
-                                value='$value'
+                                value='$option'
                                 maxlength='4'
                                 class='form-control text-center'
                             >
