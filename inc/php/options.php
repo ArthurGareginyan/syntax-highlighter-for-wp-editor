@@ -38,7 +38,11 @@ function spacexchimp_p009_options() {
     }
 
     // Sanitize data
-
+    //$array['first_line_number'] = esc_textarea( $array['first_line_number'] );
+    //$array['hidden_scrollto'] = esc_textarea( $array['hidden_scrollto'] );
+    //$array['line_numbers'] = esc_textarea( $array['line_numbers'] );
+    //$array['tab_size'] = esc_textarea( $array['tab_size'] );
+    //$array['theme'] = esc_textarea( $array['theme'] );
 
     // Modify data
     $array['line_numbers'] = ( $array['line_numbers'] == 'on' || $array['line_numbers'] == '1' || $array['line_numbers'] == 'true' ) ? 'true' : 'false';
