@@ -123,8 +123,9 @@ function spacexchimp_p009_control_list( $name, $items, $label, $help, $default )
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p009_options();
     $option = $options[$name];
-    $list_item = '';
 
+    // Loop of elements
+    $list_item = '';
     foreach ( $items as $item_key => $item_value ) {
         if ( empty( $option ) AND $item_key == $default ) {
             $selected = "selected='selected'";
