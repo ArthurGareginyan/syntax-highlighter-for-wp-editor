@@ -37,7 +37,11 @@ function spacexchimp_p009_options() {
         $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
 
         // Sanitize and modify by type of option
-        if ( is_bool( $default ) === true ) {
+        if ( is_string( $default ) === true ) {
+            $array[$name] = (string) $array[$name];
+        } elseif ( is_int( $default ) === true ) {
+            $array[$name] = (integer) $array[$name];
+        } elseif ( is_bool( $default ) === true ) {
             $array[$name] = ( $array[$name] == 'on' || $array[$name] == '1' || $array[$name] == 'true' ) ? true : false;
         }
     }
