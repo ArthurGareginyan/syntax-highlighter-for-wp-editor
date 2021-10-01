@@ -96,11 +96,11 @@ function spacexchimp_p009_load_scripts_dynamic_js() {
                 break;
         }
 
-        $readonly = '';
+        $readonly = false;
 
     } else {
         $mode = 'application/x-httpd-php';
-        $readonly = 'true';
+        $readonly = true;
     }
 
     // Create an array (JS object) with all the settings

@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
     var first_line_number = parseInt( spacexchimp_p009_scriptParams["first_line_number"] );
     var tab_size = parseInt( spacexchimp_p009_scriptParams["tab_size"] );
     var mode = spacexchimp_p009_scriptParams["mode"];
-    var readonly = spacexchimp_p009_scriptParams["readonly"];
+    var readonly = Boolean( spacexchimp_p009_scriptParams["readonly"] );
 
     // Find textareas on page and replace them with the CodeMirror editor
     $('textarea').each(function(index, element){
