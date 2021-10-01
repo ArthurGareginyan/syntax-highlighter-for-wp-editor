@@ -38,7 +38,7 @@ function spacexchimp_p009_control_switch( $name, $label, $help=null ) {
     // Put the value of the plugin options into an array for easier access
     $options = spacexchimp_p009_options();
     $option = $options[$name];
-    $checked = ( $option == 'true' ) ? "checked='checked'" : '';
+    $checked = ( $option === true ) ? "checked='checked'" : '';
 
     // Generate a part of table
     $out = "<tr>
