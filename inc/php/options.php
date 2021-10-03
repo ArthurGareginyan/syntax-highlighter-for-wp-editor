@@ -47,7 +47,7 @@ function spacexchimp_p009_options() {
     }
 
     // Sanitize data
-    //$array['theme'] = esc_textarea( $array['theme'] );
+    $array['theme'] = sanitize_text_field( $array['theme'] );
 
     // Modify data
 
