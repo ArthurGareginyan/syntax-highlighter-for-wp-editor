@@ -15,15 +15,14 @@ function spacexchimp_p009_options() {
     $plugin = spacexchimp_p009_plugin();
 
     // Retrieve options from database
-    $options = get_option( $plugin['settings'] . '_settings' );
+    $array = get_option( $plugin['settings'] . '_settings' );
 
     // Make the "$options" array if the plugin options data in the database is not exist
-    if ( ! is_array( $options ) ) {
-        $options = array();
+    if ( ! is_array( $array ) ) {
+        $array = array();
     }
 
     // Create an array with options
-    $array = $options;
     $list = array(
         'first_line_number' => (integer) '0', // _control_number
         'hidden_scrollto' => (integer) '0', // _control_hidden
@@ -34,7 +33,7 @@ function spacexchimp_p009_options() {
     foreach ( $list as $name => $default ) {
 
         // Set default value if option is empty
-        $array[$name] = !empty( $options[$name] ) ? $options[$name] : $default;
+        $array[$name] = !empty( $array[$name] ) ? $array[$name] : $default;
 
         // Cast and validate by type of option
         if ( is_string( $default ) === true ) {
