@@ -22,7 +22,7 @@ function spacexchimp_p009_upgrade_4_8() {
     // Read plugin service info from the database
     $service_info_old = get_option( $prefix_old . '_service_info' );
     $service_info_current = get_option( $prefix_new . '_service_info' );
-    $upgrade_number_current = !empty( $service_info_current['upgrade'] ) ? $service_info_current['upgrade'] : '0000';
+    $upgrade_number_current = ! empty( $service_info_current['upgrade'] ) ? $service_info_current['upgrade'] : '0000';
 
     // Setting array with new data
     $service_info_new = is_array( $service_info_old ) ? $service_info_old : array();

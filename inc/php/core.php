@@ -140,7 +140,7 @@ function spacexchimp_p009_activation() {
     }
 
     // Get the activation date of the plugin from the database
-    $activation_date = !empty( $info['activation_date'] ) ? $info['activation_date'] : '';
+    $activation_date = ! empty( $info['activation_date'] ) ? $info['activation_date'] : '';
 
     if ( $activation_date == '' ) {
         $info['activation_date'] = time();

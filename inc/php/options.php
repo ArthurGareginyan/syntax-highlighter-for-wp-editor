@@ -33,7 +33,7 @@ function spacexchimp_p009_options() {
     foreach ( $list as $name => $default ) {
 
         // Set default value if option is empty
-        $array[$name] = !empty( $array[$name] ) ? $array[$name] : $default;
+        $array[$name] = ! empty( $array[$name] ) ? $array[$name] : $default;
 
         // Cast and validate by type of option
         if ( is_string( $default ) === true ) {
