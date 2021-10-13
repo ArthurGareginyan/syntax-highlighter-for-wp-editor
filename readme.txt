@@ -196,6 +196,7 @@ Commercial licensing (e.g. for projects that can’t use an open-source license)
 * Maintenance: Processing of options has been improved. Explicit type definition technique is now used in variable declarations.
 * Enhancement: Processing of options has been improved. All data is now sanitized and validated before use.
 * Maintenance: The "inc/php/items.php" file has been added.
+* Maintenance: The "_get_codemirror_theme_pairs" function has been moved to the "inc/php/items.php" file.
 * Maintenance: The contents of PHP files have been optimised; Code formatting and commenting improved.
 * Maintenance: The "_test" function has been added to the "inc/php/options.php" file for development/testing purposes. It writes the options to a text file for the visualisation of options processing.
 * Maintenance: Code formatting and commenting improved.
