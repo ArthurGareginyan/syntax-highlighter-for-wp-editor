@@ -13,6 +13,7 @@ function spacexchimp_p009_get_codemirror_theme_pairs() {
 
     // Creat and fill an output array
     $output = array(
+        'default'                 => 'Default',
         '3024-day'                => '3024 day',
         '3024-night'              => '3024 night',
         'ambiance-mobile'         => 'Ambiance mobile',

@@ -19,7 +19,6 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                     <?php
                         // Preparing an array with the names of themes
                         $themes = spacexchimp_p009_get_codemirror_theme_pairs();
-                        $themes_plus = array( 'default' => 'Default' ) + $themes;
                     ?>
 
                     <!-- SUBMIT -->
@@ -36,7 +35,7 @@ defined( 'ABSPATH' ) or die( "Restricted access!" );
                             <table class="form-table">
                                 <?php
                                     spacexchimp_p009_control_list( 'theme',
-                                                                    $themes_plus,
+                                                                    $themes,
                                                                    __( 'Color theme', $plugin['text'] ),
                                                                    __( 'You can choose the theme which you like to view.', $plugin['text'] ),
                                                                    'default'

@@ -48,7 +48,7 @@ function spacexchimp_p009_load_scripts_codemirror() {
     }
 
     // Enqueue theme
-    if ( $options['theme'] != "default" ) {
+    if ( $options['theme'] != 'default' ) {
         wp_enqueue_style( $plugin['prefix'] . '-codemirror-theme-css', $plugin['url'] . 'inc/lib/codemirror/theme/' . $options['theme'] . '.css', array(), $plugin['version'], 'all' );
     }
 
